@@ -7,6 +7,9 @@
 **Файл:** `index.html` — один самодостаточный файл. Без сборки, без CDN, без внешних картинок.
 Открывается двойным кликом в любом современном браузере.
 
+**Опубликовано:** https://yterentievsales-debug.github.io/prime-cleaning-demo/
+(репозиторий: https://github.com/yterentievsales-debug/prime-cleaning-demo)
+
 ## Превью
 
 | Главный экран | ИИ-консультант |
