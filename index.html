@@ -1,0 +1,2654 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Уборка офисов, производств и территорий по договору — «Прайм-Клининг», с 2006 года</title>
+<meta name="description" content="Профессиональный клининг для бизнеса: ежедневная уборка, генеральная, после ремонта, мойка окон и фасадов, дезинфекция, вывоз снега и ТБО. Бесплатная тестовая уборка, оплата по факту без предоплаты. Республика Коми, Кировская и Нижегородская области.">
+<meta name="theme-color" content="#0A1B22">
+<meta property="og:title" content="«Прайм-Клининг» — уборка для бизнеса с оплатой по факту">
+<meta property="og:description" content="20 лет в профессиональном клининге. Бесплатная тестовая уборка перед договором. Рассчитайте стоимость за 20 секунд.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2300A99B'/%3E%3Cpath d='M16 7l2.3 5.7L24 15l-5.7 2.3L16 23l-2.3-5.7L8 15l5.7-2.3z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   «Прайм-Клининг» — демо-лендинг. Один файл, без внешних зависимостей.
+   ============================================================ */
+:root{
+  --ink:#08181F;
+  --ink-2:#0F2C36;
+  --steel:#0A2630;
+  --steel-2:#0E3540;
+  --body:#3E5560;
+  --muted:#5C7480;
+  --paper:#FFFFFF;
+  --paper-2:#F4F9FA;
+  --paper-3:#E9F3F4;
+  --line:#DCE8EA;
+  --line-2:#C9DADD;
+  --accent:#00A99B;
+  --accent-d:#00847A;
+  --accent-l:#E6F7F4;
+  --accent-glow:rgba(0,169,155,.28);
+  --amber:#F2A33C;
+  --amber-l:#FFF4E2;
+  --ok:#20B26C;
+  --danger:#D14B4B;
+  --r-sm:10px; --r:16px; --r-lg:22px;
+  --shadow-sm:0 2px 8px rgba(8,24,31,.05);
+  --shadow:0 14px 40px rgba(8,24,31,.10);
+  --shadow-lg:0 28px 70px rgba(8,24,31,.16);
+  --font:"Segoe UI Variable Display","Segoe UI",Roboto,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.22,.68,.18,1);
+  --maxw:1180px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font);color:var(--ink);background:var(--paper);
+  line-height:1.55;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.ico{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- кнопки ---------- */
+.btn{
+  --btn-bg:linear-gradient(135deg,var(--accent) 0%,#00BFAE 100%);
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  background:var(--btn-bg);color:#fff;border:0;cursor:pointer;text-decoration:none;
+  font-weight:700;font-size:.98rem;line-height:1.2;letter-spacing:.005em;
+  padding:15px 26px;border-radius:12px;position:relative;overflow:hidden;white-space:nowrap;
+  box-shadow:0 10px 24px -8px var(--accent-glow),inset 0 1px 0 rgba(255,255,255,.22);
+  transition:transform .18s var(--ease),box-shadow .25s var(--ease),filter .2s;
+}
+.btn::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 20%,rgba(255,255,255,.32) 50%,transparent 80%);
+  transform:translateX(-120%);transition:transform .7s var(--ease);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 32px -10px var(--accent-glow),inset 0 1px 0 rgba(255,255,255,.22)}
+.btn:hover::after{transform:translateX(120%)}
+.btn:active{transform:translateY(0)}
+.btn--ghost{
+  background:transparent;color:var(--ink);border:1.5px solid var(--line-2);box-shadow:none;
+}
+.btn--ghost:hover{border-color:var(--accent);color:var(--accent-d);background:var(--accent-l);box-shadow:none}
+.btn--ghost::after{display:none}
+.btn--sm{padding:11px 18px;font-size:.9rem;border-radius:10px}
+.h-cta-full{display:inline}
+.h-cta-short{display:none}
+.btn--block{width:100%}
+.btn--light{background:#fff;color:var(--steel)}
+.btn--light:hover{background:#fff;filter:brightness(.96)}
+.link-underline{color:var(--accent-d);text-decoration:none;border-bottom:1px solid rgba(0,132,122,.35);padding-bottom:1px}
+.link-underline:hover{border-color:var(--accent-d)}
+
+/* ---------- типографика / служебное ---------- */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:.74rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d);
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;background:var(--amber-l);color:#8A5410;
+  font-weight:700;font-size:.8rem;padding:6px 13px;border-radius:999px;border:1px solid #F7DFB8;
+}
+.tag .dot{width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 3px rgba(242,163,60,.22)}
+h2.sec{font-size:clamp(1.55rem,3.1vw,2.35rem);line-height:1.16;letter-spacing:-.02em;font-weight:800;margin:14px 0 10px}
+h2.sec em{font-style:normal;color:var(--accent-d)}
+.lead{color:var(--body);font-size:1.02rem;max-width:64ch}
+.sec-head{margin-bottom:34px;max-width:760px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head.center .eyebrow::before{display:none}
+.sec-head.center .lead{margin-inline:auto}
+section{padding:78px 0;position:relative}
+section.alt{background:var(--paper-2)}
+section.tight{padding-top:0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+
+/* ---------- верхняя микро-полоса ---------- */
+.topbar{background:var(--ink);color:#B9CDD3;font-size:.78rem}
+.topbar .wrap{display:flex;align-items:center;gap:18px;min-height:36px;flex-wrap:wrap}
+.topbar .regions{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.topbar .regions .ico{width:14px;height:14px;color:var(--accent)}
+.topbar .dash{flex:1;height:1px;background:rgba(255,255,255,.09);min-width:20px}
+.topbar .badge-ai{display:inline-flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-weight:600}
+.topbar .badge-ai .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent-glow);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,169,155,.55)}70%{box-shadow:0 0 0 9px rgba(0,169,155,0)}100%{box-shadow:0 0 0 0 rgba(0,169,155,0)}}
+
+/* ---------- шапка ---------- */
+header.site{
+  position:sticky;top:0;z-index:70;background:rgba(255,255,255,.97);
+  backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line);
+  transition:box-shadow .3s var(--ease);
+}
+header.site.is-stuck{box-shadow:0 8px 30px rgba(8,24,31,.08)}
+header.site .wrap{display:flex;align-items:center;gap:26px;min-height:70px;padding-block:11px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;line-height:1.15}
+.logo__mark{
+  width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(145deg,#0C3B44,#00A99B);color:#fff;
+  box-shadow:0 8px 18px -8px rgba(0,169,155,.7),inset 0 1px 0 rgba(255,255,255,.25);
+}
+.logo__mark .ico{width:22px;height:22px;stroke-width:1.9}
+.logo b{font-size:1.06rem;font-weight:800;letter-spacing:-.015em;display:block;white-space:nowrap}
+.logo small{display:block;font-size:.7rem;color:var(--muted);font-weight:500;letter-spacing:.02em;white-space:nowrap}
+nav.main{display:flex;gap:4px;margin-left:auto}
+nav.main a{
+  color:var(--body);text-decoration:none;font-size:.9rem;font-weight:600;padding:8px 12px;border-radius:9px;
+  transition:color .18s,background .18s;white-space:nowrap;
+}
+nav.main a:hover{color:var(--accent-d);background:var(--accent-l)}
+.head-right{display:flex;align-items:center;gap:14px;flex:none}
+.head-phone{display:grid;line-height:1.2;text-align:right}
+.head-phone a{font-weight:800;font-size:1.02rem;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.head-phone span{font-size:.7rem;color:var(--muted)}
+.head-phone a:hover{color:var(--accent-d)}
+.burger{
+  display:none;width:44px;height:44px;border-radius:11px;border:1px solid var(--line);background:#fff;
+  cursor:pointer;place-items:center;color:var(--ink);
+}
+.burger span{display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;transition:.2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:currentColor;border-radius:2px;transition:.2s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.demo-pill{
+  font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  background:var(--amber-l);color:#8A5410;border:1px solid #F7DFB8;padding:3px 7px;border-radius:6px;
+}
+
+/* мобильное меню */
+.mobnav{
+  position:fixed;inset:0;z-index:80;background:rgba(8,24,31,.5);backdrop-filter:blur(3px);
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.mobnav.open{opacity:1;pointer-events:auto}
+.mobnav__panel{
+  position:absolute;right:0;top:0;bottom:0;width:min(340px,86vw);background:#fff;padding:22px;
+  display:flex;flex-direction:column;gap:6px;transform:translateX(100%);transition:transform .3s var(--ease);
+  box-shadow:-20px 0 60px rgba(8,24,31,.25);
+}
+.mobnav.open .mobnav__panel{transform:none}
+.mobnav__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.mobnav a{text-decoration:none;font-weight:600;padding:12px 6px;border-bottom:1px solid var(--line);font-size:.98rem}
+.mobnav a:last-of-type{border-bottom:0}
+.mobnav .btn{margin-top:14px}
+.mobnav__close{width:38px;height:38px;border-radius:10px;border:1px solid var(--line);background:#fff;font-size:1.3rem;cursor:pointer;line-height:1}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;padding:58px 0 74px;background:
+  radial-gradient(900px 480px at 82% -8%,rgba(0,169,155,.13),transparent 62%),
+  radial-gradient(700px 420px at 4% 12%,rgba(0,169,155,.07),transparent 60%),
+  linear-gradient(180deg,#FBFDFD 0%,#F2F9F9 58%,#FFFFFF 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(rgba(10,38,48,.10) 1px,transparent 1px);
+  background-size:22px 22px;
+  mask-image:linear-gradient(160deg,#000 0%,transparent 55%);
+  -webkit-mask-image:linear-gradient(160deg,#000 0%,transparent 55%);
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:start}
+.hero h1{
+  font-size:clamp(1.92rem,3.9vw,3.12rem);line-height:1.1;letter-spacing:-.028em;font-weight:800;
+  margin:16px 0 16px;max-width:20ch;
+}
+.hero h1 em{font-style:normal;color:var(--accent-d)}
+.hero h1 .mark{
+  position:relative;display:inline-block;color:#fff;padding:.02em .18em .06em;border-radius:8px;
+  background:var(--accent);box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+.hero .lead{font-size:1.05rem;max-width:52ch}
+.hero .points{display:grid;gap:11px;margin:24px 0 30px;font-size:.96rem;color:var(--ink-2)}
+.hero .points > span{display:flex;gap:11px;align-items:flex-start;line-height:1.45}
+.hero .points .tick{
+  width:22px;height:22px;border-radius:50%;flex:none;margin-top:1px;display:grid;place-items:center;
+  background:var(--accent-l);color:var(--accent-d);
+}
+.hero .points .tick .ico{width:13px;height:13px;stroke-width:2.6}
+.hero .points b{font-weight:700}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero-note{margin-top:14px;font-size:.78rem;color:var(--muted);display:flex;gap:8px;align-items:center}
+.hero-note .ico{width:14px;height:14px;color:var(--ok)}
+
+/* карточка-калькулятор */
+.calc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;
+  box-shadow:var(--shadow-lg);position:relative;
+}
+.calc::before{
+  content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(150deg,rgba(0,169,155,.55),transparent 34%,transparent 70%,rgba(0,169,155,.25));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;padding:1px;
+}
+.calc__head{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.calc__head .badge{
+  display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--accent-d);background:var(--accent-l);padding:5px 10px;border-radius:7px;
+}
+.calc__head .badge .ico{width:13px;height:13px}
+.calc__title{font-size:1.22rem;font-weight:800;letter-spacing:-.015em;margin:8px 0 2px}
+.calc__sub{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field > label,.field .lbl{font-size:.76rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.field select,.field input[type=text],.field input[type=tel],.field textarea{
+  width:100%;appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236B828D' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center;
+  border:1.5px solid var(--line);border-radius:11px;padding:12px 38px 12px 13px;
+  font-size:.94rem;font-weight:600;color:var(--ink);transition:border-color .18s,box-shadow .18s;
+}
+.field input[type=text],.field input[type=tel],.field textarea{background-image:none;padding-right:13px;font-weight:500}
+.field textarea{resize:vertical;min-height:78px}
+.field select:hover,.field input:hover,.field textarea:hover{border-color:var(--line-2)}
+.field select:focus,.field input:focus,.field textarea:focus{
+  outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(0,169,155,.12);
+}
+.range-row{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:2px}
+.range-val{font-weight:800;font-size:1.02rem;color:var(--ink);letter-spacing:-.01em}
+.range-val small{font-weight:600;font-size:.8rem;color:var(--muted);letter-spacing:0}
+input[type=range]{
+  -webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:99px;
+  background:linear-gradient(90deg,var(--accent) 0%,var(--accent) var(--fill,30%),#E3EEEF var(--fill,30%),#E3EEEF 100%);
+  cursor:pointer;margin:8px 0 4px;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;
+  border:3px solid var(--accent);box-shadow:0 3px 10px rgba(0,169,155,.35);cursor:grab;
+}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:3px solid var(--accent);cursor:grab}
+.range-scale{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted)}
+.calc__result{
+  margin-top:16px;padding:16px 17px;border-radius:14px;background:linear-gradient(150deg,#0A2630,#0E3540);
+  color:#fff;position:relative;overflow:hidden;
+}
+.calc__result::after{
+  content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,169,155,.4),transparent 68%);
+}
+.calc__result .r-label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#9FC2C9;font-weight:700}
+.calc__result .r-price{font-size:1.72rem;font-weight:800;letter-spacing:-.025em;line-height:1.15;margin:3px 0 2px;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
+.calc__result .r-price small{font-size:.8rem;font-weight:600;color:#9FC2C9;letter-spacing:0}
+.calc__result .r-hint{font-size:.74rem;color:#8FB3BB;line-height:1.4}
+.calc__result .r-sub{font-size:.8rem;color:#CBE3E7;margin-top:6px;font-weight:600}
+.calc .btn{margin-top:14px}
+.calc__fine{font-size:.68rem;color:var(--muted);text-align:center;margin-top:9px;line-height:1.4}
+
+/* ---------- полоса доверия ---------- */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding:0}
+.trust .wrap{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;padding-block:20px}
+.trust__label{font-size:.72rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding-right:26px;border-right:1px solid var(--line)}
+.trust__items{display:flex;gap:10px;flex-wrap:wrap}
+.trust__item{
+  display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;color:var(--ink-2);
+  background:var(--paper-2);border:1px solid var(--line);border-radius:999px;padding:8px 14px;
+}
+.trust__item .ico{width:15px;height:15px;color:var(--accent-d)}
+
+/* ---------- статистика ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+.stat{padding:26px 22px;border-right:1px solid var(--line);position:relative}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+.stat b span{color:var(--accent)}
+.stat small{display:block;font-size:.8rem;color:var(--muted);margin-top:7px;line-height:1.35}
+
+/* ---------- услуги ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;
+  display:flex;flex-direction:column;gap:0;position:relative;overflow:hidden;
+  transition:transform .25s var(--ease),box-shadow .3s var(--ease),border-color .25s;
+}
+.svc::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(160deg,rgba(0,169,155,.07),transparent 55%);opacity:0;transition:opacity .3s;
+}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#B9DCD7}
+.svc:hover::after{opacity:1}
+.svc__ico{
+  width:46px;height:46px;border-radius:13px;display:grid;place-items:center;margin-bottom:15px;
+  background:linear-gradient(150deg,var(--accent-l),#D7F1EC);color:var(--accent-d);flex:none;
+}
+.svc__ico .ico{width:23px;height:23px}
+.svc h3{font-size:1.02rem;font-weight:750;line-height:1.25;letter-spacing:-.012em;margin-bottom:7px}
+.svc p{font-size:.85rem;color:var(--body);line-height:1.45;flex:1}
+.svc__price{display:flex;align-items:baseline;gap:5px;margin-top:16px;padding-top:14px;border-top:1px dashed var(--line-2)}
+.svc__price b{font-size:1.02rem;font-weight:800;letter-spacing:-.01em;color:var(--ink)}
+.svc__price span{font-size:.72rem;color:var(--muted)}
+.svc__more{
+  margin-top:12px;font-size:.8rem;font-weight:700;color:var(--accent-d);text-decoration:none;
+  display:inline-flex;align-items:center;gap:5px;position:relative;z-index:1;background:none;border:0;padding:0;cursor:pointer;
+}
+.svc__more .ico{width:13px;height:13px;transition:transform .2s var(--ease)}
+.svc:hover .svc__more .ico{transform:translateX(3px)}
+.svc--wide{grid-column:span 2}
+.svc--feature{background:linear-gradient(160deg,#0A2630,#113C46);border-color:#15454F;color:#fff}
+.svc--feature h3{color:#fff}
+.svc--feature p{color:#AFCBD1}
+.svc--feature .svc__ico{background:rgba(0,169,155,.2);color:#4FE0CE}
+.svc--feature .svc__price{border-top-color:rgba(255,255,255,.16)}
+.svc--feature .svc__price b{color:#fff}
+.svc--feature .svc__price span{color:#9FC2C9}
+.svc--feature .svc__more{color:#4FE0CE}
+.svc--feature::after{background:radial-gradient(300px 160px at 100% 0,rgba(0,169,155,.28),transparent 70%);opacity:1}
+
+/* ---------- табы "что входит" ---------- */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{
+  border:1.5px solid var(--line);background:#fff;color:var(--body);font-weight:700;font-size:.88rem;
+  padding:10px 17px;border-radius:999px;cursor:pointer;transition:.2s var(--ease);display:inline-flex;align-items:center;gap:7px;
+}
+.tab .ico{width:15px;height:15px}
+.tab:hover{border-color:#B9DCD7;color:var(--accent-d)}
+.tab[aria-selected=true]{background:var(--steel);border-color:var(--steel);color:#fff;box-shadow:0 8px 20px -10px rgba(10,38,48,.6)}
+.tab[aria-selected=true] .ico{color:#4FE0CE}
+.tabpanel[hidden]{display:none}
+.scope{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
+.scope__list{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;box-shadow:var(--shadow-sm)}
+.scope__list h3{font-size:1.16rem;font-weight:800;letter-spacing:-.015em;margin-bottom:4px}
+.scope__list > p{font-size:.86rem;color:var(--muted);margin-bottom:18px}
+.scope__list ul{list-style:none;display:grid;gap:11px}
+.scope__list li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--ink-2);line-height:1.4}
+.scope__list li .ico{width:16px;height:16px;color:var(--accent);margin-top:2px;stroke-width:2.4}
+.scope__aside{
+  background:linear-gradient(160deg,var(--paper-3),#F7FCFC);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;
+}
+.scope__aside .big{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.scope__aside .big em{font-style:normal;color:var(--accent-d)}
+.scope__aside p{font-size:.86rem;color:var(--body)}
+.scope__kpi{display:grid;gap:10px}
+.scope__kpi div{display:flex;align-items:baseline;gap:9px;font-size:.84rem;color:var(--body);border-top:1px solid rgba(10,38,48,.08);padding-top:10px}
+.scope__kpi b{font-size:1.05rem;color:var(--ink);font-weight:800;white-space:nowrap}
+
+/* ---------- прайс ---------- */
+.price-wrap{display:grid;grid-template-columns:1.35fr .65fr;gap:20px;align-items:start}
+.table-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.price{width:100%;border-collapse:collapse;min-width:520px;font-size:.9rem}
+table.price caption{
+  text-align:left;padding:20px 24px 0;font-size:1.16rem;font-weight:800;letter-spacing:-.015em;color:var(--ink);
+}
+table.price caption span{display:block;font-size:.8rem;font-weight:500;color:var(--muted);margin-top:4px;letter-spacing:0}
+table.price thead th{
+  text-align:left;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);
+  font-weight:800;padding:16px 24px 10px;border-bottom:1px solid var(--line);white-space:nowrap;
+}
+table.price thead th:last-child,table.price td:last-child{text-align:right}
+table.price tbody tr{border-bottom:1px solid var(--line);transition:background .15s}
+table.price tbody tr:last-child{border-bottom:0}
+table.price tbody tr:hover{background:var(--paper-2)}
+table.price td{padding:13px 24px;vertical-align:middle}
+table.price td.name{font-weight:600;color:var(--ink-2)}
+table.price td.name small{display:block;font-weight:500;font-size:.76rem;color:var(--muted);margin-top:2px}
+table.price td.cost{font-weight:800;color:var(--accent-d);white-space:nowrap;letter-spacing:-.01em}
+table.price td.min{color:var(--muted);font-size:.82rem;white-space:nowrap}
+table.price tr.hl{background:var(--accent-l)}
+table.price tr.hl td.name{color:var(--accent-d)}
+.price-note{padding:14px 24px 18px;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);background:var(--paper-2)}
+.price-aside{display:grid;gap:16px}
+.price-card-side{
+  border-radius:var(--r-lg);padding:24px;background:linear-gradient(160deg,#0A2630,#123E48);color:#fff;position:relative;overflow:hidden;
+}
+.price-card-side::after{content:"";position:absolute;right:-40px;bottom:-50px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(0,169,155,.32),transparent 70%)}
+.price-card-side h3{font-size:1.1rem;font-weight:800;letter-spacing:-.015em;margin-bottom:8px;position:relative}
+.price-card-side p{font-size:.84rem;color:#AFCBD1;margin-bottom:16px;position:relative}
+.price-card-side ul{list-style:none;display:grid;gap:8px;margin-bottom:18px;position:relative}
+.price-card-side li{font-size:.82rem;display:flex;gap:8px;color:#D6E7EA}
+.price-card-side li .ico{width:14px;height:14px;color:#4FE0CE;margin-top:2px}
+.price-card-side .btn{position:relative}
+.price-side-light{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px}
+.price-side-light b{display:block;font-size:.95rem;margin-bottom:6px}
+.price-side-light p{font-size:.82rem;color:var(--body)}
+
+/* ---------- преимущества ---------- */
+.adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.adv{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;position:relative;
+  transition:border-color .25s,box-shadow .25s,transform .25s var(--ease);
+}
+.adv:hover{border-color:#B9DCD7;box-shadow:var(--shadow);transform:translateY(-3px)}
+.adv__n{
+  font-size:.72rem;font-weight:800;letter-spacing:.1em;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:8px;
+}
+.adv__n::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.adv h3{font-size:1.02rem;font-weight:750;letter-spacing:-.012em;margin-bottom:7px}
+.adv p{font-size:.87rem;color:var(--body);line-height:1.5}
+.adv p b{color:var(--ink-2)}
+
+/* ---------- сравнение ---------- */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cmp{border-radius:var(--r-lg);padding:28px;position:relative;overflow:hidden}
+.cmp h3{font-size:1.08rem;font-weight:800;letter-spacing:-.015em;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.cmp ul{list-style:none;display:grid;gap:11px;font-size:.9rem;line-height:1.4}
+.cmp li{display:flex;gap:10px;align-items:flex-start}
+.cmp li .ico{width:16px;height:16px;margin-top:2px;stroke-width:2.6}
+.cmp--us{background:linear-gradient(160deg,#0A2630,#123E48);color:#EAF4F5;box-shadow:var(--shadow)}
+.cmp--us h3{color:#fff}
+.cmp--us h3 .ico{color:#4FE0CE}
+.cmp--us li .ico{color:#4FE0CE}
+.cmp--us::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(0,169,155,.28),transparent 70%)}
+.cmp--us li{position:relative}
+.cmp--them{background:#fff;border:1px solid var(--line)}
+.cmp--them h3{color:var(--ink)}
+.cmp--them h3 .ico{color:var(--muted)}
+.cmp--them li{color:var(--body)}
+.cmp--them li .ico{color:#C9A6A6}
+.cmp__badge{
+  position:absolute;top:22px;right:22px;font-size:.66rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  background:rgba(79,224,206,.16);color:#4FE0CE;padding:5px 9px;border-radius:6px;border:1px solid rgba(79,224,206,.3);
+}
+
+/* ---------- процесс ---------- */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;left:34px;right:34px;top:23px;height:2px;background:linear-gradient(90deg,var(--accent),rgba(0,169,155,.15))}
+.step{position:relative;padding:0 14px 0 0;counter-increment:s}
+.step__dot{
+  width:47px;height:47px;border-radius:50%;background:#fff;border:2px solid var(--accent);color:var(--accent-d);
+  display:grid;place-items:center;font-weight:800;font-size:1rem;position:relative;z-index:1;margin-bottom:16px;
+  box-shadow:0 0 0 6px #fff,0 8px 18px -10px rgba(0,169,155,.6);
+}
+.step__dot{background:linear-gradient(150deg,var(--accent),#00BFAE);color:#fff;border-color:transparent}
+.step h3{font-size:.96rem;font-weight:750;letter-spacing:-.01em;margin-bottom:6px;line-height:1.3;padding-right:8px}
+.step p{font-size:.82rem;color:var(--body);line-height:1.45;padding-right:8px}
+.step time{display:block;font-size:.72rem;font-weight:700;color:var(--accent-d);margin-bottom:5px;letter-spacing:.02em}
+
+/* ---------- команда ---------- */
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.person{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px;text-align:center;transition:box-shadow .25s,transform .25s var(--ease)}
+.person:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.person__ava{
+  width:78px;height:78px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;
+  font-size:1.5rem;font-weight:800;color:var(--accent-d);letter-spacing:-.02em;
+  background:radial-gradient(circle at 30% 25%,#F0FCFA,#D5F0EB);border:2px solid #fff;box-shadow:0 0 0 1px var(--line),0 10px 24px -14px rgba(0,169,155,.7);
+}
+.person b{display:block;font-size:.95rem;font-weight:750;letter-spacing:-.01em}
+.person span{display:block;font-size:.78rem;color:var(--muted);margin-top:3px}
+.person .person__tel{display:block;margin-top:10px;font-size:.78rem;color:var(--accent-d);text-decoration:none;font-weight:600}
+
+/* ---------- отзывы ---------- */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px}
+.review__top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.review__stars{display:flex;gap:2px;color:var(--amber)}
+.review__stars .ico{width:14px;height:14px;fill:currentColor;stroke:none}
+.review__seg{font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-d);background:var(--accent-l);padding:4px 8px;border-radius:6px;white-space:nowrap}
+.review p{font-size:.9rem;color:var(--ink-2);line-height:1.55;flex:1}
+.review__who{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:12px}
+.review__ava{width:36px;height:36px;border-radius:50%;background:var(--paper-3);display:grid;place-items:center;font-weight:800;font-size:.8rem;color:var(--accent-d);flex:none}
+.review__who b{display:block;font-size:.84rem;font-weight:700}
+.review__who span{display:block;font-size:.75rem;color:var(--muted)}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:start}
+.faq__list{display:grid;gap:10px}
+details.q{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+details.q[open]{border-color:#B9DCD7;box-shadow:var(--shadow-sm)}
+details.q summary{
+  list-style:none;cursor:pointer;padding:17px 50px 17px 18px;font-weight:700;font-size:.94rem;line-height:1.4;
+  position:relative;letter-spacing:-.01em;
+}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{
+  content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;margin-top:-6px;
+  border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(45deg);
+  transition:transform .22s var(--ease);
+}
+details.q[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
+details.q .a{padding:0 18px 18px;font-size:.88rem;color:var(--body);line-height:1.55}
+details.q .a b{color:var(--ink-2)}
+.faq__aside{background:linear-gradient(160deg,#0A2630,#123E48);border-radius:var(--r-lg);padding:30px;color:#fff;position:relative;overflow:hidden}
+.faq__aside::after{content:"";position:absolute;right:-50px;bottom:-50px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(0,169,155,.3),transparent 70%)}
+.faq__aside h3{font-size:1.25rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:10px;position:relative}
+.faq__aside p{font-size:.88rem;color:#AFCBD1;margin-bottom:20px;position:relative}
+.faq__aside .btn{position:relative}
+.faq__aside .ai-note{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);position:relative}
+.faq__aside .ai-note .ico{width:18px;height:18px;color:#4FE0CE;margin-top:2px}
+.faq__aside .ai-note span{font-size:.78rem;color:#C6DDE1;line-height:1.45}
+
+/* ---------- финальный CTA + форма ---------- */
+.cta{background:
+  radial-gradient(800px 400px at 80% 0,rgba(0,169,155,.22),transparent 60%),
+  linear-gradient(160deg,#08181F 0%,#0A2630 55%,#0E3540 100%);
+  color:#fff;border-radius:0;
+}
+.cta .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:46px;align-items:center}
+.cta h2{font-size:clamp(1.6rem,3.2vw,2.4rem);line-height:1.15;letter-spacing:-.025em;font-weight:800;margin-bottom:14px}
+.cta h2 em{font-style:normal;color:#4FE0CE}
+.cta p.sub{color:#AFCBD1;font-size:1rem;margin-bottom:22px;max-width:44ch}
+.cta-list{list-style:none;display:grid;gap:11px;margin-bottom:26px}
+.cta-list li{display:flex;gap:10px;font-size:.9rem;color:#D6E7EA;align-items:flex-start}
+.cta-list li .ico{width:16px;height:16px;color:#4FE0CE;margin-top:2px;stroke-width:2.4}
+.lead-form{background:#fff;border-radius:var(--r-lg);padding:28px;color:var(--ink);box-shadow:var(--shadow-lg);position:relative}
+.lead-form h3{font-size:1.2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:4px}
+.lead-form p.f-sub{font-size:.82rem;color:var(--muted);margin-bottom:18px}
+.lead-form .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lead-form .field{margin-bottom:12px}
+.lead-form .consent{display:flex;gap:9px;align-items:flex-start;font-size:.72rem;color:var(--muted);line-height:1.4;margin:4px 0 14px}
+.lead-form .consent input{width:16px;height:16px;flex:none;margin-top:1px;accent-color:var(--accent)}
+.form-ok{
+  display:none;text-align:center;padding:26px 10px;
+}
+.form-ok.show{display:block;animation:fadeUp .4s var(--ease)}
+.form-ok .ok-ico{width:56px;height:56px;border-radius:50%;background:#E4F8EF;color:var(--ok);display:grid;place-items:center;margin:0 auto 14px}
+.form-ok .ok-ico .ico{width:28px;height:28px;stroke-width:2.6}
+.form-ok b{display:block;font-size:1.05rem;margin-bottom:6px}
+.form-ok span{font-size:.86rem;color:var(--body);display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- контакты ---------- */
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:start}
+.contact-list{display:grid;gap:12px;margin-top:6px}
+.contact-item{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;transition:border-color .2s,box-shadow .2s}
+.contact-item:hover{border-color:#B9DCD7;box-shadow:var(--shadow-sm)}
+.contact-item .ci{width:38px;height:38px;border-radius:11px;background:var(--accent-l);color:var(--accent-d);display:grid;place-items:center;flex:none}
+.contact-item .ci .ico{width:18px;height:18px}
+.contact-item b{display:block;font-size:.92rem;font-weight:700}
+.contact-item span{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
+.map-card{
+  border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--paper-3);position:relative;min-height:340px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+}
+.map-card svg{position:absolute;inset:0;width:100%;height:100%}
+.map-pin{position:absolute;left:52%;top:44%;transform:translate(-50%,-100%);z-index:2;filter:drop-shadow(0 8px 16px rgba(8,24,31,.35))}
+.map-pin::after{content:"";position:absolute;left:50%;bottom:-6px;width:34px;height:10px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(8,24,31,.28),transparent 70%);border-radius:50%}
+.map-card__box{position:relative;z-index:2;margin:16px;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow-sm)}
+.map-card__box b{display:block;font-size:.95rem}
+.map-card__box span{display:block;font-size:.8rem;color:var(--muted);margin-top:2px}
+.map-card__box a{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:.82rem;font-weight:700;color:var(--accent-d);text-decoration:none}
+.map-card__box a .ico{width:13px;height:13px}
+
+/* ---------- подвал ---------- */
+footer.site{background:var(--ink);color:#9FB8BE;padding:52px 0 30px;font-size:.84rem}
+footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer.site .logo b{color:#fff}
+footer.site .logo small{color:#7E9AA1}
+footer.site h3{color:#fff;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;font-weight:800}
+footer.site ul{list-style:none;display:grid;gap:8px}
+footer.site a{color:#9FB8BE;text-decoration:none}
+footer.site a:hover{color:#4FE0CE}
+footer.site .f-desc{font-size:.8rem;line-height:1.55;color:#8AA5AC;margin-top:14px;max-width:34ch}
+footer.site .f-phone{display:block;color:#fff;font-weight:800;font-size:1.05rem;margin-bottom:6px;text-decoration:none}
+footer.site .bottom{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:22px;font-size:.76rem;color:#7E9AA1;align-items:center}
+footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;font-size:.75rem;color:#A9C2C8;line-height:1.45}
+
+/* ---------- мобильная панель ---------- */
+.mobilebar{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:65;background:rgba(255,255,255,.97);
+  border-top:1px solid var(--line);padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+  box-shadow:0 -8px 30px rgba(8,24,31,.1);gap:9px;
+}
+.mobilebar a,.mobilebar button{
+  flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:11px;
+  text-decoration:none;font-weight:700;font-size:.88rem;padding:12px 10px;border:0;cursor:pointer;
+}
+.mobilebar .mb-call{background:var(--paper-2);border:1px solid var(--line);color:var(--ink)}
+.mobilebar .mb-cta{background:var(--accent);color:#fff;flex:1.35}
+.mobilebar .ico{width:17px;height:17px}
+
+/* ---------- ИИ-консультант ---------- */
+.ai-dock{position:fixed;right:clamp(12px,2vw,26px);bottom:clamp(12px,2vw,26px);z-index:90;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.ai-dock.is-open .ai-launch,.ai-dock.is-open .ai-teaser{display:none}
+.ai-launch{position:relative;width:66px;height:66px;border-radius:50%;border:0;cursor:pointer;padding:0;background:transparent}
+.ai-launch__ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 180deg,#00A99B,#4FE0CE,#00A99B,#0A2630,#00A99B);animation:spin 9s linear infinite;opacity:.95}
+.ai-launch__ring::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.ai-launch__face{
+  position:absolute;inset:4px;border-radius:50%;background:linear-gradient(150deg,#0A2630,#124C58);
+  display:grid;place-items:center;color:#4FE0CE;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 10px 26px -8px rgba(0,169,155,.75);
+}
+.ai-launch__face svg{width:30px;height:30px}
+.ai-launch__ping{position:absolute;inset:-2px;border-radius:50%;border:2px solid rgba(0,169,155,.6);animation:ping 2.6s var(--ease) infinite;pointer-events:none}
+.ai-launch__dot{position:absolute;right:2px;bottom:2px;width:15px;height:15px;border-radius:50%;background:var(--ok);border:3px solid #fff;z-index:2}
+.ai-launch__badge{
+  position:absolute;top:-4px;left:-6px;background:var(--amber);color:#3D2A05;font:800 10px/1 var(--font);
+  letter-spacing:.04em;padding:4px 6px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+.ai-launch:hover .ai-launch__face{transform:scale(1.04)}
+.ai-launch__face{transition:transform .2s var(--ease)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ping{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}
+
+.ai-teaser{
+  max-width:270px;background:#fff;border-radius:16px 16px 4px 16px;padding:13px 16px;
+  box-shadow:0 16px 40px rgba(8,24,31,.22),0 0 0 1px rgba(8,24,31,.06);
+  position:relative;display:grid;gap:3px;opacity:0;transform:translateY(8px) scale(.96);
+  transition:opacity .4s var(--ease),transform .4s var(--ease);pointer-events:none;
+}
+.ai-teaser:not(.show){display:none}
+.ai-teaser.show{opacity:1;transform:none;pointer-events:auto;cursor:pointer}
+.ai-teaser::after{content:"";position:absolute;right:8px;bottom:-7px;width:14px;height:14px;background:#fff;transform:rotate(45deg);border-radius:2px}
+.ai-teaser b{font-size:.9rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
+.ai-teaser b .ico{width:14px;height:14px;color:var(--accent-d)}
+.ai-teaser span{font-size:.8rem;color:var(--body);line-height:1.4}
+.ai-teaser .tip{font-size:.7rem;color:var(--muted);margin-top:4px}
+
+.ai-panel{
+  width:min(392px,calc(100vw - 24px));height:min(660px,calc(100dvh - 44px));display:flex;flex-direction:column;
+  background:#fff;border-radius:20px;overflow:hidden;
+  box-shadow:0 32px 80px -18px rgba(8,24,31,.5),0 0 0 1px rgba(8,24,31,.08);
+  transform-origin:bottom right;animation:panelIn .3s var(--ease);
+}
+.ai-panel[hidden]{display:none}
+@keyframes panelIn{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
+.ai-head{
+  background:linear-gradient(140deg,#082028 0%,#0C333D 60%,#0F4550 100%);color:#fff;padding:14px 14px 13px;
+  display:flex;align-items:center;gap:11px;position:relative;flex:none;
+}
+.ai-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,224,206,.5),transparent)}
+.ai-ava{
+  width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;position:relative;
+  background:linear-gradient(150deg,#00A99B,#0A2630);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 6px 16px -6px rgba(0,169,155,.8);
+}
+.ai-ava svg{width:22px;height:22px;color:#fff}
+.ai-head .who{display:grid;gap:1px;min-width:0;flex:1}
+.ai-head .who b{font-size:.94rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
+.ai-head .who b em{font-style:normal;font-size:.6rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:rgba(79,224,206,.18);color:#4FE0CE;padding:2px 5px;border-radius:4px}
+.ai-head .who small{font-size:.72rem;color:#9FC2C9;display:inline-flex;align-items:center;gap:5px}
+.ai-head .who small i{width:6px;height:6px;border-radius:50%;background:var(--ok);display:inline-block;box-shadow:0 0 0 3px rgba(32,178,108,.22)}
+.ai-head .hbtns{display:flex;gap:2px;flex:none}
+.ai-head .hbtns button{
+  width:30px;height:30px;border:0;border-radius:8px;background:rgba(255,255,255,.07);color:#B8D2D7;
+  cursor:pointer;display:grid;place-items:center;transition:.15s;
+}
+.ai-head .hbtns button:hover{background:rgba(255,255,255,.16);color:#fff}
+.ai-head .hbtns .ico{width:15px;height:15px}
+
+.ai-body{
+  flex:1;min-height:0;overflow-y:auto;padding:16px 14px 10px;background:
+    radial-gradient(400px 200px at 100% 0,rgba(0,169,155,.07),transparent 70%),
+    linear-gradient(180deg,#F3F9F9,#F7FBFB);
+  display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth;overscroll-behavior:contain;
+}
+.ai-body::-webkit-scrollbar{width:6px}
+.ai-body::-webkit-scrollbar-thumb{background:#CBDDDF;border-radius:99px}
+.ai-day{text-align:center;font-size:.68rem;color:#8BA4AB;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:2px 0 4px;flex:none}
+.msg{max-width:87%;padding:10px 13px;border-radius:15px;font-size:.875rem;line-height:1.5;overflow-wrap:anywhere;position:relative;flex:none;
+  opacity:0;transform:translateY(8px);animation:msgIn .3s var(--ease) forwards}
+@keyframes msgIn{to{opacity:1;transform:none}}
+.msg--bot{justify-self:flex-start;background:#fff;border:1px solid #E2EDEF;border-bottom-left-radius:5px;color:var(--ink-2);
+  box-shadow:0 2px 8px rgba(8,24,31,.04)}
+.msg--user{justify-self:flex-end;background:linear-gradient(150deg,var(--accent),#00BFAE);color:#fff;border-bottom-right-radius:5px;
+  font-weight:600;box-shadow:0 6px 16px -8px rgba(0,169,155,.7)}
+.msg b{font-weight:800;color:var(--ink)}
+.msg--user b{color:#fff}
+.msg .ln{display:block;margin-top:6px;padding-left:15px;position:relative}
+.msg .ln::before{content:"";position:absolute;left:2px;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.msg .sep{display:block;height:1px;background:var(--line);margin:9px 0}
+.msg .hint{display:block;font-size:.78rem;color:var(--muted);margin-top:7px}
+.msg .quote{background:var(--paper-2);border-radius:9px;padding:8px 10px;font-size:.8rem;color:var(--body);margin-top:7px;border-left:2px solid var(--accent)}
+.msg__card{
+  align-self:stretch;max-width:100%;flex:none;background:#fff;border:1px solid var(--line);border-radius:14px 14px 14px 5px;
+  padding:0;overflow:hidden;box-shadow:0 10px 26px -14px rgba(8,24,31,.35);
+  opacity:0;transform:translateY(8px);animation:msgIn .3s var(--ease) forwards;
+}
+.msg__card .card-top{background:linear-gradient(150deg,#0A2630,#123E48);color:#fff;padding:12px 14px;display:flex;align-items:center;gap:8px}
+.msg__card .card-top .ico{width:15px;height:15px;color:#4FE0CE}
+.msg__card .card-top b{font-size:.82rem;font-weight:800;letter-spacing:.01em}
+.msg__card .card-top span{margin-left:auto;font-size:.64rem;font-weight:800;letter-spacing:.07em;color:#4FE0CE;background:rgba(79,224,206,.15);padding:2px 6px;border-radius:4px}
+.msg__card dl{margin:0;padding:12px 14px;display:grid;gap:7px}
+.msg__card .row{display:flex;justify-content:space-between;gap:12px;font-size:.8rem;color:var(--body)}
+.msg__card .row b{color:var(--ink);font-weight:700;text-align:right}
+.msg__card .row.total{border-top:1px dashed var(--line-2);padding-top:7px;margin-top:2px;font-size:.85rem}
+.msg__card .row.total b{color:var(--accent-d);font-size:.95rem}
+.msg__card .card-foot{padding:0 14px 12px;font-size:.7rem;color:var(--muted);line-height:1.4}
+.ai-typing{justify-self:flex-start;display:flex;gap:4px;padding:13px 15px;background:#fff;border:1px solid #E2EDEF;border-radius:15px;border-bottom-left-radius:5px;width:max-content;flex:none}
+.ai-typing[hidden]{display:none}
+.ai-typing span{width:6px;height:6px;border-radius:50%;background:#9FB8BE;animation:tp 1.1s infinite}
+.ai-typing span:nth-child(2){animation-delay:.16s}
+.ai-typing span:nth-child(3){animation-delay:.32s}
+@keyframes tp{0%,60%,100%{transform:none;opacity:.35}30%{transform:translateY(-4px);opacity:1}}
+
+.ai-chips{display:flex;gap:7px;padding:0 14px 10px;flex-wrap:wrap;background:#F7FBFB;flex:none}
+.ai-chips:empty{display:none}
+.chip{
+  border:1px solid #CFE3E4;background:#fff;color:var(--accent-d);font-size:.78rem;font-weight:700;
+  padding:7px 11px;border-radius:999px;cursor:pointer;transition:.16s;display:inline-flex;align-items:center;gap:5px;
+}
+.chip:hover{background:var(--accent-l);border-color:var(--accent);transform:translateY(-1px)}
+.chip .ico{width:12px;height:12px}
+.ai-input{display:flex;align-items:flex-end;gap:8px;padding:10px 12px;border-top:1px solid var(--line);background:#fff;flex:none}
+.ai-input textarea{
+  flex:1;min-width:0;border:0;background:var(--paper-2);border-radius:12px;padding:11px 13px;resize:none;
+  font-size:.875rem;line-height:1.4;max-height:96px;min-height:42px;outline:none;transition:box-shadow .18s;
+}
+.ai-input textarea:focus{box-shadow:0 0 0 2px rgba(0,169,155,.35)}
+.ai-input .send{
+  width:42px;height:42px;border-radius:50%;border:0;background:linear-gradient(150deg,var(--accent),#00BFAE);
+  color:#fff;display:grid;place-items:center;cursor:pointer;flex:none;transition:.18s;box-shadow:0 6px 16px -8px rgba(0,169,155,.9);
+}
+.ai-input .send:hover{transform:scale(1.05)}
+.ai-input .send:disabled{opacity:.5;cursor:default;transform:none}
+.ai-input .send .ico{width:19px;height:19px}
+.ai-foot-note{padding:7px 14px 9px;font-size:.66rem;color:#8BA4AB;background:#fff;border-top:1px dashed var(--line);text-align:center;line-height:1.4;flex:none}
+.ai-foot-note b{color:var(--accent-d)}
+
+/* ---------- витрина ИИ-консультанта ---------- */
+.ai-showcase{
+  background:
+    radial-gradient(700px 360px at 88% 10%,rgba(0,169,155,.28),transparent 62%),
+    linear-gradient(160deg,#08181F 0%,#0A2630 60%,#0E3540 100%);
+  color:#fff;overflow:hidden;
+}
+.ai-showcase .wrap{display:grid;grid-template-columns:1fr .92fr;gap:48px;align-items:center}
+.ai-showcase .eyebrow{color:#4FE0CE}
+.ai-showcase .eyebrow::before{background:#4FE0CE}
+.ai-showcase h2{color:#fff}
+.ai-showcase h2 em{color:#4FE0CE}
+.ai-showcase .lead{color:#AFCBD1}
+.ai-showcase .cta-list li{color:#D6E7EA}
+.ai-showcase .cta-list{margin:22px 0 26px}
+.ai-demo-card{
+  background:#fff;border-radius:18px;padding:16px;color:var(--ink);
+  box-shadow:0 30px 70px -20px rgba(0,0,0,.6);position:relative;
+}
+.ai-demo-card__head{display:flex;align-items:center;gap:9px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.ai-demo-card__head .av{width:30px;height:30px;border-radius:9px;background:linear-gradient(150deg,#00A99B,#0A2630);display:grid;place-items:center}
+.ai-demo-card__head .av svg{width:16px;height:16px;color:#fff}
+.ai-demo-card__head b{font-size:.82rem;font-weight:800;display:flex;align-items:center;gap:6px}
+.ai-demo-card__head b em{font-style:normal;font-size:.55rem;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-d);background:var(--accent-l);padding:2px 5px;border-radius:4px}
+.ai-demo-card__head span{margin-left:auto;font-size:.65rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
+.ai-demo-card__head span i{width:5px;height:5px;border-radius:50%;background:var(--ok)}
+.ai-demo-msgs{display:grid;gap:8px;background:var(--paper-2);border-radius:12px;padding:11px}
+.ai-demo-msgs .b,.ai-demo-msgs .u{max-width:90%;padding:8px 11px;border-radius:12px;font-size:.78rem;line-height:1.45}
+.ai-demo-msgs .b{background:#fff;border:1px solid #E2EDEF;border-bottom-left-radius:4px;color:var(--ink-2)}
+.ai-demo-msgs .u{justify-self:end;background:var(--accent);color:#fff;font-weight:600;border-bottom-right-radius:4px}
+.ai-demo-msgs .b b{color:var(--accent-d)}
+.ai-demo-lead{
+  margin-top:8px;background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;
+}
+.ai-demo-lead__top{background:linear-gradient(150deg,#0A2630,#123E48);color:#fff;padding:7px 10px;font-size:.68rem;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.ai-demo-lead__top span{color:#4FE0CE;font-size:.58rem;letter-spacing:.06em}
+.ai-demo-lead__body{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;font-size:.72rem;color:var(--body)}
+.ai-demo-lead__body b{color:var(--ink);font-weight:800}
+.ai-demo-card__foot{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:.65rem;color:var(--muted)}
+.ai-demo-card__foot .ico{width:12px;height:12px;color:var(--accent)}
+
+/* ---------- анимации появления ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- адаптив ---------- */
+@media (max-width:1200px){
+  .head-phone{display:none}
+  nav.main{gap:0}
+  nav.main a{padding:8px 10px;font-size:.87rem}
+}
+@media (max-width:1080px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .adv-grid{grid-template-columns:repeat(2,1fr)}
+  .team{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:26px}
+  .steps::before{display:none}
+  .stat b{font-size:1.8rem}
+}
+@media (max-width:960px){
+  nav.main{display:none}
+  .head-phone{display:none}
+  .burger{display:grid}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .hero h1{max-width:24ch}
+  .calc{max-width:560px}
+  .price-wrap,.scope,.faq,.cta .wrap,.contacts,.ai-showcase .wrap{grid-template-columns:1fr}
+  .trust .wrap{grid-template-columns:1fr;gap:14px;padding-block:18px}
+  .trust__label{border-right:0;padding-right:0}
+  .compare{grid-template-columns:1fr}
+  .reviews{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+  .cta .wrap{gap:32px}
+  .faq__aside{order:2}
+  section{padding:60px 0}
+  .mobilebar{display:flex}
+  body{padding-bottom:66px}
+  footer.site{padding-bottom:90px}
+  .ai-dock{bottom:calc(76px + env(safe-area-inset-bottom))}
+  .ai-panel{height:min(620px,calc(100dvh - 108px))}
+}
+@media (max-width:700px){
+  .wrap{padding:0 16px}
+  /* прайс как список */
+  table.price{min-width:0;font-size:.9rem}
+  table.price thead{display:none}
+  table.price caption{padding:16px 16px 8px}
+  table.price tbody tr{display:grid;grid-template-columns:1fr auto;gap:3px 12px;padding:13px 16px;border-bottom:1px solid var(--line)}
+  table.price tbody tr:last-child{border-bottom:0}
+  table.price td{padding:0;border:0;display:block}
+  table.price td.name{grid-column:1/-1;font-size:.94rem;line-height:1.3}
+  table.price td.name small{font-size:.75rem;margin-top:3px}
+  table.price td.cost{grid-column:1;font-size:.94rem;align-self:end}
+  table.price td.min{grid-column:2;text-align:right;font-size:.78rem;align-self:end;white-space:nowrap}
+  table.price td.min::before{content:"мин. заказ: ";color:var(--muted)}
+  .price-note{padding:12px 16px 16px}
+  header.site .wrap{gap:10px}
+  .logo{gap:9px}
+  .logo__mark{width:38px;height:38px;border-radius:11px}
+  .logo b{font-size:.97rem}
+  .logo small{display:none}
+  .head-right{gap:8px}
+  .head-right > .btn{padding:11px 14px;font-size:.8rem;border-radius:10px}
+  .h-cta-short{display:none}
+  .demo-pill{display:none}
+  .burger{width:42px;height:42px}
+  .hero h1{overflow-wrap:break-word}
+  .topbar .regions span{display:none}
+  .topbar .badge-ai{font-size:.72rem}
+  .hero{padding:36px 0 48px}
+  .hero h1{font-size:clamp(1.65rem,7vw,2.1rem)}
+  .hero .points{font-size:.9rem}
+  .hero-cta .btn{width:100%}
+  .svc-grid{grid-template-columns:1fr}
+  .svc--wide{grid-column:span 1}
+  .adv-grid,.team,.reviews{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:18px}
+  .step{display:grid;grid-template-columns:47px 1fr;column-gap:14px;padding:0}
+  .step__dot{grid-row:span 3;margin-bottom:0;box-shadow:0 8px 18px -10px rgba(0,169,155,.6)}
+  .step h3{padding-right:0}
+  .step p{padding-right:0}
+  .lead-form{padding:22px}
+  .lead-form .row2{grid-template-columns:1fr}
+  .calc{padding:20px}
+  .calc__result .r-price{font-size:1.5rem}
+  footer.site .cols{grid-template-columns:1fr;gap:24px}
+  .ai-panel{width:calc(100vw - 20px);height:min(78dvh,640px)}
+  .ai-teaser{display:none !important}
+  .ai-launch{display:none}
+  .sec-head{margin-bottom:26px}
+  h2.sec{font-size:1.55rem}
+  .scope__aside .big{font-size:1.3rem}
+}
+@media (max-width:480px){
+  .h-cta-full{display:none}
+  .h-cta-short{display:inline}
+  .logo b{font-size:.9rem}
+  .logo__mark{width:34px;height:34px;border-radius:10px}
+  .logo__mark .ico{width:18px;height:18px}
+  .burger{width:38px;height:38px}
+  .topbar .wrap{flex-wrap:nowrap;min-height:34px;gap:10px}
+  .topbar .regions--wide{display:none}
+  .topbar .dash{display:none}
+  .topbar .badge-ai{font-size:.68rem;margin-left:auto}
+  .hero .points{font-size:.86rem}
+  .calc__result .r-price{font-size:1.35rem}
+  .stat{padding:20px 16px}
+}
+@media (max-width:420px){
+  .trust__item{font-size:.76rem;padding:7px 11px}
+  .ai-launch{width:58px;height:58px}
+  .ai-launch__face svg{width:26px;height:26px}
+}
+</style>
+</head>
+<body>
+<!-- иконки -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 4.9L19 9.9l-4.9 1.9L12 16.8l-1.9-4.9L5 9.9l4.9-1.9z"/><path d="M18.6 15.2l.8 2.1 2.1.8-2.1.8-.8 2.1-.8-2.1-2.1-.8 2.1-.8z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21.6 16.9v2.9a2 2 0 0 1-2.2 2 19.7 19.7 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.7 19.7 0 0 1 1.7 4.1 2 2 0 0 1 3.7 2h2.9a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.6 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.9 2.1z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6.5A1.5 1.5 0 0 0 5 3.5v17A1.5 1.5 0 0 0 6.5 22h11a1.5 1.5 0 0 0 1.5-1.5V7z"/><path d="M14 2v5h5"/><path d="M8.5 13h7M8.5 17h4.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M2.5 21h19"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9.5 21v-5.5h5V21"/><path d="M9 9.5h.01M15 9.5h.01M9 13h.01M15 13h.01"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2.5 21h19"/><path d="M4.5 21V10l5 3V10l5 3V8l5.5 4v9"/><path d="M8 21v-3M14 21v-3"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5h16L18.7 4H5.3z"/><path d="M4 9.5V20a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9.5"/><path d="M9.5 21v-6h5v6"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M12 4v16M3 12h18"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8l8 3v6.1c0 5-3.4 8.3-8 9.3-4.6-1-8-4.3-8-9.3V5.8z"/><path d="M8.8 11.8l2.2 2.2 4.2-4.2"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2.5v19M4.7 6.7l14.6 10.6M19.3 6.7L4.7 17.3"/><path d="M9.5 4.5L12 6l2.5-1.5M9.5 19.5L12 18l2.5 1.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4"/><path d="M2.6 20.5a6.4 6.4 0 0 1 12.8 0"/><path d="M16.4 5.2a3.4 3.4 0 0 1 0 5.6"/><path d="M17.6 14.4a6.4 6.4 0 0 1 3.8 6.1"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 17V6h11.5v11"/><path d="M14 10h4.2l3.3 3.3V17h-7.5"/><circle cx="7" cy="18" r="1.9"/><circle cx="17.6" cy="18" r="1.9"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.6 6.4L12 13l8.4-6.6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.2 1.2-6.5L2.5 9.5l6.6-.9z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.6a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.9-.9L3 21l1.8-4.9A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21.5 2.5L11 13"/><path d="M21.5 2.5l-6.8 19-3.7-8.5L2.5 9.3z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M8 6.5h8"/><path d="M8.2 11h.01M12 11h.01M15.8 11h.01M8.2 14.6h.01M12 14.6h.01M15.8 14.6h.01M8.2 18.2h.01M12 18.2h.01M15.8 18.2h.01"/></symbol>
+    <symbol id="i-ruble" viewBox="0 0 24 24"><path d="M8.5 21V4h5.2a4.7 4.7 0 0 1 0 9.4H8.5"/><path d="M6 13.4h9.5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M6 15H4.5A1.5 1.5 0 0 1 3 13.5v-9A1.5 1.5 0 0 1 4.5 3h9A1.5 1.5 0 0 1 15 4.5V6"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-8 0-14 3.4-14 10a6 6 0 0 0 6 6c6.6 0 8-6 8-16z"/><path d="M4 21c1.5-5 4-8 8-10"/></symbol>
+  </defs>
+</svg>
+
+<!-- верхняя микрополоса -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="regions"><svg class="ico"><use href="#i-pin"/></svg>Сыктывкар</span>
+    <span class="regions regions--wide">Коми · Кировская обл. · Нижегородская обл.</span>
+    <span class="dash"></span>
+    <a class="badge-ai" href="#ai" data-open-ai><span class="pulse"></span>ИИ-консультант онлайн</a>
+  </div>
+</div>
+
+<!-- шапка -->
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
+      <span>
+        <b>Прайм-Клининг</b>
+        <small>профессиональный клининг для бизнеса</small>
+      </span>
+    </a>
+    <nav class="main" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#why">Почему мы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="head-right">
+      <div class="head-phone">
+        <a href="tel:+79128636500">8 912 863-65-00</a>
+        <span>круглосуточно, без выходных</span>
+      </div>
+      <a class="btn btn--sm" href="#lead"><span class="h-cta-full">Рассчитать стоимость</span><span class="h-cta-short">Смета</span></a>
+      <span class="demo-pill" title="Это демонстрационная версия сайта">демо</span>
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobnav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- мобильное меню -->
+<div class="mobnav" id="mobnav" aria-hidden="true" inert>
+  <div class="mobnav__panel" role="dialog" aria-label="Меню сайта" aria-modal="true">
+    <div class="mobnav__head">
+      <a class="logo" href="#top">
+        <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
+        <span><b>Прайм-Клининг</b><small>с 2006 года</small></span>
+      </a>
+      <button class="mobnav__close" id="mobnav-close" type="button" aria-label="Закрыть меню">×</button>
+    </div>
+    <a href="#services">Услуги</a>
+    <a href="#prices">Цены</a>
+    <a href="#why">Почему мы</a>
+    <a href="#process">Как работаем</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    <a class="btn btn--block" href="#lead">Рассчитать стоимость</a>
+    <a class="btn btn--block btn--ghost" href="tel:+79128636500">8 912 863-65-00</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag"><span class="dot"></span>Бесплатная тестовая уборка перед договором</span>
+      <h1>Уборка для бизнеса <em>без предоплаты</em> и простоев</h1>
+      <p class="lead">«Прайм-Клининг» с 2006 года обслуживает офисы, производства, ритейл и территории. Сначала бесплатно покажем качество на вашем объекте — потом подписываем договор.</p>
+      <div class="points">
+        <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span><b>20 лет</b> на рынке клининга: 120+ объектов на постоянном обслуживании</span></span>
+        <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span><b>Платите по факту:</b> без предоплаты, только за подтверждённые работы</span></span>
+        <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span>Сертифицированная химия, журналы контроля по требованиям Роспотребнадзора</span></span>
+        <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span>Электронный контроль выхода персонала — опоздание видно сразу</span></span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="#lead">Получить смету за 15 минут <svg class="ico" style="width:17px;height:17px"><use href="#i-arrow"/></svg></a>
+        <button class="btn btn--ghost" type="button" data-open-ai><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Спросить ИИ-консультанта</button>
+      </div>
+      <p class="hero-note"><svg class="ico"><use href="#i-shield"/></svg>СРО фасилити-операторов · ISO · реестр «Белый ФМ»</p>
+    </div>
+
+    <!-- калькулятор -->
+    <div class="calc" id="calc" aria-labelledby="calc-title">
+      <div class="calc__head">
+        <span class="badge"><svg class="ico"><use href="#i-calc"/></svg>Калькулятор</span>
+      </div>
+      <div class="calc__title" id="calc-title">Стоимость за 20 секунд</div>
+      <div class="calc__sub">Укажите объект и площадь — покажем ориентир по прайсу. Точную смету пришлём после бесплатного осмотра.</div>
+      <div class="field">
+        <label for="calc-object">Тип объекта</label>
+        <select id="calc-object">
+          <option>Офис / бизнес-центр</option>
+          <option>Производство / склад</option>
+          <option>Магазин / ритейл</option>
+          <option>Медицинское учреждение</option>
+          <option>Банк / отделение</option>
+          <option>Квартира / частный дом</option>
+          <option>Территория / парковка</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="calc-type">Вид уборки</label>
+        <select id="calc-type">
+          <option value="daily">Ежедневная (поддерживающая)</option>
+          <option value="support">Разовая поддерживающая</option>
+          <option value="general">Генеральная</option>
+          <option value="rebuild">После ремонта / стройки</option>
+          <option value="windows">Мойка окон</option>
+          <option value="disinfect">Дезинфекция</option>
+        </select>
+      </div>
+      <div class="field">
+        <div class="range-row">
+          <label for="calc-area">Площадь</label>
+          <span class="range-val"><span id="calc-area-val">600</span> <small id="calc-area-unit">м²</small></span>
+        </div>
+        <input type="range" id="calc-area" min="50" max="10000" step="50" value="600" aria-describedby="calc-area-hint">
+        <div class="range-scale" id="calc-area-hint"><span>50 м²</span><span>10 000 м²</span></div>
+      </div>
+      <label class="consent" style="display:flex;gap:9px;align-items:flex-start;font-size:.76rem;color:var(--body);margin:2px 0 0">
+        <input type="checkbox" id="calc-territory" style="width:16px;height:16px;flex:none;margin-top:2px;accent-color:var(--accent)">
+        <span>Нужна ещё уборка прилегающей территории</span>
+      </label>
+      <div class="calc__result" aria-live="polite">
+        <div class="r-label">Предварительная стоимость</div>
+        <div class="r-price"><span id="calc-price">от 22 440 ₽</span><small id="calc-period">/ мес</small></div>
+        <div class="r-sub" id="calc-sub">≈ 1 020 ₽ за 1 рабочий день</div>
+        <div class="r-hint" id="calc-hint">Минимальный заказ 1 500 ₽ · ориентир по прайсу 2026</div>
+      </div>
+      <button class="btn btn--block" type="button" id="calc-submit">Получить точную смету</button>
+      <p class="calc__fine">Бесплатный осмотр объекта и тестовая уборка — без обязательств</p>
+    </div>
+  </div>
+</section>
+
+<!-- полоса доверия -->
+<div class="trust">
+  <div class="wrap">
+    <span class="trust__label">Нам доверяют</span>
+    <div class="trust__items">
+      <span class="trust__item"><svg class="ico"><use href="#i-factory"/></svg>Промышленные предприятия</span>
+      <span class="trust__item"><svg class="ico"><use href="#i-store"/></svg>Ритейл и торговые сети</span>
+      <span class="trust__item"><svg class="ico"><use href="#i-building"/></svg>Бюджетная сфера</span>
+      <span class="trust__item"><svg class="ico"><use href="#i-shield"/></svg>Банки</span>
+      <span class="trust__item"><svg class="ico"><use href="#i-target"/></svg>Коммерческая недвижимость</span>
+    </div>
+  </div>
+</div>
+
+<!-- цифры -->
+<section class="tight" style="padding:40px 0 0">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><b>20 <span>лет</span></b><small>непрерывной работы с 2006 года</small></div>
+      <div class="stat"><b>120<span>+</span></b><small>объектов на постоянном обслуживании</small></div>
+      <div class="stat"><b>260</b><small>обученных сотрудников в штате</small></div>
+      <div class="stat"><b>3</b><small>региона присутствия: Коми, Кировская и Нижегородская обл.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Услуги</span>
+      <h2 class="sec">Один подрядчик на всё: <em>от ежедневной уборки до вывоза снега</em></h2>
+      <p class="lead">Не нужно искать разных исполнителей на офис, территорию и окна. Заключаете один договор — мы закрываем весь объём, включая расходники и отчётность.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc svc--feature reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-spark"/></svg></div>
+        <h3>Комплексная ежедневная уборка</h3>
+        <p>Абонентское обслуживание: закреплённая бригада, расходники, уборка до открытия объекта и контроль выхода персонала.</p>
+        <div class="svc__price"><b>от 1,7 ₽</b><span>/ м² в рабочий день</span></div>
+        <button class="svc__more" type="button" data-service="Ежедневная уборка">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-target"/></svg></div>
+        <h3>Генеральная уборка</h3>
+        <p>Глубокая чистка поверхностей, мебели, санузлов, вентиляции и труднодоступных мест. Разово или ежеквартально.</p>
+        <div class="svc__price"><b>от 30 ₽</b><span>/ м²</span></div>
+        <button class="svc__more" type="button" data-service="Генеральная уборка">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-factory"/></svg></div>
+        <h3>Уборка после ремонта</h3>
+        <p>Строительная пыль, следы краски, клея и затирки, мойка окон и полов. Сдаём объект под ключ — без «доделок».</p>
+        <div class="svc__price"><b>от 40 ₽</b><span>/ м²</span></div>
+        <button class="svc__more" type="button" data-service="Уборка после ремонта">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-window"/></svg></div>
+        <h3>Мойка окон и фасадов</h3>
+        <p>Остекление любой высоты, витражи, вывески, фасадные панели. Работаем с автовышки и альпинистами.</p>
+        <div class="svc__price"><b>от 50 / 40 ₽</b><span>/ м² окна / фасада</span></div>
+        <button class="svc__more" type="button" data-service="Мойка окон и фасадов">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-shield"/></svg></div>
+        <h3>Дезинфекция помещений</h3>
+        <p>Обработка по СанПиН сертифицированными средствами: производственные цеха, санузлы, общественные зоны.</p>
+        <div class="svc__price"><b>от 10 ₽</b><span>/ м²</span></div>
+        <button class="svc__more" type="button" data-service="Дезинфекция помещений">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-leaf"/></svg></div>
+        <h3>Уборка территории</h3>
+        <p>Тротуары, парковки, газоны, урны, посыпка и сгребание снега. Механизированно и вручную, по графику.</p>
+        <div class="svc__price"><b>от 1 ₽</b><span>/ м² в рабочий день</span></div>
+        <button class="svc__more" type="button" data-service="Уборка территории">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-snow"/></svg></div>
+        <h3>Вывоз снега и ТБО</h3>
+        <p>Погрузка и вывоз снега, строительного мусора и ТКО. Своя техника, документы для отчётности.</p>
+        <div class="svc__price"><b>от 180 ₽</b><span>/ м³, мин. заказ 18 000 ₽</span></div>
+        <button class="svc__more" type="button" data-service="Вывоз снега и ТБО">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico"><svg class="ico"><use href="#i-users"/></svg></div>
+        <h3>Аутсорсинг и подменный персонал</h3>
+        <p>Подмена на время больничных и отпусков, уборщицы в штате подрядчика — без кадрового учёта и налогов.</p>
+        <div class="svc__price"><b>от 220 ₽</b><span>/ час</span></div>
+        <button class="svc__more" type="button" data-service="Аутсорсинг персонала">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </article>
+    </div>
+
+    <div class="hero-cta" style="margin-top:26px;justify-content:center">
+      <button class="btn btn--ghost" type="button" data-open-ai><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Не нашли услугу? Спросите ИИ-консультанта</button>
+    </div>
+  </div>
+</section>
+
+<!-- ЧТО ВХОДИТ -->
+<section class="alt" id="scope">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Что входит в работу</span>
+      <h2 class="sec">Не «протереть пыль», <em>а регламент под ваш объект</em></h2>
+      <p class="lead">Перед стартом мы описываем зоны, перечень работ и периодичность. Вы точно знаете, что и как часто делается — это приложение к договору.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Тип объекта">
+      <button class="tab" role="tab" id="tab-office" aria-controls="panel-office" aria-selected="true"><svg class="ico"><use href="#i-building"/></svg>Офис</button>
+      <button class="tab" role="tab" id="tab-prod" aria-controls="panel-prod" aria-selected="false"><svg class="ico"><use href="#i-factory"/></svg>Производство и склад</button>
+      <button class="tab" role="tab" id="tab-retail" aria-controls="panel-retail" aria-selected="false"><svg class="ico"><use href="#i-store"/></svg>Ритейл</button>
+      <button class="tab" role="tab" id="tab-terr" aria-controls="panel-terr" aria-selected="false"><svg class="ico"><use href="#i-leaf"/></svg>Территория</button>
+    </div>
+
+    <div class="tabpanel" id="panel-office" role="tabpanel" aria-labelledby="tab-office">
+      <div class="scope">
+        <div class="scope__list">
+          <h3>Офис / бизнес-центр</h3>
+          <p>Ежедневная поддерживающая уборка по графику до начала рабочего дня и в течение дня.</p>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg>Кабинеты, опенспейсы, переговорные: пыль, полы, рабочие поверхности</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Санузлы: мойка и дезинфекция, замена расходников, контроль запасов</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Кухня и кофе-поинт: поверхности, техника, посуда, вынос мусора</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Входная группа, стекло, лифты, зоны ресепшн</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Вынос мусора и ТКО, содержание контейнерных площадок</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Отчётность: журналы уборки, акты, фотофиксация по запросу</li>
+          </ul>
+        </div>
+        <div class="scope__aside">
+          <div class="big">От графика зависят <em>деньги</em></div>
+          <p>Абонентский договор дешевле разовых вызовов: персонал закреплён, логистика учтена, закупка химии идёт оптом.</p>
+          <div class="scope__kpi">
+            <div><b>1–2 дня</b><span>на запуск объекта после подписания</span></div>
+            <div><b>24/7</b><span>работаем, пока офис закрыт</span></div>
+            <div><b>0 ₽</b><span>за тестовую уборку перед договором</span></div>
+          </div>
+          <a class="btn btn--sm" href="#lead">Заказать расчёт</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="panel-prod" role="tabpanel" aria-labelledby="tab-prod" hidden>
+      <div class="scope">
+        <div class="scope__list">
+          <h3>Производство и склад</h3>
+          <p>Уборка, где важны техника безопасности, графики смен и допуски персонала.</p>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg>Механизированная мойка и полировка полов, поломоечные машины Nilfisk, Tennant, IPC</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Обеспыливание стеллажей, оборудования и строительных конструкций</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Зоны погрузки и разгрузки, пандусы, маркировка полов</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Бытовки, столовые, раздевалки, санузлы по графику смен</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Соблюдение СИЗ, инструктаж персонала, допуски и наряды</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Журналы дезинфекции и уборки, готовность к проверкам</li>
+          </ul>
+        </div>
+        <div class="scope__aside">
+          <div class="big">Техника решает <em>скорость</em></div>
+          <p>На площади от 3 000 м² ручная уборка экономически бессмысленна. Мы считаем стоимость с учётом механизации — это дешевле в пересчёте на м².</p>
+          <div class="scope__kpi">
+            <div><b>до 2 000 м²/ч</b><span>производительность райдера</span></div>
+            <div><b>3 модели</b><span>техники в собственном парке</span></div>
+            <div><b>по сменам</b><span>работаем в любой график</span></div>
+          </div>
+          <a class="btn btn--sm" href="#lead">Заказать осмотр</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="panel-retail" role="tabpanel" aria-labelledby="tab-retail" hidden>
+      <div class="scope">
+        <div class="scope__list">
+          <h3>Магазин и ритейл</h3>
+          <p>Уборка до открытия и уборка в течение дня — без остановки торговли.</p>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg>Торговый зал: полы, пыль на полках, зеркала, цокольные зоны</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Витрины и входные группы: мойка стекла, следы от рук</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Примерочные, кассовая зона, зона ожидания</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Уборка до 08:00 — к открытию объект в идеальном виде</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Санузлы для сотрудников и посетителей, расходники</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Оперативный выход по заявке: разливы, поломки, ЧП</li>
+          </ul>
+        </div>
+        <div class="scope__aside">
+          <div class="big">Чистота кассы <em>видна всем</em></div>
+          <p>Грязный пол у кассы — минус к среднему чеку. На бригаде лежит поддержание стандарта компании, а не разовая приборка.</p>
+          <div class="scope__kpi">
+            <div><b>до 08:00</b><span>сдаём объект к открытию</span></div>
+            <div><b>2–4 ч</b><span>выезд по заявке в городе</span></div>
+            <div><b>1 договор</b><span>на все точки сети</span></div>
+          </div>
+          <a class="btn btn--sm" href="#lead">Рассчитать сеть</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabpanel" id="panel-terr" role="tabpanel" aria-labelledby="tab-terr" hidden>
+      <div class="scope">
+        <div class="scope__list">
+          <h3>Прилегающая территория</h3>
+          <p>Круглогодичное содержание: летом — чистота, зимой — безопасные проходы.</p>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg>Тротуары, парковки, въезды: подметание и мойка механизированно</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Газоны и клумбы: покос, сбор листвы, содержание урн</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Зимой: сгребание и погрузка снега, посыпка противогололёдными средствами</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Вывоз снега и ТБО с документами для бухгалтерии</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Уборка по погоде: после снегопада выходим в ту же смену</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Фотоотчёт до и после каждой уборки</li>
+          </ul>
+        </div>
+        <div class="scope__aside">
+          <div class="big">Зимой штраф дороже <em>договора</em></div>
+          <p>Неубранный снег — это травмы, претензии и предписания. Мы берём погодные риски на себя и держим технику наготове.</p>
+          <div class="scope__kpi">
+            <div><b>посыпка</b><span>в течение 2 часов после снегопада</span></div>
+            <div><b>своя техника</b><span>самосвалы, погрузчики, трактор</span></div>
+            <div><b>18 000 ₽</b><span>минимальный заказ на вывоз</span></div>
+          </div>
+          <a class="btn btn--sm" href="#lead">Заказать зимний договор</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРАЙС -->
+<section id="prices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Цены</span>
+      <h2 class="sec">Прозрачный прайс <em>без скрытых доплат</em></h2>
+      <p class="lead">Цены за 1 м² — ориентировочные, фиксируются в смете после осмотра. Итог зависит от площади, периодичности и степени загрязнения — обсудим это сразу, а не после выставления счёта.</p>
+    </div>
+
+    <div class="price-wrap">
+      <div class="table-card reveal">
+        <div class="table-scroll">
+          <table class="price">
+            <caption>Прайс-лист на 2026 год<span>Ориентировочные цены. Точная стоимость — по итогам бесплатного осмотра.</span></caption>
+            <thead>
+              <tr><th scope="col">Услуга</th><th scope="col">Цена</th><th scope="col">Мин. заказ</th></tr>
+            </thead>
+            <tbody>
+              <tr class="hl"><td class="name">Ежедневная уборка помещений<small>абонентский договор, цена за рабочий день</small></td><td class="cost">от 1,7 ₽/м²</td><td class="min">по объекту</td></tr>
+              <tr><td class="name">Ежедневная уборка территории<small>тротуары, парковка, входные группы</small></td><td class="cost">от 1 ₽/м²</td><td class="min">по объекту</td></tr>
+              <tr><td class="name">Поддерживающая уборка<small>офисы, склады, производства, магазины, СТО</small></td><td class="cost">от 20 ₽/м²</td><td class="min">1 500 ₽</td></tr>
+              <tr><td class="name">Генеральная уборка<small>глубокая чистка всех поверхностей</small></td><td class="cost">от 30 ₽/м²</td><td class="min">2 000 ₽</td></tr>
+              <tr><td class="name">Уборка после ремонта<small>строительная пыль, следы отделки</small></td><td class="cost">от 40 ₽/м²</td><td class="min">2 000 ₽</td></tr>
+              <tr><td class="name">Мойка окон</td><td class="cost">от 50 ₽/м²</td><td class="min">2 000 ₽</td></tr>
+              <tr><td class="name">Мойка фасадов</td><td class="cost">от 40 ₽/м²</td><td class="min">2 000 ₽</td></tr>
+              <tr><td class="name">Глубокая чистка пола<small>машинная, с защитным составом</small></td><td class="cost">от 15 ₽/м²</td><td class="min">2 000 ₽</td></tr>
+              <tr><td class="name">Дезинфекция помещений<small>по СанПиН, сертифицированные средства</small></td><td class="cost">от 10 ₽/м²</td><td class="min">2 000 ₽</td></tr>
+              <tr><td class="name">Вывоз снега / ТБО</td><td class="cost">от 180 ₽/м³</td><td class="min">18 000 ₽</td></tr>
+              <tr><td class="name">Подменный персонал<small>больничные, отпуска, пиковые периоды</small></td><td class="cost">от 220 ₽/час</td><td class="min">по объекту</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="price-note">Цена зависит от площади, периодичности, степени загрязнения и материалов отделки. Срочные заказы в выходные, праздники и ночное время — по повышенному тарифу, всегда согласованному заранее.</p>
+      </div>
+
+      <aside class="price-aside">
+        <div class="price-card-side reveal">
+          <h3>Пригласите нас на тендер</h3>
+          <p>Готовим коммерческое предложение по 44-ФЗ и 223-ФЗ, с полным пакетом документов и фиксированной ценой на срок договора.</p>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg>СРО фасилити-операторов, ISO</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Опыт с бюджетными учреждениями</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Полный комплект закрывающих документов</li>
+          </ul>
+          <a class="btn btn--block" href="#lead">Получить КП</a>
+        </div>
+        <div class="price-side-light reveal">
+          <b>Нужен расчёт под площадь?</b>
+          <p>Введите метраж в калькуляторе — покажем ориентир по прайсу и пришлём смету после осмотра.</p>
+          <a class="link-underline" href="#calc" style="display:inline-block;margin-top:10px;font-size:.85rem;font-weight:700">Открыть калькулятор →</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ПОЧЕМУ МЫ -->
+<section class="alt" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Почему «Прайм-Клининг»</span>
+      <h2 class="sec">Почему нас не меняют: <em>шесть причин</em></h2>
+      <p class="lead">Мы работаем с 2006 года и знаем: клиента теряют не на цене, а на срывах графика и «невидимых» доплатах. Поэтому выстроили процессы так, чтобы этого не происходило.</p>
+    </div>
+
+    <div class="adv-grid">
+      <article class="adv reveal">
+        <div class="adv__n">01 — Скорость</div>
+        <h3>Начнём на следующий день</h3>
+        <p>Осмотр — в течение суток, бригада выходит на объект на следующий день после звонка. <b>Простоев на вашей стороне нет.</b></p>
+      </article>
+      <article class="adv reveal">
+        <div class="adv__n">02 — Качество</div>
+        <h3>Бесплатная тестовая уборка</h3>
+        <p>Сначала показываем результат на деле, потом подписываем договор. <b>Оплата только за подтверждённые вами работы</b>, без предоплаты.</p>
+      </article>
+      <article class="adv reveal">
+        <div class="adv__n">03 — Безопасность</div>
+        <h3>Химия по требованиям Роспотребнадзора</h3>
+        <p>Сертифицированные моющие и дезинфицирующие средства, инструктаж персонала, <b>журналы контроля</b> — готовы к любой проверке.</p>
+      </article>
+      <article class="adv reveal">
+        <div class="adv__n">04 — Удобство</div>
+        <h3>Не только уборка</h3>
+        <p>Химчистка мебели, расходники для туалетных комнат, озеленение, аренда грязезащитных ковриков. <b>Один подрядчик на всю эксплуатацию.</b></p>
+      </article>
+      <article class="adv reveal">
+        <div class="adv__n">05 — Прозрачность</div>
+        <h3>Белый ФМ и СРО</h3>
+        <p>Регистрация в госреестре «Белый ФМ» и членство в СРО фасилити-операторов: <b>официальные зарплаты, налоги и ГОСТы</b>.</p>
+      </article>
+      <article class="adv reveal">
+        <div class="adv__n">06 — Контроль</div>
+        <h3>Электронный контроль выхода</h3>
+        <p>Система фиксирует приход и нахождение персонала на объекте. <b>Опоздание или отсутствие видно сразу</b> — и сразу исправляется.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- СРАВНЕНИЕ -->
+<section id="compare">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Сравнение</span>
+      <h2 class="sec">Разница видна <em>на второй неделе</em></h2>
+      <p class="lead">Сравнили нас с типичной частной бригадой по критериям, которые реально влияют на объект: замена персонала, документы, ответственность за имущество.</p>
+    </div>
+    <div class="compare">
+      <div class="cmp cmp--us reveal">
+        <span class="cmp__badge">выгоднее</span>
+        <h3><svg class="ico"><use href="#i-spark"/></svg>Прайм-Клининг</h3>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Бригада закреплена за объектом, при болезни — подмена в тот же день</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Бесплатная тестовая уборка и оплата по факту, без предоплаты</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Полный пакет документов: договор, акты, счета, журналы, СРО</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Ответственность за имущество закреплена в договоре</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Своя техника и профессиональная химия — без «пятен после мойки»</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Электронный контроль выхода и отчёт по объекту</li>
+        </ul>
+      </div>
+      <div class="cmp cmp--them reveal">
+        <h3><svg class="ico"><use href="#i-minus"/></svg>Частная бригада / уборщица в штате</h3>
+        <ul>
+          <li><svg class="ico"><use href="#i-close"/></svg>Заболел единственный человек — объект стоит, замены нет</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Аванс вперёд и «доплатите за сложность» по ходу работ</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Налоги, кадровый учёт, больничные и отпуска — на вас</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Качество зависит от настроения, стандарта нет</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Испорченная отделка — отвечать некому</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Проверить фактический выход практически невозможно</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="alt" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Как мы работаем</span>
+      <h2 class="sec">Как проходит запуск: <em>пять шагов</em></h2>
+      <p class="lead">Средний срок от первого звонка до выхода бригады — двое суток. Осмотр и тестовая уборка бесплатны и не обязывают вас подписывать договор.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__dot">1</div>
+        <time>15 минут</time>
+        <h3>Заявка и уточнение</h3>
+        <p>Менеджер связывается, уточняет площадь, тип объекта и график. Сразу называем вилку цены.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__dot">2</div>
+        <time>1 день</time>
+        <h3>Бесплатный осмотр</h3>
+        <p>Выезжаем на объект, оцениваем загрязнение и материалы отделки, согласуем перечень работ.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__dot">3</div>
+        <time>перед договором</time>
+        <h3>Тестовая уборка</h3>
+        <p>Показываем качество на деле — бесплатно. Вы оцениваете результат и решаете, работать ли дальше.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__dot">4</div>
+        <time>1–2 дня</time>
+        <h3>Договор и регламент</h3>
+        <p>Фиксируем цену, график, зоны и ответственность. Подписываем приложение с перечнем работ.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__dot">5</div>
+        <time>каждый месяц</time>
+        <h3>Работа и контроль</h3>
+        <p>Бригада на объекте, менеджер на связи, акты и отчёты — ежемесячно. Качество проверяем сами.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОМАНДА -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Команда</span>
+      <h2 class="sec">С кем вы будете <em>работать напрямую</em></h2>
+      <p class="lead">Никаких «отделов» и переадресаций: у объекта есть персональный менеджер, который отвечает за результат и знает вашу специфику.</p>
+    </div>
+    <div class="team">
+      <div class="person reveal">
+        <div class="person__ava">НЖ</div>
+        <b>Жупиков Никита Валерьевич</b>
+        <span>Генеральный директор</span>
+      </div>
+      <div class="person reveal">
+        <div class="person__ava">ГЦ</div>
+        <b>Цыганова Галина Петровна</b>
+        <span>Коммерческий директор</span>
+      </div>
+      <div class="person reveal">
+        <div class="person__ava">АР</div>
+        <b>Рудак Александр Васильевич</b>
+        <span>Проектный руководитель</span>
+      </div>
+      <div class="person reveal">
+        <div class="person__ava">НР</div>
+        <b>Романовская Наталья Александровна</b>
+        <span>Менеджер по работе с клиентами</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Отзывы</span>
+      <h2 class="sec">Что говорят <em>наши клиенты</em></h2>
+      <p class="lead">Работаем с промышленными предприятиями, ритейлом, бюджетной сферой и банками. Ниже — типичные отзывы по каждому направлению.</p>
+    </div>
+    <div class="reviews">
+      <article class="review reveal">
+        <div class="review__top">
+          <div class="review__stars" role="img" aria-label="5 из 5">
+            <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+          </div>
+          <span class="review__seg">Производство</span>
+        </div>
+        <p>«До этого пробовали двух подрядчиков — оба срывались на графике в сезон. Здесь третий год: бригада приходит до смены, полы в цеху моют машиной, замечаний по журналам нет. Отдельно ценю, что замена сотрудника — не наша головная боль».</p>
+        <div class="review__who">
+          <span class="review__ava">АС</span>
+          <div><b>Алексей С.</b><span>начальник АХО, деревообрабатывающее производство</span></div>
+        </div>
+      </article>
+      <article class="review reveal">
+        <div class="review__top">
+          <div class="review__stars" role="img" aria-label="5 из 5">
+            <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+          </div>
+          <span class="review__seg">Ритейл</span>
+        </div>
+        <p>«Магазин в торговом центре: главное — к открытию всё сияет, и нас не видно в зале в течение дня. Работают до 08:00, витрины протирают без разводов. По акту раз в месяц всё прозрачно, сюрпризов в счёте не было».</p>
+        <div class="review__who">
+          <span class="review__ava">МК</span>
+          <div><b>Марина К.</b><span>управляющая сетью магазинов</span></div>
+        </div>
+      </article>
+      <article class="review reveal">
+        <div class="review__top">
+          <div class="review__stars" role="img" aria-label="5 из 5">
+            <svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg><svg class="ico"><use href="#i-star"/></svg>
+          </div>
+          <span class="review__seg">Бюджетная сфера</span>
+        </div>
+        <p>«Заходили через тендер, документы собрали без единого замечания. Тестовую уборку сделали ещё до подписания — по факту сравнивали два подрядчика и выбрали по результату, а не по презентации. Работаем второй контракт».</p>
+        <div class="review__who">
+          <span class="review__ava">ИД</span>
+          <div><b>Ирина Д.</b><span>заместитель директора по эксплуатации</span></div>
+        </div>
+      </article>
+    </div>
+    <p style="font-size:.74rem;color:var(--muted);margin-top:16px">Отзывы приведены как пример подачи для демо-версии сайта.</p>
+  </div>
+</section>
+
+<!-- ВИТРИНА ИИ-КОНСУЛЬТАНТА -->
+<section class="ai-showcase" id="ai-consultant">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">ИИ-консультант</span>
+      <h2 class="sec" style="color:#fff">Ночью, в выходные и в пик заявок <em>отвечает ИИ</em></h2>
+      <p class="lead">Алёна знает прайс, услуги, договор и документы. Считает стоимость по площади, снимает возражения и передаёт менеджеру готовую заявку с параметрами объекта.</p>
+      <ul class="cta-list">
+        <li><svg class="ico"><use href="#i-check"/></svg>Мгновенный расчёт по прайсу: 20 секунд вместо звонка</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Понимает свободный текст: «уборка после ремонта 1 200 м²»</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Собирает объект, площадь и телефон — заявка уходит в CRM</li>
+      </ul>
+      <button class="btn btn--light" type="button" data-open-ai>
+        <svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Попробовать диалог
+      </button>
+      <p style="font-size:.76rem;color:#8FB3BB;margin-top:14px">Это рабочий образец: чат запускается прямо на странице, без установки и настроек.</p>
+    </div>
+
+    <div class="ai-demo-card reveal" aria-hidden="true">
+      <div class="ai-demo-card__head">
+        <span class="av"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2l1.25 3.3 3.3 1.25-3.3 1.25L12 11.3 10.75 8 7.45 6.75l3.3-1.25z" fill="currentColor"/><rect x="4.4" y="12.1" width="15.2" height="9.6" rx="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="9.1" cy="16.9" r="1.3" fill="currentColor"/><circle cx="14.9" cy="16.9" r="1.3" fill="currentColor"/></svg></span>
+        <b>Алёна <em>ИИ</em></b>
+        <span><i></i>онлайн</span>
+      </div>
+      <div class="ai-demo-msgs">
+        <div class="b">Здравствуйте! Уборка офиса 600 м² — <b>от 33 000 ₽/мес</b> ежедневно. Нужна разовая или генеральная?</div>
+        <div class="u">Нужна ежедневная, оплата по факту</div>
+        <div class="b">Принял: офис, 600 м², ежедневная. Бесплатная тестовая уборка — включена. Оставьте телефон, менеджер пришлёт смету за 15 минут.</div>
+        <div class="ai-demo-lead">
+          <div class="ai-demo-lead__top">Заявка на расчёт <span>№ ДЕМО-2417</span></div>
+          <div class="ai-demo-lead__body"><span>Объект: офис, 600 м²</span><b>от 33 000 ₽/мес</b></div>
+        </div>
+      </div>
+      <div class="ai-demo-card__foot"><svg class="ico"><use href="#i-shield"/></svg>Демо-образец диалога ИИ-консультанта</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="faq">
+      <div class="reveal">
+        <span class="eyebrow">Вопросы</span>
+        <h2 class="sec" style="margin-bottom:20px">Отвечаем на то, <em>что спрашивают чаще всего</em></h2>
+        <div class="faq__aside">
+          <h3>Не нашли свой вопрос?</h3>
+          <p>ИИ-консультант знает прайс, услуги и порядок работы. Ответит мгновенно в любое время — даже ночью.</p>
+          <button class="btn btn--light" type="button" data-open-ai><svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Открыть чат</button>
+          <div class="ai-note">
+            <svg class="ico"><use href="#i-shield"/></svg>
+            <span>Чат — демонстрационный образец ИИ-консультанта. Он работает на встроенной базе знаний сайта и передаёт заявку менеджеру.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq__list reveal">
+        <details class="q" open>
+          <summary>Уборка действительно бесплатная для теста?</summary>
+          <div class="a">Да. Мы делаем <b>разовую тестовую уборку бесплатно</b> — на объекте или территории. Вы оцениваете результат на деле и только потом решаете, заключать договор или нет. Предоплата не требуется: платите за фактически выполненные и подтверждённые вами работы.</div>
+        </details>
+        <details class="q">
+          <summary>Как формируется цена и почему «от»?</summary>
+          <div class="a">Ориентир считаем по прайсу за 1 м². Финальная цена зависит от площади, периодичности (регулярный клининг по абонентскому договору дешевле разового), степени загрязнения, материалов отделки (мрамор, ценные породы дерева требуют специальной химии) и особых условий — срочность, ночь, выходные. Все условия фиксируем <b>до начала работ</b>.</div>
+        </details>
+        <details class="q">
+          <summary>Сколько времени занимает запуск объекта?</summary>
+          <div class="a">Заявку принимаем круглосуточно, менеджер отвечает в течение 15 минут. Осмотр — в течение суток, бригада выходит на объект <b>на следующий день</b> после звонка. Договор и регламент уборки оформляем параллельно, без остановки работ.</div>
+        </details>
+        <details class="q">
+          <summary>Кто отвечает, если испортили имущество?</summary>
+          <div class="a">Ответственность за сохранность имущества закреплена в договоре. Персонал работает с сертифицированной химией и по инструкциям, поэтому риск повреждения минимален, но если что-то произошло — <b>ущерб компенсируем</b>.</div>
+        </details>
+        <details class="q">
+          <summary>Работаете ли вы с бюджетными учреждениями и тендерами?</summary>
+          <div class="a">Да. Мы участвуем в закупках по <b>44-ФЗ и 223-ФЗ</b>, состоим в СРО фасилити-операторов, зарегистрированы в реестре «Белый ФМ». Готовим коммерческое предложение с полным комплектом документов и фиксированной ценой на срок договора.</div>
+        </details>
+        <details class="q">
+          <summary>Что будет, если сотрудник заболел?</summary>
+          <div class="a">Это наша зона ответственности. У нас есть подменный персонал: <b>замена выходит в тот же день</b>, объект не останавливается. Также применяем электронный контроль выхода — опоздание или отсутствие видно сразу, а не по жалобе на следующий день.</div>
+        </details>
+        <details class="q">
+          <summary>Какие документы вы предоставляете?</summary>
+          <div class="a">Договор, приложение с перечнем работ и периодичностью, акты выполненных работ, счета и закрывающие документы для бухгалтерии, журналы уборки и дезинфекции. По запросу — фотоотчёт до и после.</div>
+        </details>
+        <details class="q">
+          <summary>Можно ли заказать разовую уборку без договора?</summary>
+          <div class="a">Можно. Разовая уборка — генеральная, после ремонта, мойка окон, дезинфекция — выполняется по заявке с минимальной суммой заказа от 1 500–2 000 ₽ в зависимости от услуги. Но регулярное обслуживание по абонентскому договору <b>обойдётся дешевле</b> в пересчёте на месяц.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛЬНЫЙ CTA -->
+<section class="cta" id="lead">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow" style="color:#4FE0CE">Заявка</span>
+      <h2>Посчитаем ваш объект и покажем <em>качество бесплатно</em></h2>
+      <p class="sub">Оставьте контакт — менеджер перезвонит в течение 15 минут, уточнит площадь и пришлёт смету. Осмотр и тестовая уборка бесплатны.</p>
+      <ul class="cta-list">
+        <li><svg class="ico"><use href="#i-check"/></svg>Смета с фиксированной ценой на срок договора</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Без предоплаты, оплата по факту выполненных работ</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>КП по 44-ФЗ и 223-ФЗ, полный пакет документов</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Работаем круглосуточно, включая праздники</li>
+      </ul>
+      <p style="font-size:.8rem;color:#8FB3BB;display:flex;gap:8px;align-items:center">
+        <svg class="ico" style="width:15px;height:15px;color:#4FE0CE"><use href="#i-pin"/></svg>
+        Сыктывкар, ул. Маркова, 20 · выезжаем по Коми, Кировской и Нижегородской области
+      </p>
+    </div>
+
+    <div class="lead-form reveal">
+      <form id="lead-form" novalidate>
+        <h3>Расчёт стоимости</h3>
+        <p class="f-sub">Заполните — и мы вернёмся с ценой, а не с «давайте обсудим».</p>
+        <div class="row2">
+          <div class="field">
+            <label for="lf-name">Как к вам обращаться</label>
+            <input type="text" id="lf-name" name="name" placeholder="Имя" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="lf-phone">Телефон</label>
+            <input type="tel" id="lf-phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="lf-object">Объект и площадь</label>
+          <input type="text" id="lf-object" name="object" placeholder="Например: офис 600 м², ежедневная уборка">
+        </div>
+        <label class="consent">
+          <input type="checkbox" id="lf-consent" checked>
+          <span>Согласен на обработку персональных данных. Это демо-форма: данные никуда не отправляются.</span>
+        </label>
+        <button class="btn btn--block" type="submit">Получить смету за 15 минут</button>
+      </form>
+      <div class="form-ok" id="lead-ok">
+        <div class="ok-ico"><svg class="ico"><use href="#i-check"/></svg></div>
+        <b>Заявка принята</b>
+        <span>Менеджер перезвонит в течение 15 минут и согласует бесплатный осмотр.<br><small style="color:var(--muted);font-size:.78rem">Демо-режим: данные не отправлены.</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Контакты</span>
+      <h2 class="sec">Свяжитесь <em>удобным способом</em></h2>
+      <p class="lead">Диспетчерская принимает заявки круглосуточно. Если удобнее текстом — напишите ИИ-консультанту, он ответит сразу и передаст заявку менеджеру.</p>
+    </div>
+
+    <div class="contacts">
+      <div class="reveal">
+        <div class="contact-list">
+          <a class="contact-item" href="tel:+79128636500">
+            <span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span>
+            <span><b>8 912 863-65-00</b><span>круглосуточно, отдел продаж</span></span>
+          </a>
+          <a class="contact-item" href="tel:+78212272732">
+            <span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span>
+            <span><b>8 8212 27-27-32</b><span>офис в Сыктывкаре</span></span>
+          </a>
+          <a class="contact-item" href="mailto:commercial@prime-cleaning.ru">
+            <span class="ci"><svg class="ico"><use href="#i-mail"/></svg></span>
+            <span><b>commercial@prime-cleaning.ru</b><span>для КП, тендеров и документов</span></span>
+          </a>
+          <a class="contact-item" href="#contacts">
+            <span class="ci"><svg class="ico"><use href="#i-pin"/></svg></span>
+            <span><b>Сыктывкар, ул. Маркова, д. 20</b><span>Республика Коми · выезд по региону</span></span>
+          </a>
+          <a class="contact-item" href="#contacts">
+            <span class="ci"><svg class="ico"><use href="#i-clock"/></svg></span>
+            <span><b>24/7</b><span>заявки принимаем круглосуточно и в праздники</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-card reveal" aria-label="Схема расположения офиса">
+        <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="400" fill="#EDF4F4"/>
+          <path d="M0 372C110 330 170 250 300 232C430 214 500 150 600 96" stroke="#CFE3E7" stroke-width="30" fill="none"/>
+          <path d="M0 372C110 330 170 250 300 232C430 214 500 150 600 96" stroke="#DDEBEE" stroke-width="16" fill="none"/>
+          <g fill="#E1ECEC">
+            <rect x="24" y="34" width="86" height="58" rx="5"/><rect x="132" y="18" width="70" height="74" rx="5"/>
+            <rect x="224" y="40" width="96" height="52" rx="5"/><rect x="342" y="24" width="66" height="68" rx="5"/>
+            <rect x="430" y="46" width="92" height="50" rx="5"/>
+            <rect x="30" y="150" width="74" height="66" rx="5"/><rect x="126" y="140" width="92" height="82" rx="5"/>
+            <rect x="240" y="150" width="60" height="56" rx="5"/><rect x="330" y="132" width="104" height="74" rx="5"/>
+            <rect x="456" y="150" width="86" height="60" rx="5"/>
+            <rect x="52" y="264" width="80" height="52" rx="5"/><rect x="156" y="278" width="64" height="44" rx="5"/>
+            <rect x="360" y="256" width="88" height="58" rx="5"/><rect x="474" y="262" width="76" height="52" rx="5"/>
+            <rect x="250" y="300" width="72" height="46" rx="5"/>
+          </g>
+          <g stroke="#D6E5E5" stroke-width="16" stroke-linecap="round">
+            <path d="M0 128H600"/><path d="M118 0V400"/><path d="M410 0V400"/><path d="M0 328H600"/>
+          </g>
+          <g stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="10 12" opacity=".9">
+            <path d="M0 128H600"/><path d="M0 328H600"/><path d="M118 0V400"/><path d="M410 0V400"/>
+          </g>
+          <g fill="#96B2B4" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600">
+            <text x="138" y="122">ул. Маркова</text>
+            <text x="426" y="322">ул. Бабушкина</text>
+            <text x="56" y="284">Сыктывкар</text>
+          </g>
+          <circle cx="312" cy="176" r="58" fill="rgba(0,169,155,.13)"/>
+          <circle cx="312" cy="176" r="36" fill="rgba(0,169,155,.18)"/>
+        </svg>
+        <div class="map-pin" aria-hidden="true">
+          <svg width="38" height="46" viewBox="0 0 38 46" fill="none">
+            <path d="M19 45s15-12.2 15-25A15 15 0 1 0 4 20c0 12.8 15 25 15 25z" fill="#0A2630"/>
+            <path d="M19 45s15-12.2 15-25A15 15 0 1 0 4 20c0 12.8 15 25 15 25z" stroke="#4FE0CE" stroke-width="2"/>
+            <circle cx="19" cy="19" r="6.5" fill="#4FE0CE"/>
+          </svg>
+        </div>
+        <div class="map-card__box">
+          <b>Офис «Прайм-Клининг»</b>
+          <span>г. Сыктывкар, ул. Маркова, д. 20</span>
+          <a href="#lead">Построить маршрут <svg class="ico" style="width:12px;height:12px"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top">
+          <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
+          <span><b>Прайм-Клининг</b><small>профессиональные клининговые услуги</small></span>
+        </a>
+        <p class="f-desc">Клининг для бизнеса с 2006 года. Комплексная и разовая уборка, мойка окон и фасадов, дезинфекция, вывоз снега и ТБО, аутсорсинг персонала.</p>
+        <p class="f-desc" style="margin-top:10px">Центральная и Северо-Западная часть России: Республика Коми, Кировская и Нижегородская области.</p>
+      </div>
+      <div>
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="#services">Ежедневная уборка</a></li>
+          <li><a href="#services">Генеральная уборка</a></li>
+          <li><a href="#services">Уборка после ремонта</a></li>
+          <li><a href="#services">Мойка окон и фасадов</a></li>
+          <li><a href="#services">Дезинфекция</a></li>
+          <li><a href="#services">Вывоз снега и ТБО</a></li>
+          <li><a href="#services">Аутсорсинг персонала</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Компания</h3>
+        <ul>
+          <li><a href="#why">Почему мы</a></li>
+          <li><a href="#process">Как работаем</a></li>
+          <li><a href="#prices">Прайс-лист</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#faq">Вопросы и ответы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <a class="f-phone" href="tel:+79128636500">8 912 863-65-00</a>
+        <a class="f-phone" href="tel:+78212272732" style="font-size:.92rem;font-weight:700">8 8212 27-27-32</a>
+        <ul style="margin-top:10px">
+          <li><a href="mailto:commercial@prime-cleaning.ru">commercial@prime-cleaning.ru</a></li>
+          <li>Сыктывкар, ул. Маркова, 20</li>
+          <li>круглосуточно, без выходных</li>
+        </ul>
+        <div class="demo-note" style="margin-top:14px">Демонстрационный макет по мотивам prime-cleaning.ru. Не является официальным сайтом компании.</div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 «Прайм-Клининг» · демо-версия лендинга</span>
+      <span>Политика обработки персональных данных · Карта сайта</span>
+    </div>
+  </div>
+</footer>
+
+<!-- мобильная панель -->
+<div class="mobilebar">
+  <a class="mb-call" href="tel:+79128636500"><svg class="ico"><use href="#i-phone"/></svg>Позвонить</a>
+  <button class="mb-cta" type="button" data-open-ai><svg class="ico"><use href="#i-spark"/></svg>Спросить ИИ</button>
+</div>
+
+<!-- ИИ-КОНСУЛЬТАНТ -->
+<div class="ai-dock" id="ai">
+  <div class="ai-teaser" id="ai-teaser" role="button" tabindex="0" aria-label="ИИ-консультант: подберу услугу и посчитаю стоимость">
+    <b><svg class="ico"><use href="#i-spark"/></svg>ИИ-консультант</b>
+    <span>Подберу услугу и посчитаю стоимость за 20 секунд</span>
+    <span class="tip">Нажмите, чтобы начать диалог</span>
+  </div>
+
+  <div class="ai-panel" id="ai-panel" role="dialog" aria-modal="false" aria-labelledby="ai-title" hidden>
+    <header class="ai-head">
+      <span class="ai-ava" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2l1.25 3.3 3.3 1.25-3.3 1.25L12 11.3 10.75 8 7.45 6.75l3.3-1.25z" fill="currentColor"/><rect x="4.4" y="12.1" width="15.2" height="9.6" rx="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="9.1" cy="16.9" r="1.3" fill="currentColor"/><circle cx="14.9" cy="16.9" r="1.3" fill="currentColor"/></svg>
+      </span>
+      <div class="who">
+        <b id="ai-title">Алёна <em>ИИ</em></b>
+        <small><i></i>онлайн · отвечает мгновенно</small>
+      </div>
+      <div class="hbtns">
+        <button type="button" id="ai-reset" aria-label="Начать диалог заново" title="Начать заново"><svg class="ico"><use href="#i-minus"/></svg></button>
+        <button type="button" id="ai-close" aria-label="Закрыть чат" title="Закрыть"><svg class="ico"><use href="#i-close"/></svg></button>
+      </div>
+    </header>
+
+    <div class="ai-body" id="ai-body" aria-live="polite" aria-relevant="additions"></div>
+    <div class="ai-chips" id="ai-chips"></div>
+
+    <form class="ai-input" id="ai-form">
+      <textarea id="ai-text" rows="1" placeholder="Напишите вопрос…" aria-label="Ваше сообщение" autocomplete="off"></textarea>
+      <button class="send" type="submit" id="ai-send" aria-label="Отправить сообщение"><svg class="ico"><use href="#i-send"/></svg></button>
+    </form>
+    <div class="ai-foot-note"><b>Демо:</b> ИИ-консультант работает на базе знаний сайта и передаёт заявку менеджеру</div>
+  </div>
+
+  <button class="ai-launch" id="ai-launch" type="button" aria-label="ИИ-консультант AI — открыть чат" aria-expanded="false" aria-controls="ai-panel">
+    <span class="ai-launch__ring" aria-hidden="true"></span>
+    <span class="ai-launch__ping" aria-hidden="true"></span>
+    <span class="ai-launch__face" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2l1.25 3.3 3.3 1.25-3.3 1.25L12 11.3 10.75 8 7.45 6.75l3.3-1.25z" fill="currentColor"/><rect x="4.4" y="12.1" width="15.2" height="9.6" rx="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="9.1" cy="16.9" r="1.3" fill="currentColor"/><circle cx="14.9" cy="16.9" r="1.3" fill="currentColor"/></svg>
+    </span>
+    <span class="ai-launch__dot" aria-hidden="true"></span>
+    <span class="ai-launch__badge" aria-hidden="true">AI</span>
+  </button>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ============ утилиты ============ */
+  var $  = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var fmt = function (n) { return Math.round(n).toLocaleString("ru-RU"); };
+  var r100 = function (n) { return Math.round(n / 100) * 100; };
+  var norm = function (s) { return String(s).toLowerCase().replace(/ё/g, "е").replace(/\s+/g, " ").trim(); };
+  var digits = function (s) { return String(s).replace(/\D/g, ""); };
+  var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]; }); };
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ============ шапка / меню ============ */
+  var header = $("header.site");
+  var onScroll = function () { header.classList.toggle("is-stuck", window.scrollY > 12); };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  var mobnav = $("#mobnav"), burger = $("#burger");
+  function setMenu(open) {
+    mobnav.classList.toggle("open", open);
+    mobnav.setAttribute("aria-hidden", String(!open));
+    if (open) mobnav.removeAttribute("inert"); else mobnav.setAttribute("inert", "");
+    burger.setAttribute("aria-expanded", String(open));
+    document.body.style.overflow = open ? "hidden" : "";
+  }
+  burger.addEventListener("click", function () { setMenu(true); });
+  $("#mobnav-close").addEventListener("click", function () { setMenu(false); });
+  mobnav.addEventListener("click", function (e) { if (e.target === mobnav) setMenu(false); });
+  $$("#mobnav a").forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && mobnav.classList.contains("open")) { setMenu(false); burger.focus(); }
+  });
+
+  /* ============ появление блоков ============ */
+  if ("IntersectionObserver" in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    $$(".reveal").forEach(function (el) { io.observe(el); });
+  } else {
+    $$(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ============ табы ============ */
+  var tabs = $$(".tab");
+  function activateTab(tab) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute("aria-selected", String(on));
+      var panel = document.getElementById(t.getAttribute("aria-controls"));
+      if (panel) panel.hidden = !on;
+    });
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () { activateTab(t); });
+    t.addEventListener("keydown", function (e) {
+      var i = tabs.indexOf(t), next = null;
+      if (e.key === "ArrowRight") next = tabs[(i + 1) % tabs.length];
+      if (e.key === "ArrowLeft") next = tabs[(i - 1 + tabs.length) % tabs.length];
+      if (next) { e.preventDefault(); activateTab(next); next.focus(); }
+    });
+  });
+
+  /* ============ прайс и расчёт ============ */
+  var RATES = {
+    daily:     { rate: 1.7, min: 1500,  label: "Ежедневная (поддерживающая) уборка" },
+    support:   { rate: 20,  min: 1500,  label: "Разовая поддерживающая уборка" },
+    general:   { rate: 30,  min: 2000,  label: "Генеральная уборка" },
+    rebuild:   { rate: 40,  min: 2000,  label: "Уборка после ремонта" },
+    windows:   { rate: 50,  min: 2000,  label: "Мойка окон" },
+    facade:    { rate: 40,  min: 2000,  label: "Мойка фасадов" },
+    disinfect: { rate: 10,  min: 2000,  label: "Дезинфекция помещений" },
+    floor:     { rate: 15,  min: 2000,  label: "Глубокая чистка пола" },
+    snow:      { rate: 180, min: 18000, label: "Вывоз снега" },
+    staff:     { rate: 220, min: 0,     label: "Подменный персонал" }
+  };
+
+  function priceFor(type, area, territory) {
+    var r = RATES[type] || RATES.general;
+    if (type === "daily") {
+      var perDay = Math.max(area * r.rate, r.min);
+      var monthly = perDay * 22;
+      var terr = 0;
+      if (territory) { terr = r100(area * 1 * 22); monthly += terr; }
+      return {
+        total: r100(monthly), period: "/ мес", perDay: Math.round(perDay / 10) * 10,
+        rateLine: r.rate + " ₽/м² × " + area + " м² × 22 смены", terr: terr, min: r.min
+      };
+    }
+    var total = Math.max(area * r.rate, r.min);
+    return {
+      total: r100(total), period: "за объект", perDay: null,
+      rateLine: r.rate + " ₽/м² × " + area + " м², минимальный заказ " + fmt(r.min) + " ₽", terr: 0, min: r.min
+    };
+  }
+
+  /* ---------- калькулятор ---------- */
+  var cObj = $("#calc-object"), cType = $("#calc-type"), cArea = $("#calc-area"),
+      cTerr = $("#calc-territory"),
+      outPrice = $("#calc-price"), outPeriod = $("#calc-period"),
+      outSub = $("#calc-sub"), outHint = $("#calc-hint"),
+      areaVal = $("#calc-area-val");
+
+  function updateCalc() {
+    var area = parseInt(cArea.value, 10);
+    var type = cType.value;
+    var terr = cTerr.checked;
+    var r = RATES[type] || RATES.general;
+    var res = priceFor(type, area, terr);
+
+    areaVal.textContent = fmt(area);
+    var pct = ((area - cArea.min) / (cArea.max - cArea.min)) * 100;
+    cArea.style.setProperty("--fill", pct + "%");
+
+    outPrice.textContent = "от " + fmt(res.total) + " ₽";
+    outPeriod.textContent = res.period;
+
+    if (type === "daily") {
+      outSub.innerHTML = "≈ " + fmt(res.perDay) + " ₽ за 1 рабочий день · " + (terr ? "с территорией" : "22 смены в месяц");
+      outHint.textContent = "Мин. заказ " + fmt(r.min) + " ₽ за выход" + (terr ? " · уборка территории +1 ₽/м² в день" : "") + " · цены 2026 года";
+    } else {
+      outSub.textContent = res.rateLine;
+      outHint.textContent = "Минимальный заказ " + fmt(res.min) + " ₽ · точная смета после бесплатного осмотра";
+    }
+    cArea.setAttribute("aria-valuetext", fmt(area) + " квадратных метров");
+  }
+  [cObj, cType, cArea, cTerr].forEach(function (el) {
+    el.addEventListener("input", updateCalc);
+    el.addEventListener("change", updateCalc);
+  });
+  updateCalc();
+
+  $("#calc-submit").addEventListener("click", function () {
+    var area = parseInt(cArea.value, 10);
+    var res = priceFor(cType.value, area, cTerr.checked);
+    var field = $("#lf-object");
+    var text = cObj.value + ", " + fmt(area) + " м² · " + RATES[cType.value].label.toLowerCase() +
+      (cTerr.checked ? " + территория" : "") + " (ориентир: от " + fmt(res.total) + " ₽ " + (res.period.indexOf("мес") !== -1 ? "в месяц" : "за объект") + ")";
+    if (field) field.value = text;
+    document.getElementById("lead").scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+    setTimeout(function () {
+      var ok = $("#lead-ok");
+      if (ok && ok.classList.contains("show")) return;
+      var n = $("#lf-name");
+      if (n) n.focus({ preventScroll: true });
+    }, 600);
+  });
+
+  /* ============ форма заявки ============ */
+  var leadForm = $("#lead-form");
+  var phoneInput = $("#lf-phone");
+  function maskPhone(v) {
+    var d = digits(v);
+    if (d.charAt(0) === "8") d = "7" + d.slice(1);
+    if (d.charAt(0) !== "7") d = "7" + d;
+    d = d.slice(0, 11);
+    var out = "+7";
+    if (d.length > 1) out += " (" + d.slice(1, 4);
+    if (d.length >= 5) out += ") " + d.slice(4, 7);
+    if (d.length >= 8) out += "-" + d.slice(7, 9);
+    if (d.length >= 10) out += "-" + d.slice(9, 11);
+    return out;
+  }
+  phoneInput.addEventListener("input", function () {
+    if (phoneInput.value.trim() === "") return;
+    phoneInput.value = maskPhone(phoneInput.value);
+  });
+
+  leadForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = $("#lf-name").value.trim();
+    var phone = digits(phoneInput.value);
+    var consent = $("#lf-consent").checked;
+    if (name.length < 2) { $("#lf-name").focus(); $("#lf-name").style.borderColor = "var(--danger)"; return; }
+    $("#lf-name").style.borderColor = "";
+    if (phone.length < 11) { phoneInput.focus(); phoneInput.style.borderColor = "var(--danger)"; return; }
+    phoneInput.style.borderColor = "";
+    if (!consent) { $("#lf-consent").focus(); return; }
+    leadForm.style.display = "none";
+    $("#lead-ok").classList.add("show");
+  });
+
+  /* ============ ИИ-КОНСУЛЬТАНТ ============ */
+  var panel = $("#ai-panel"), launch = $("#ai-launch"), teaser = $("#ai-teaser"),
+      body = $("#ai-body"), chipsBox = $("#ai-chips"),
+      aiForm = $("#ai-form"), aiText = $("#ai-text");
+
+  var ai = {
+    started: false, open: false, busy: false, pending: null,
+    slots: { type: null, area: 0, object: null, territory: false, phone: null },
+    typing: null
+  };
+
+  var TYPE_LABEL = {
+    daily: "ежедневная уборка", support: "поддерживающая уборка", general: "генеральная уборка",
+    rebuild: "уборка после ремонта", windows: "мойка окон", facade: "мойка фасадов",
+    disinfect: "дезинфекция", floor: "глубокая чистка пола", snow: "вывоз снега", staff: "подменный персонал"
+  };
+  var TYPE_RATE = {
+    daily: "от 1,7 ₽/м² за рабочий день (мин. 1 500 ₽ за выход)",
+    support: "от 20 ₽/м² (мин. 1 500 ₽)",
+    general: "от 30 ₽/м² (мин. 2 000 ₽)",
+    rebuild: "от 40 ₽/м² (мин. 2 000 ₽)",
+    windows: "от 50 ₽/м² остекления (мин. 2 000 ₽)",
+    facade: "от 40 ₽/м² фасада (мин. 2 000 ₽)",
+    disinfect: "от 10 ₽/м² (мин. 2 000 ₽)",
+    floor: "от 15 ₽/м² (мин. 2 000 ₽)",
+    snow: "от 180 ₽/м³ (мин. 18 000 ₽)",
+    staff: "от 220 ₽/час"
+  };
+  var OBJ_LABEL = {
+    office: "офис", production: "производство / склад", retail: "магазин / ритейл",
+    medical: "медицинское учреждение", bank: "банк / отделение",
+    flat: "квартира / дом", territory: "территория"
+  };
+
+  function scrollChat() {
+    if (!body) return;
+    body.scrollTop = body.scrollHeight;
+    requestAnimationFrame(function () { body.scrollTop = body.scrollHeight; });
+  }
+  function addUser(text) {
+    var d = document.createElement("div");
+    d.className = "msg msg--user";
+    d.textContent = text;
+    body.appendChild(d);
+    scrollChat();
+  }
+  function addBotHTML(html) {
+    var d = document.createElement("div");
+    d.className = "msg msg--bot";
+    d.innerHTML = html;
+    body.appendChild(d);
+    scrollChat();
+    return d;
+  }
+  function showTyping() {
+    if (!ai.typing) {
+      ai.typing = document.createElement("div");
+      ai.typing.className = "ai-typing";
+      ai.typing.innerHTML = "<span></span><span></span><span></span>";
+    }
+    ai.typing.hidden = false;
+    body.appendChild(ai.typing);
+    scrollChat();
+  }
+  function hideTyping() { if (ai.typing) ai.typing.hidden = true; }
+  function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+
+  async function botSay(html, delay) {
+    showTyping();
+    await sleep(delay != null ? delay : Math.min(1500, 420 + String(html).length * 2.2));
+    hideTyping();
+    return addBotHTML(html);
+  }
+
+  function setChips(list) {
+    chipsBox.innerHTML = "";
+    (list || []).forEach(function (pair) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip";
+      b.innerHTML = pair[0];
+      b.addEventListener("click", function () {
+        if (ai.busy) return;
+        if (pair[1].charAt(0) === "@") handleCommand(pair[1]);
+        else send(pair[1]);
+      });
+      chipsBox.appendChild(b);
+    });
+  }
+
+  function leadCard() {
+    var s = ai.slots;
+    var hasCalc = s.area >= 30 && RATES[s.type] && s.type !== "snow" && s.type !== "staff";
+    var res = hasCalc ? priceFor(s.type, s.area, s.territory) : null;
+    var num = "ДЕМО-" + (2400 + Math.floor(Math.random() * 99));
+    var rows = "";
+    rows += '<div class="row"><span>Телефон</span><b>' + esc(s.phone || "—") + "</b></div>";
+    if (s.object) rows += '<div class="row"><span>Объект</span><b>' + esc(OBJ_LABEL[s.object]) + "</b></div>";
+    if (s.type) rows += '<div class="row"><span>Услуга</span><b>' + esc(TYPE_LABEL[s.type]) + "</b></div>";
+    if (s.area) rows += '<div class="row"><span>Площадь</span><b>' + fmt(s.area) + " м²</b></div>";
+    if (res) rows += '<div class="row total"><span>Ориентир</span><b>от ' + fmt(res.total) + " ₽ " + res.period + "</b></div>";
+    var card = document.createElement("div");
+    card.className = "msg__card";
+    card.innerHTML =
+      '<div class="card-top"><svg class="ico"><use href="#i-doc"/></svg><b>Заявка на расчёт</b><span>' + num + "</span></div>" +
+      '<dl>' + rows + "</dl>" +
+      '<div class="card-foot">Менеджер свяжется в течение 15 минут и согласует бесплатный осмотр. Заявка сформирована в демо-режиме.</div>';
+    body.appendChild(card);
+    scrollChat();
+  }
+
+  /* --- распознавание сущностей --- */
+  function parseArea(text) {
+    var t = norm(text);
+    var m = t.match(/(\d[\d\s]{0,7})\s*(м2|м²|кв\.?\s?м|кв\s?м|квадрат|метр)/);
+    var n = m ? parseInt(m[1].replace(/\s/g, ""), 10) : null;
+    if (!n) { var b = t.match(/^\s*(\d{2,6})\s*$/); if (b) n = parseInt(b[1], 10); }
+    if (!n) { var c = t.match(/площад[а-я]*\s*(\d{2,6})/); if (c) n = parseInt(c[1], 10); }
+    if (n && n >= 20 && n <= 200000) return n;
+    return 0;
+  }
+  function detectType(t) {
+    var map = [
+      ["rebuild", ["после ремонта", "после строй", "послестроит", "строительн", "стройк", "новострой"]],
+      ["windows", ["окон", "окна", "окно", "витраж", "остеклен", "вывеск", "стекл"]],
+      ["facade", ["фасад"]],
+      ["disinfect", ["дезинфек", "вирус", "санпин", "обработк", "антибактер", "ковид"]],
+      ["snow", ["снег", "тбо", "мусор", "вывоз", "гололед", "налед", "зим"]],
+      ["staff", ["персонал", "аутсорс", "подмен", "уборщиц", "больничн", "отпуск", "штат"]],
+      ["floor", ["глубокая чистка пола", "полы", "полировк", "поломоечн"]],
+      ["general", ["генеральн", "глубок", "разов"]],
+      ["daily", ["ежеднев", "каждый день", "постоянн", "абонент", "регулярн", "поддерживающ"]]
+    ];
+    for (var i = 0; i < map.length; i++) {
+      for (var j = 0; j < map[i][1].length; j++) if (t.indexOf(map[i][1][j]) !== -1) return map[i][0];
+    }
+    return null;
+  }
+  function detectObject(t) {
+    if (t.indexOf("офис") !== -1 || t.indexOf("бизнес-центр") !== -1 || t.indexOf("бц") !== -1) return "office";
+    if (t.indexOf("производ") !== -1 || t.indexOf("склад") !== -1 || t.indexOf("цех") !== -1) return "production";
+    if (t.indexOf("магазин") !== -1 || t.indexOf("ритейл") !== -1 || t.indexOf("торгов") !== -1) return "retail";
+    if (t.indexOf("медицин") !== -1 || t.indexOf("клиник") !== -1 || t.indexOf("больниц") !== -1) return "medical";
+    if (t.indexOf("банк") !== -1) return "bank";
+    if (t.indexOf("квартир") !== -1 || t.indexOf("дом") !== -1) return "flat";
+    if (t.indexOf("территори") !== -1 || t.indexOf("парковк") !== -1) return "territory";
+    return null;
+  }
+
+  /* --- база знаний --- */
+  var KB = [
+    { id: "price", k: ["стоимость", "стоит", "цена", "цены", "прайс", "сколько", "расценк", "смет", "расчет", "почем", "тариф", "бюджет"] },
+    { id: "daily", k: ["ежеднев", "каждый день", "постоянн", "абонент", "регулярн", "поддерживающ"] },
+    { id: "general", k: ["генеральн", "глубок"] },
+    { id: "rebuild", k: ["после ремонта", "стройк", "строительн", "новострой"] },
+    { id: "windows", k: ["окон", "окна", "витраж", "вывеск", "остеклен", "фасад"] },
+    { id: "disinfect", k: ["дезинфек", "вирус", "санпин", "обработк", "ковид"] },
+    { id: "snow", k: ["снег", "тбо", "мусор", "вывоз", "гололед", "зим"] },
+    { id: "staff", k: ["персонал", "аутсорс", "подмен", "уборщиц", "больничн", "отпуск", "вахт"] },
+    { id: "territory", k: ["территори", "парковк", "тротуар", "газон", "прилегающ", "двор"] },
+    { id: "tender", k: ["тендер", "44-фз", "44 фз", "223", "закупк", "госзаказ", "бюджетн", "контракт", "котировк"] },
+    { id: "payment", k: ["оплат", "предоплат", "аванс", "счет", "по факту", "рассрочк", "деньги"] },
+    { id: "docs", k: ["документ", "акт", "журнал", "отчет", "закрывающ", "ндс", "бухгалтер", "договор"] },
+    { id: "guarantee", k: ["гарант", "качество", "претенз", "испорт", "ущерб", "порча", "страховк"] },
+    { id: "timing", k: ["срок", "когда", "быстро", "срочно", "завтра", "успеете", "долго"] },
+    { id: "safety", k: ["хими", "безопасн", "роспотребнадзор", "сертификат", "аллерг", "дети", "экологич"] },
+    { id: "about", k: ["о компании", "сколько лет", "опыт", "кто вы", "регион", "где работаете", "сыктывкар", "коми", "киров", "нижн", "адрес"] },
+    { id: "contacts", k: ["телефон", "позвонить", "связаться", "контакт", "почта", "email", "вк", "вайбер", "ватсап"] },
+    { id: "test", k: ["тестов", "бесплатн", "пробн", "попробоват"] },
+    { id: "vacancy", k: ["ваканс", "работ", "трудоустрой", "зарплат", "устроиться"] },
+    { id: "human", k: ["менеджер", "человек", "живой", "оператор", "перезвон"] },
+    { id: "thanks", k: ["спасибо", "благодар", "отлично", "супер", "понял", "ясно"] }
+  ];
+
+  function bestIntent(t) {
+    var best = null, bestScore = 0;
+    KB.forEach(function (item) {
+      var score = 0;
+      item.k.forEach(function (kw) {
+        if (t.indexOf(kw) !== -1) score += kw.length + 2;
+      });
+      if (score > bestScore) { bestScore = score; best = item.id; }
+    });
+    return bestScore >= 4 ? best : null;
+  }
+
+  /* --- ответы --- */
+  var ANSWERS = {
+    daily:
+      "<b>Ежедневная уборка по абонентскому договору</b> — основной формат для офисов, производств и ритейла." +
+      '<span class="ln">от 1,7 ₽/м² за 1 рабочий день, минимальный заказ 1 500 ₽ за выход</span>' +
+      '<span class="ln">бригада закреплена за объектом, подмена — в тот же день</span>' +
+      '<span class="ln">расходники, журналы, акты и электронный контроль выхода включены</span>' +
+      '<span class="hint">Абонентский договор дешевле разовых вызовов: персонал и логистика планируются заранее.</span>',
+    general:
+      "<b>Генеральная уборка</b> — глубокая чистка всех поверхностей: стены, мебель, радиаторы, вентиляция, труднодоступные места." +
+      '<span class="ln">от 30 ₽/м², минимальный заказ 2 000 ₽</span>' +
+      '<span class="ln">сроки: 400 м² — 1 смена, 1 500 м² — 2–3 смены</span>' +
+      '<span class="hint">Обычно берут 2–4 раза в год, а между ними — поддерживающая уборка.</span>',
+    rebuild:
+      "<b>Уборка после ремонта</b> — убираем строительную пыль, следы краски, клея, затирки и плёнки." +
+      '<span class="ln">от 40 ₽/м², минимальный заказ 2 000 ₽</span>' +
+      '<span class="ln">мойка окон, полов, санузлов, вынос строймусора по договорённости</span>' +
+      '<span class="hint">Стоимость зависит от площади остекления и объёма мусора — лучше прислать фото или видео объекта.</span>',
+    windows:
+      "<b>Мойка окон и фасадов</b>:" +
+      '<span class="ln">окна — от 50 ₽/м² остекления, мин. 2 000 ₽</span>' +
+      '<span class="ln">фасады — от 40 ₽/м², мин. 2 000 ₽</span>' +
+      '<span class="ln">витражи, вывески, остекление на высоте — с автовышки или промышленными альпинистами</span>' +
+      '<span class="hint">Работаем без разводов: деминерализованная вода и профессиональная химия.</span>',
+    disinfect:
+      "<b>Дезинфекция помещений</b> по требованиям СанПиН — сертифицированные средства, не оставляющие запаха." +
+      '<span class="ln">от 10 ₽/м², минимальный заказ 2 000 ₽</span>' +
+      '<span class="ln">обработка санузлов, цехов, общественных зон, пищевых производств</span>' +
+      '<span class="ln">выдаём акт и журнал обработки для проверок</span>',
+    snow:
+      "<b>Вывоз снега и ТБО</b> — своя техника: самосвалы, погрузчики, трактор." +
+      '<span class="ln">вывоз снега — от 180 ₽/м³, минимальный заказ 18 000 ₽</span>' +
+      '<span class="ln">расчистка и посыпка территории в течение 2 часов после снегопада</span>' +
+      '<span class="ln">документы для бухгалтерии и фотоотчёт до/после</span>' +
+      '<span class="hint">Зимний договор выгоднее разовых вызовов — техника закреплена за объектом.</span>',
+    staff:
+      "<b>Аутсорсинг и подменный персонал</b> — уборщицы в штате подрядчика, без кадрового учёта и налогов у вас." +
+      '<span class="ln">от 220 ₽/час; возможна фиксированная сумма за период</span>' +
+      '<span class="ln">подмена на время больничных, отпусков и пиковых нагрузок</span>' +
+      '<span class="ln">официальное трудоустройство и обучение персонала — на нас</span>',
+    territory:
+      "<b>Уборка прилегающей территории</b> — тротуары, парковки, газоны, урны." +
+      '<span class="ln">от 1 ₽/м² за 1 рабочий день</span>' +
+      '<span class="ln">летом: подметание, мойка, покос; зимой: сгребание снега, посыпка, вывоз</span>' +
+      '<span class="ln">механизированно и вручную, по согласованному графику</span>',
+    tender:
+      "<b>Для тендеров и бюджетных учреждений</b> — работаем по 44-ФЗ и 223-ФЗ." +
+      '<span class="ln">СРО фасилити-операторов, сертификат ISO, реестр «Белый ФМ»</span>' +
+      '<span class="ln">полный комплект документов, фиксированная цена на срок договора</span>' +
+      '<span class="ln">опыт обслуживания государственных организаций</span>' +
+      '<span class="hint">Пришлите техзадание — подготовим КП и расчёт в течение рабочего дня.</span>',
+    payment:
+      "<b>Оплата</b> — без предоплаты: платите за фактически выполненные и подтверждённые работы." +
+      '<span class="ln">безналичный расчёт, счёт и акт ежемесячно</span>' +
+      '<span class="ln">для новых клиентов — бесплатная тестовая уборка перед договором</span>' +
+      '<span class="ln">условия фиксируются в договоре, доплат «по факту» не бывает</span>',
+    docs:
+      "<b>Документы</b>, которые вы получаете:" +
+      '<span class="ln">договор и приложение с перечнем работ и периодичностью</span>' +
+      '<span class="ln">акты выполненных работ, счета, закрывающие документы для бухгалтерии</span>' +
+      '<span class="ln">журналы уборки и дезинфекции — готовы к проверке Роспотребнадзора</span>' +
+      '<span class="ln">фотоотчёт до/после по запросу</span>',
+    guarantee:
+      "<b>Качество и ответственность</b>:" +
+      '<span class="ln">сначала бесплатная тестовая уборка — вы видите результат до договора</span>' +
+      '<span class="ln">ответственность за сохранность имущества закреплена в договоре</span>' +
+      '<span class="ln">замечания устраняем за свой счёт в оговорённый срок</span>',
+    timing:
+      "<b>Сроки</b>: заявку принимаем круглосуточно, менеджер отвечает в течение 15 минут." +
+      '<span class="ln">осмотр объекта — в течение суток</span>' +
+      '<span class="ln">выход бригады — на следующий день после звонка</span>' +
+      '<span class="ln">срочные выезды в городе — от 2–4 часов</span>',
+    safety:
+      "<b>Безопасность</b> — используем сертифицированные моющие и дезинфицирующие средства, соответствующие требованиям Роспотребнадзора." +
+      '<span class="ln">инструктаж и СИЗ для персонала</span>' +
+      '<span class="ln">для мрамора, ценных пород дерева и дизайнерских тканей — отдельная химия</span>' +
+      '<span class="ln">ведём все необходимые журналы контроля</span>',
+    about:
+      "«Прайм-Клининг» работает <b>с 2006 года</b>." +
+      '<span class="ln">120+ объектов на постоянном обслуживании, 260 сотрудников в штате</span>' +
+      '<span class="ln">Республика Коми, Кировская и Нижегородская области</span>' +
+      '<span class="ln">СРО фасилити-операторов, ISO, реестр «Белый ФМ»</span>' +
+      '<span class="ln">офис: Сыктывкар, ул. Маркова, 20</span>',
+    contacts:
+      "<b>Связаться с нами</b>:" +
+      '<span class="ln">8 912 863-65-00 — отдел продаж, круглосуточно</span>' +
+      '<span class="ln">8 8212 27-27-32 — офис в Сыктывкаре</span>' +
+      '<span class="ln">commercial@prime-cleaning.ru — для КП и тендеров</span>' +
+      '<span class="hint">Или оставьте телефон здесь — менеджер перезвонит в течение 15 минут.</span>',
+    test:
+      "<b>Да, тестовая уборка бесплатна.</b> Мы делаем разовую уборку на вашем объекте, вы оцениваете результат и только потом решаете, подписывать ли договор." +
+      '<span class="ln">предоплата не нужна</span>' +
+      '<span class="ln">оплата только за фактически выполненные работы</span>' +
+      '<span class="hint">Хотите записаться на тестовую уборку?</span>',
+    vacancy:
+      "Мы регулярно набираем уборщиков и бригадиров. Вакансии и условия — на странице «Вакансии» или у менеджера по персоналу: <b>8 912 863-65-00</b>." +
+      '<span class="hint">Официальное трудоустройство, инвентарь и химия предоставляются.</span>',
+    human:
+      "Конечно, подключу менеджера — но сначала телефон, чтобы он перезвонил точно по делу.",
+    thanks:
+      "Рада помочь! Если появятся вопросы — я на связи круглосуточно." +
+      '<span class="hint">Заявку можно оставить прямо здесь: назовите телефон.</span>'
+  };
+
+  async function answerIntent(id) {
+    if (id === "human") { await startLead(); return; }
+    if (id === "thanks") { await botSay(ANSWERS.thanks, 700); setChips([["Рассчитать стоимость", "@price"], ["Бесплатная тестовая уборка", "Тестовая уборка бесплатная?"], ["Позвонить", "Как связаться?"]]); return; }
+    await botSay(ANSWERS[id] || ANSWERS.about);
+    setChips([
+      ["Рассчитать стоимость", "@price"],
+      ["Бесплатная тестовая уборка", "Тестовая уборка бесплатная?"],
+      ["Оставить заявку", "@lead"]
+    ]);
+  }
+
+  async function estimateReply() {
+    var s = ai.slots;
+    if (!s.type) {
+      ai.pending = "type";
+      await botSay("Стоимость зависит от формата уборки. <b>Какой формат вам нужен?</b>" +
+        '<span class="ln">ежедневная — от 1,7 ₽/м² за рабочий день</span>' +
+        '<span class="ln">генеральная — от 30 ₽/м²</span>' +
+        '<span class="ln">после ремонта — от 40 ₽/м²</span>' +
+        '<span class="ln">мойка окон — от 50 ₽/м²</span>');
+      setChips([["Ежедневная", "Ежедневная уборка офиса"], ["Генеральная", "Генеральная уборка"], ["После ремонта", "Уборка после ремонта"], ["Мойка окон", "Мойка окон"]]);
+      return;
+    }
+    if (!s.area) {
+      ai.pending = "area";
+      var objTxt = s.object ? " для " + OBJ_LABEL[s.object] : "";
+      await botSay("<b>" + TYPE_LABEL[s.type].charAt(0).toUpperCase() + TYPE_LABEL[s.type].slice(1) + "</b>" + objTxt + " — " + TYPE_RATE[s.type] + "." +
+        '<span class="hint">Какая площадь объекта? Напишите в м², например «600 м²» — сразу посчитаю.</span>');
+      setChips([["600 м²", "600 м²"], ["1 200 м²", "1200 м²"], ["Не знаю площадь", "Точную площадь уточню позже"]]);
+      return;
+    }
+    var res = priceFor(s.type, s.area, s.territory);
+    var assumed = s.assumed ? '<span class="hint">Взяла самый частый формат для такого объекта — ежедневную уборку. Нужна разовая или генеральная — просто скажите.</span>' : "";
+    var html = "Посчитала по прайсу 2026 года:" +
+      '<span class="sep"></span>' +
+      "<b>" + TYPE_LABEL[s.type].charAt(0).toUpperCase() + TYPE_LABEL[s.type].slice(1) + "</b>" +
+      (s.object ? " · " + OBJ_LABEL[s.object] : "") + " · <b>" + fmt(s.area) + " м²</b>" +
+      '<span class="ln">ориентир: <b>от ' + fmt(res.total) + " ₽ " + res.period + "</b></span>" +
+      (res.perDay ? '<span class="ln">≈ ' + fmt(res.perDay) + " ₽ за 1 рабочий день, 22 смены в месяц</span>" : "") +
+      (res.terr ? '<span class="ln">включая территорию: + ' + fmt(res.terr) + " ₽/мес</span>" : "") +
+      '<span class="hint">Точную цену зафиксируем после бесплатного осмотра: она зависит от загрязнения и материалов отделки. Осмотр и тестовая уборка — бесплатно.</span>' + assumed;
+    s.assumed = false;
+    await botSay(html);
+    setChips([["Оставить заявку", "@lead"], ["Как формируется цена?", "Как формируется цена?"], ["Что входит в уборку?", "Что входит в ежедневную уборку офиса?"]]);
+  }
+
+  async function startLead() {
+    var s = ai.slots;
+    ai.pending = "phone";
+    var summary = [];
+    if (s.object) summary.push("объект — " + OBJ_LABEL[s.object]);
+    if (s.type) summary.push(TYPE_LABEL[s.type]);
+    if (s.area) summary.push(fmt(s.area) + " м²");
+    var lead = summary.length ? "Приняла: <b>" + summary.join(", ") + "</b>.<br>" : "";
+    await botSay(lead + "Оставьте номер телефона — менеджер пришлёт смету в течение <b>15 минут</b> и согласует бесплатный осмотр." +
+      '<span class="hint">Например: +7 912 863-65-00. Это демо, звонка не будет.</span>');
+    setChips([["Пока не готов", "@later"], ["Позвонить самому", "Как связаться?"]]);
+  }
+
+  async function handleCommand(cmd) {
+    if (cmd === "@lead") { await startLead(); return; }
+    if (cmd === "@price") {
+      var t = ai.slots.type || "daily";
+      ai.slots.type = t;
+      if (t === "snow" || t === "staff") await answerIntent(t);
+      else await estimateReply();
+      return;
+    }
+    if (cmd === "@later") {
+      ai.pending = null;
+      await botSay("Поняла, не настаиваю. Если понадобится — телефон отдела продаж <b>8 912 863-65-00</b>, работаем круглосуточно." +
+        '<span class="hint">Я остаюсь здесь: могу рассказать про договор, документы или бесплатную тестовую уборку.</span>');
+      setChips([["Про договор", "Расскажите про договор"], ["Тестовая уборка", "Тестовая уборка бесплатная?"], ["Прайс", "Покажите прайс"]]);
+      return;
+    }
+  }
+
+  async function completeLead() {
+    ai.pending = null;
+    await botSay("Записала номер <b>" + esc(ai.slots.phone) + "</b>. Заявка сформирована — детали ниже.", 800);
+    leadCard();
+    await sleep(450);
+    await botSay("Что дальше: менеджер перезвонит в течение 15 минут, уточнит детали и пришлёт смету. Осмотр — бесплатно." +
+      '<span class="hint">Пока ждёте — можете спросить про договор, документы или тестовую уборку.</span>');
+    setChips([["Про договор", "Расскажите про договор"], ["Документы", "Какие документы вы предоставляете?"], ["Спасибо", "Спасибо"]]);
+  }
+
+  async function route(text) {
+    var t = norm(text);
+
+    /* 1. шаги диалога */
+    if (ai.pending === "phone") {
+      var d = digits(text);
+      if (d.length >= 10) { ai.slots.phone = maskPhone(d); await completeLead(); return; }
+      await botSay("Похоже, в номере не хватает цифр. Напишите в формате <b>+7 912 863-65-00</b> — и я передам заявку менеджеру.");
+      return;
+    }
+
+    /* номер телефона без контекста — тоже заявка */
+    if (digits(text).length >= 10 && String(text).replace(/[\d\s()+\-]/g, "").length === 0) {
+      ai.slots.phone = maskPhone(digits(text));
+      await completeLead();
+      return;
+    }
+
+    if (ai.pending === "area") {
+      var a = parseArea(text);
+      if (a) { ai.slots.area = a; ai.pending = null; await estimateReply(); return; }
+      if (t.indexOf("не знаю") !== -1 || t.indexOf("позже") !== -1 || t.indexOf("уточн") !== -1) {
+        ai.pending = null;
+        await botSay("Не проблема — менеджер замерит площадь на бесплатном осмотре и посчитает точно. Оставьте телефон, и он согласует время.");
+        await startLead();
+        return;
+      }
+    }
+
+    if (ai.pending === "type") {
+      var ty0 = detectType(t);
+      if (ty0) {
+        ai.slots.type = ty0;
+        ai.pending = null;
+        var a0 = parseArea(text);
+        if (a0) ai.slots.area = a0;
+        await estimateReply();
+        return;
+      }
+    }
+
+    /* 2. пополняем слоты из сообщения */
+    var ty = detectType(t);
+    if (ty) { ai.slots.type = ty; ai.slots.assumed = false; }
+    var ob = detectObject(t);
+    if (ob) ai.slots.object = ob;
+    var ar = parseArea(text);
+    if (ar) ai.slots.area = ar;
+
+    /* 3. намерения */
+    var intent = bestIntent(t);
+
+    if (intent === "price" || (!intent && ar)) {
+      if (ai.slots.type === "snow" || ai.slots.type === "staff") { await answerIntent(ai.slots.type); return; }
+      if (!ai.slots.type && (ai.slots.area || ai.slots.object)) {
+        ai.slots.type = (ai.slots.object === "flat" || ai.slots.object === "territory") ? "general" : "daily";
+        ai.slots.assumed = true;
+      }
+      await estimateReply();
+      return;
+    }
+    if (intent && ["daily", "general", "rebuild", "windows", "disinfect"].indexOf(intent) !== -1 && ai.slots.area) {
+      await estimateReply();
+      return;
+    }
+    if (intent === "test") {
+      await botSay(ANSWERS.test);
+      setChips([["Записаться на тест", "@lead"], ["Что входит в уборку?", "Что входит в ежедневную уборку офиса?"], ["Прайс", "Покажите прайс"]]);
+      return;
+    }
+    if (intent === "docs" && t.indexOf("договор") !== -1 && t.indexOf("акт") === -1) {
+      await botSay("<b>Договор</b> — с фиксированной ценой и приложением, где описаны зоны, перечень работ и периодичность." +
+        '<span class="ln">заключаем с юрлицами и ИП, работаем по 44-ФЗ и 223-ФЗ</span>' +
+        '<span class="ln">цена не меняется в течение срока договора</span>' +
+        '<span class="ln">расторжение — по уведомлению, без штрафов «на будущее»</span>' +
+        '<span class="hint">Сначала бесплатная тестовая уборка — вы подписываете уже с уверенностью в результате.</span>');
+      setChips([["Оставить заявку", "@lead"], ["Документы для бухгалтерии", "Какие документы вы предоставляете?"], ["Оплата", "Как происходит оплата?"]]);
+      return;
+    }
+    if (intent === "price") { await estimateReply(); return; }
+    if (intent) { await answerIntent(intent); return; }
+
+    /* 4. фолбэк */
+    await botSay("Пока не уверен, что понял вопрос. Я разбираюсь в уборке, ценах, договорах, тендерах и документах — попробуйте спросить чуть иначе." +
+      '<span class="hint">Например: «сколько стоит уборка офиса 800 м²» или «какие документы вы даёте».</span>');
+    setChips([["Сколько стоит уборка?", "Сколько стоит уборка офиса 600 м²?"], ["Тестовая уборка", "Тестовая уборка бесплатная?"], ["Позвать менеджера", "@lead"]]);
+  }
+
+  /* --- ввод / отправка --- */
+  function autoGrow() {
+    aiText.style.height = "auto";
+    aiText.style.height = Math.min(aiText.scrollHeight, 96) + "px";
+  }
+  aiText.addEventListener("input", autoGrow);
+  aiText.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(aiText.value); }
+  });
+  aiForm.addEventListener("submit", function (e) { e.preventDefault(); send(aiText.value); });
+
+  async function send(text) {
+    text = String(text || "").trim();
+    if (!text || ai.busy) return;
+    ai.busy = true;
+    $("#ai-send").disabled = true;
+    setChips([]);
+    addUser(text);
+    aiText.value = "";
+    autoGrow();
+    try { await route(text); } catch (err) { console.error(err); }
+    ai.busy = false;
+    $("#ai-send").disabled = false;
+  }
+
+  /* --- приветствие --- */
+  async function greet() {
+    body.innerHTML = "";
+    var day = document.createElement("div");
+    day.className = "ai-day";
+    day.textContent = "ИИ-консультант · демо";
+    body.appendChild(day);
+    await botSay("Здравствуйте! Я <b>Алёна</b>, ИИ-консультант «Прайм-Клининг». Помогу подобрать уборку и посчитать стоимость по прайсу.", 600);
+    await botSay("С чего начнём?" +
+      '<span class="ln">рассчитаю стоимость по площади</span>' +
+      '<span class="ln">расскажу, что входит в уборку</span>' +
+      '<span class="ln">подскажу по договору, документам и тендерам</span>', 900);
+    setChips([
+      ["Сколько стоит уборка офиса 600 м²", "Сколько стоит уборка офиса 600 м²?"],
+      ["Бесплатная тестовая уборка", "Тестовая уборка бесплатная?"],
+      ["Пригласить на тендер", "Приглашаем на тендер"],
+      ["Оставить заявку", "@lead"]
+    ]);
+  }
+
+  function openChat(prefill) {
+    panel.hidden = false;
+    $("#ai").classList.add("is-open");
+    launch.setAttribute("aria-expanded", "true");
+    ai.open = true;
+    teaser.classList.remove("show");
+    if (!ai.started) {
+      ai.started = true;
+      greet().then(function () {
+        if (prefill) setTimeout(function () { send(prefill); }, 700);
+      });
+    } else if (prefill) {
+      setTimeout(function () { send(prefill); }, 250);
+    }
+    if (window.matchMedia("(min-width:700px)").matches) {
+      setTimeout(function () { aiText.focus({ preventScroll: true }); }, 320);
+    }
+  }
+  function closeChat() {
+    panel.hidden = true;
+    $("#ai").classList.remove("is-open");
+    launch.setAttribute("aria-expanded", "false");
+    ai.open = false;
+    launch.focus({ preventScroll: true });
+  }
+
+  launch.addEventListener("click", function () { ai.open ? closeChat() : openChat(); });
+  $("#ai-close").addEventListener("click", closeChat);
+  $("#ai-reset").addEventListener("click", function () {
+    ai.pending = null;
+    ai.busy = false;
+    ai.slots = { type: null, area: 0, object: null, territory: false, phone: null };
+    hideTyping();
+    greet();
+  });
+  teaser.addEventListener("click", function () { openChat(); });
+  teaser.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openChat(); }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && ai.open) closeChat();
+  });
+
+  $$("[data-open-ai]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      openChat();
+    });
+  });
+
+  $$(".svc__more").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      openChat("Сколько стоит " + btn.dataset.service.toLowerCase() + "?");
+    });
+  });
+
+  /* тизер через 8 секунд */
+  setTimeout(function () {
+    if (!ai.started && panel.hidden) teaser.classList.add("show");
+  }, 8000);
+  setTimeout(function () { teaser.classList.remove("show"); }, 26000);
+
+  /* префилл формы из чата при клике на телефон в шапке не нужен */
+})();
+</script>
+</body>
+</html>
