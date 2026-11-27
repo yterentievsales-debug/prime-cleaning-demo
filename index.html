@@ -9,7 +9,7 @@
 <meta property="og:title" content="«Прайм Клининг»: уборка для бизнеса с оплатой по факту">
 <meta property="og:description" content="20 лет в профессиональном клининге. Бесплатная тестовая уборка перед договором. Рассчитайте стоимость за 20 секунд.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2300A99B'/%3E%3Cpath d='M16 7l2.3 5.7L24 15l-5.7 2.3L16 23l-2.3-5.7L8 15l5.7-2.3z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2300A99B'/%3E%3Cpath d='M16 6c3.3 4.3 6 7.5 6 10.5a6 6 0 0 1-12 0C10 13.5 12.7 10.3 16 6z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 /* ============================================================
    «Прайм Клининг»: демонстрационный лендинг. Один файл, без внешних зависимостей.
@@ -90,10 +90,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* ---------- типографика / служебное ---------- */
 .eyebrow{
-  display:inline-flex;align-items:center;gap:9px;font-size:.74rem;font-weight:800;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d);
+  display:inline-flex;align-items:center;gap:9px;font-size:1.11rem;font-weight:800;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--accent-d);
 }
-.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+.eyebrow::before{display:none}
 .tag{
   display:inline-flex;align-items:center;gap:8px;background:var(--amber-l);color:#8A5410;
   font-weight:700;font-size:.8rem;padding:6px 13px;border-radius:999px;border:1px solid #F7DFB8;
@@ -921,7 +921,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 <!-- иконки -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
-    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 4.9L19 9.9l-4.9 1.9L12 16.8l-1.9-4.9L5 9.9l4.9-1.9z"/><path d="M18.6 15.2l.8 2.1 2.1.8-2.1.8-.8 2.1-.8-2.1-2.1-.8 2.1-.8z"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3c3.3 4.2 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 2.7-6.8 6-11z"/><path d="M9.4 14.6a2.6 2.6 0 0 0 2.6 2.6"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21.6 16.9v2.9a2 2 0 0 1-2.2 2 19.7 19.7 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.7 19.7 0 0 1 1.7 4.1 2 2 0 0 1 3.7 2h2.9a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.6 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.9 2.1z"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
@@ -964,7 +964,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 <header class="site">
   <div class="wrap">
     <a class="logo" href="#top">
-      <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
+      <span class="logo__mark"><svg class="ico"><use href="#i-drop"/></svg></span>
       <span>
         <b>Прайм Клининг</b>
         <small>профессиональный клининг для бизнеса</small>
@@ -993,7 +993,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   <div class="mobnav__panel" role="dialog" aria-label="Меню сайта" aria-modal="true">
     <div class="mobnav__head">
       <a class="logo" href="#top">
-        <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
+        <span class="logo__mark"><svg class="ico"><use href="#i-drop"/></svg></span>
         <span><b>Прайм Клининг</b><small>с 2006 года</small></span>
       </a>
       <button class="mobnav__close" id="mobnav-close" type="button" aria-label="Закрыть меню">×</button>
@@ -1034,6 +1034,20 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
           <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
         </linearGradient>
         <mask id="gridMask"><rect x="880" y="0" width="600" height="430" fill="url(#gridFade)"/></mask>
+        <linearGradient id="tileFade" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+          <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </linearGradient>
+        <mask id="tileMask"><rect x="0" y="500" width="980" height="330" fill="url(#tileFade)"/></mask>
+        <linearGradient id="dropGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+          <stop offset=".55" stop-color="#DFF5F1" stop-opacity=".5"/>
+          <stop offset="1" stop-color="#00A99B" stop-opacity=".22"/>
+        </linearGradient>
+        <g id="heroDrop">
+          <path d="M0 -18 C7 -7 12 0 12 7 A12 12 0 0 1 -12 7 C-12 0 -7 -7 0 -18 Z" fill="url(#dropGrad)" stroke="#00A99B" stroke-opacity=".28" stroke-width="1.2"/>
+          <ellipse cx="-4" cy="4" rx="3" ry="4.5" fill="#ffffff" opacity=".9"/>
+        </g>
       </defs>
 
       <g opacity=".9">
@@ -1089,6 +1103,26 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <g fill="#00A99B">
         <path class="spark" d="M1004 556 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z" opacity=".18"/>
         <path class="spark spark2" d="M900 150 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" opacity=".14"/>
+      </g>
+
+      <g class="hide-sm" mask="url(#tileMask)" stroke="#0A2630" stroke-opacity=".05" stroke-width="1.2">
+        <path d="M60 500 V830 M180 500 V830 M300 500 V830 M420 500 V830 M540 500 V830 M660 500 V830 M780 500 V830 M900 500 V830"/>
+        <path d="M0 560 H980 M0 680 H980 M0 800 H980"/>
+      </g>
+
+      <g class="hide-sm" pointer-events="none">
+        <ellipse cx="92" cy="702" rx="78" ry="14" fill="#00A99B" opacity=".1" filter="url(#heroSoft2)"/>
+        <ellipse cx="1270" cy="780" rx="88" ry="16" fill="#00A99B" opacity=".1" filter="url(#heroSoft2)"/>
+        <ellipse cx="690" cy="820" rx="74" ry="12" fill="#00A99B" opacity=".08" filter="url(#heroSoft2)"/>
+      </g>
+
+      <g class="hide-sm">
+        <use href="#heroDrop" transform="translate(1080 58) scale(.85)"/>
+        <use href="#heroDrop" transform="translate(1168 132) scale(1.15)"/>
+        <use href="#heroDrop" transform="translate(1328 84) scale(.7)"/>
+        <use href="#heroDrop" transform="translate(1392 236) scale(1.25)"/>
+        <use href="#heroDrop" transform="translate(1312 430) scale(.95)"/>
+        <use href="#heroDrop" transform="translate(58 176) scale(.8)"/>
       </g>
 
       <ellipse cx="720" cy="828" rx="760" ry="110" fill="#ffffff" opacity=".6" filter="url(#heroSoft2)"/>
@@ -1205,7 +1239,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 
     <div class="svc-grid">
       <article class="svc svc--feature reveal">
-        <div class="svc__ico"><svg class="ico"><use href="#i-spark"/></svg></div>
+        <div class="svc__ico"><svg class="ico"><use href="#i-drop"/></svg></div>
         <h3>Комплексная ежедневная уборка</h3>
         <p>Абонентское обслуживание: закреплённая бригада, расходники, уборка до открытия объекта и контроль выхода персонала.</p>
         <div class="svc__price"><b>от 1,7 ₽</b><span>/ м² в рабочий день</span></div>
@@ -1512,7 +1546,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="compare">
       <div class="cmp cmp--us reveal">
         <span class="cmp__badge">выгоднее</span>
-        <h3><svg class="ico"><use href="#i-spark"/></svg>Прайм Клининг</h3>
+        <h3><svg class="ico"><use href="#i-drop"/></svg>Прайм Клининг</h3>
         <ul>
           <li><svg class="ico"><use href="#i-check"/></svg>Бригада закреплена за объектом, при болезни подмена в тот же день</li>
           <li><svg class="ico"><use href="#i-check"/></svg>Бесплатная тестовая уборка и оплата по факту, без предоплаты</li>
@@ -1671,14 +1705,14 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow">консультант</span>
-      <h2 class="sec" style="color:#fff">Ночью, в выходные и в пик заявок <em>отвечает Алёна</em></h2>
+      <h2 class="sec" style="color:#fff">Ночью, в выходные и в пик заявок <em>отвечаем быстро</em></h2>
             <ul class="cta-list">
         <li><svg class="ico"><use href="#i-check"/></svg>Мгновенный расчёт по прайсу: 20 секунд вместо звонка</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Понимает запрос с полуслова: «уборка после ремонта 1 200 м²»</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Собирает объект, площадь и телефон, передаёт заявку менеджеру</li>
       </ul>
       <button class="btn btn--light" type="button" data-open-chat>
-        <svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Попробовать диалог
+        <svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Спросить сейчас
       </button>
       <p style="font-size:.76rem;color:#8FB3BB;margin-top:14px">Это рабочий образец: диалог запускается прямо на странице, без установки и настроек.</p>
     </div>
@@ -1712,8 +1746,8 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <h2 class="sec" style="margin-bottom:20px">Отвечаем на то, <em>что спрашивают чаще всего</em></h2>
         <div class="faq__aside">
           <h3>Не нашли свой вопрос?</h3>
-          <p>Алёна знает прайс, услуги и порядок работы. Мы на связи 24/7, ответим за 15 секунд, даже ночью.</p>
-          <button class="btn btn--light" type="button" data-open-chat><svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Открыть чат</button>
+          <p>Мы на связи 24/7, ответим за 15 секунд, даже ночью.</p>
+          <button class="btn btn--light" type="button" data-open-chat><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Открыть чат</button>
           <div class="chat-note">
             <svg class="ico"><use href="#i-shield"/></svg>
             <span>Демо: консультант отвечает по прайсу и услугам сайта, заявку передаёт менеджеру.</span>
@@ -1907,7 +1941,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="cols">
       <div>
         <a class="logo" href="#top">
-          <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
+          <span class="logo__mark"><svg class="ico"><use href="#i-drop"/></svg></span>
           <span><b>Прайм Клининг</b><small>профессиональные клининговые услуги</small></span>
         </a>
         <p class="f-desc">Клининг для бизнеса с 2006 года. Комплексная и разовая уборка, мойка окон и фасадов, дезинфекция, вывоз снега и ТБО, аутсорсинг персонала.</p>
@@ -1958,13 +1992,13 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 <!-- мобильная панель -->
 <div class="mobilebar">
   <a class="mb-call" href="tel:+79128636500"><svg class="ico"><use href="#i-phone"/></svg>Позвонить</a>
-  <button class="mb-cta" type="button" data-open-chat><svg class="ico"><use href="#i-spark"/></svg>Спросить</button>
+  <button class="mb-cta" type="button" data-open-chat><svg class="ico"><use href="#i-chat"/></svg>Спросить</button>
 </div>
 
 <!-- КОНСУЛЬТАНТ -->
 <div class="chat-dock" id="chat">
   <div class="chat-teaser" id="chat-teaser" role="button" tabindex="0" aria-label="Алёна: подберу услугу и посчитаю стоимость">
-    <b><svg class="ico"><use href="#i-spark"/></svg>консультант</b>
+    <b><svg class="ico"><use href="#i-chat"/></svg>консультант</b>
     <span>Подберу услугу и посчитаю стоимость за 20 секунд</span>
     <span class="tip">Нажмите, чтобы начать диалог</span>
   </div>
