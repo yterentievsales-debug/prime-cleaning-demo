@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Уборка офисов, производств и территорий по договору — «Прайм-Клининг», с 2006 года</title>
+<title>Уборка офисов, производств и территорий по договору. «Прайм Клининг», с 2006 года</title>
 <meta name="description" content="Профессиональный клининг для бизнеса: ежедневная уборка, генеральная, после ремонта, мойка окон и фасадов, дезинфекция, вывоз снега и ТБО. Бесплатная тестовая уборка, оплата по факту без предоплаты. Республика Коми, Кировская и Нижегородская области.">
 <meta name="theme-color" content="#0A1B22">
-<meta property="og:title" content="«Прайм-Клининг» — уборка для бизнеса с оплатой по факту">
+<meta property="og:title" content="«Прайм Клининг»: уборка для бизнеса с оплатой по факту">
 <meta property="og:description" content="20 лет в профессиональном клининге. Бесплатная тестовая уборка перед договором. Рассчитайте стоимость за 20 секунд.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2300A99B'/%3E%3Cpath d='M16 7l2.3 5.7L24 15l-5.7 2.3L16 23l-2.3-5.7L8 15l5.7-2.3z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 /* ============================================================
-   «Прайм-Клининг» — демо-лендинг. Один файл, без внешних зависимостей.
+   «Прайм Клининг»: демо-лендинг. Один файл, без внешних зависимостей.
    ============================================================ */
 :root{
   --ink:#08181F;
@@ -506,9 +506,9 @@ details.q .a b{color:var(--ink-2)}
 .faq__aside h3{font-size:1.25rem;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:10px;position:relative}
 .faq__aside p{font-size:.88rem;color:#AFCBD1;margin-bottom:20px;position:relative}
 .faq__aside .btn{position:relative}
-.faq__aside .ai-note{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);position:relative}
-.faq__aside .ai-note .ico{width:18px;height:18px;color:#4FE0CE;margin-top:2px}
-.faq__aside .ai-note span{font-size:.78rem;color:#C6DDE1;line-height:1.45}
+.faq__aside .chat-note{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);position:relative}
+.faq__aside .chat-note .ico{width:18px;height:18px;color:#4FE0CE;margin-top:2px}
+.faq__aside .chat-note span{font-size:.78rem;color:#C6DDE1;line-height:1.45}
 
 /* ---------- финальный CTA + форма ---------- */
 .cta{background:
@@ -590,82 +590,82 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 .mobilebar .mb-cta{background:var(--accent);color:#fff;flex:1.35}
 .mobilebar .ico{width:17px;height:17px}
 
-/* ---------- ИИ-консультант ---------- */
-.ai-dock{position:fixed;right:clamp(12px,2vw,26px);bottom:clamp(12px,2vw,26px);z-index:90;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.ai-dock.is-open .ai-launch,.ai-dock.is-open .ai-teaser{display:none}
-.ai-launch{position:relative;width:66px;height:66px;border-radius:50%;border:0;cursor:pointer;padding:0;background:transparent}
-.ai-launch__ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 180deg,#00A99B,#4FE0CE,#00A99B,#0A2630,#00A99B);animation:spin 9s linear infinite;opacity:.95}
-.ai-launch__ring::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
-.ai-launch__face{
+/* ---------- консультант ---------- */
+.chat-dock{position:fixed;right:clamp(12px,2vw,26px);bottom:clamp(12px,2vw,26px);z-index:90;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.chat-dock.is-open .chat-launch,.chat-dock.is-open .chat-teaser{display:none}
+.chat-launch{position:relative;width:66px;height:66px;border-radius:50%;border:0;cursor:pointer;padding:0;background:transparent}
+.chat-launch__ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 180deg,#00A99B,#4FE0CE,#00A99B,#0A2630,#00A99B);animation:spin 9s linear infinite;opacity:.95}
+.chat-launch__ring::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff}
+.chat-launch__face{
   position:absolute;inset:4px;border-radius:50%;background:linear-gradient(150deg,#0A2630,#124C58);
-  display:grid;place-items:center;color:#4FE0CE;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 10px 26px -8px rgba(0,169,155,.75);
+  display:block;overflow:hidden;color:#4FE0CE;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 10px 26px -8px rgba(0,169,155,.75);
 }
-.ai-launch__face svg{width:30px;height:30px}
-.ai-launch__ping{position:absolute;inset:-2px;border-radius:50%;border:2px solid rgba(0,169,155,.6);animation:ping 2.6s var(--ease) infinite;pointer-events:none}
-.ai-launch__dot{position:absolute;right:2px;bottom:2px;width:15px;height:15px;border-radius:50%;background:var(--ok);border:3px solid #fff;z-index:2}
-.ai-launch__badge{
+.chat-launch__face img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.chat-launch__ping{position:absolute;inset:-2px;border-radius:50%;border:2px solid rgba(0,169,155,.6);animation:ping 2.6s var(--ease) infinite;pointer-events:none}
+.chat-launch__dot{position:absolute;right:2px;bottom:2px;width:15px;height:15px;border-radius:50%;background:var(--ok);border:3px solid #fff;z-index:2}
+.chat-launch__badge{
   position:absolute;top:-4px;left:-6px;background:var(--amber);color:#3D2A05;font:800 10px/1 var(--font);
   letter-spacing:.04em;padding:4px 6px;border-radius:6px;box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
-.ai-launch:hover .ai-launch__face{transform:scale(1.04)}
-.ai-launch__face{transition:transform .2s var(--ease)}
+.chat-launch:hover .chat-launch__face{transform:scale(1.04)}
+.chat-launch__face{transition:transform .2s var(--ease)}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes ping{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}
 
-.ai-teaser{
+.chat-teaser{
   max-width:270px;background:#fff;border-radius:16px 16px 4px 16px;padding:13px 16px;
   box-shadow:0 16px 40px rgba(8,24,31,.22),0 0 0 1px rgba(8,24,31,.06);
   position:relative;display:grid;gap:3px;opacity:0;transform:translateY(8px) scale(.96);
   transition:opacity .4s var(--ease),transform .4s var(--ease);pointer-events:none;
 }
-.ai-teaser:not(.show){display:none}
-.ai-teaser.show{opacity:1;transform:none;pointer-events:auto;cursor:pointer}
-.ai-teaser::after{content:"";position:absolute;right:8px;bottom:-7px;width:14px;height:14px;background:#fff;transform:rotate(45deg);border-radius:2px}
-.ai-teaser b{font-size:.9rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
-.ai-teaser b .ico{width:14px;height:14px;color:var(--accent-d)}
-.ai-teaser span{font-size:.8rem;color:var(--body);line-height:1.4}
-.ai-teaser .tip{font-size:.7rem;color:var(--muted);margin-top:4px}
+.chat-teaser:not(.show){display:none}
+.chat-teaser.show{opacity:1;transform:none;pointer-events:auto;cursor:pointer}
+.chat-teaser::after{content:"";position:absolute;right:8px;bottom:-7px;width:14px;height:14px;background:#fff;transform:rotate(45deg);border-radius:2px}
+.chat-teaser b{font-size:.9rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
+.chat-teaser b .ico{width:14px;height:14px;color:var(--accent-d)}
+.chat-teaser span{font-size:.8rem;color:var(--body);line-height:1.4}
+.chat-teaser .tip{font-size:.7rem;color:var(--muted);margin-top:4px}
 
-.ai-panel{
+.chat-panel{
   width:min(392px,calc(100vw - 24px));height:min(660px,calc(100dvh - 44px));display:flex;flex-direction:column;
   background:#fff;border-radius:20px;overflow:hidden;
   box-shadow:0 32px 80px -18px rgba(8,24,31,.5),0 0 0 1px rgba(8,24,31,.08);
   transform-origin:bottom right;animation:panelIn .3s var(--ease);
 }
-.ai-panel[hidden]{display:none}
+.chat-panel[hidden]{display:none}
 @keyframes panelIn{from{opacity:0;transform:translateY(16px) scale(.94)}to{opacity:1;transform:none}}
-.ai-head{
+.chat-head{
   background:linear-gradient(140deg,#082028 0%,#0C333D 60%,#0F4550 100%);color:#fff;padding:14px 14px 13px;
   display:flex;align-items:center;gap:11px;position:relative;flex:none;
 }
-.ai-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,224,206,.5),transparent)}
-.ai-ava{
-  width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;position:relative;
+.chat-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,224,206,.5),transparent)}
+.chat-ava{
+  width:44px;height:44px;border-radius:50%;flex:none;display:block;overflow:hidden;position:relative;
   background:linear-gradient(150deg,#00A99B,#0A2630);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 6px 16px -6px rgba(0,169,155,.8);
 }
-.ai-ava svg{width:22px;height:22px;color:#fff}
-.ai-head .who{display:grid;gap:1px;min-width:0;flex:1}
-.ai-head .who b{font-size:.94rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
-.ai-head .who b em{font-style:normal;font-size:.6rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:rgba(79,224,206,.18);color:#4FE0CE;padding:2px 5px;border-radius:4px}
-.ai-head .who small{font-size:.72rem;color:#9FC2C9;display:inline-flex;align-items:center;gap:5px}
-.ai-head .who small i{width:6px;height:6px;border-radius:50%;background:var(--ok);display:inline-block;box-shadow:0 0 0 3px rgba(32,178,108,.22)}
-.ai-head .hbtns{display:flex;gap:2px;flex:none}
-.ai-head .hbtns button{
+.chat-ava img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.chat-head .who{display:grid;gap:1px;min-width:0;flex:1}
+.chat-head .who b{font-size:.94rem;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
+.chat-head .who b em{font-style:normal;font-size:.6rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;background:rgba(79,224,206,.18);color:#4FE0CE;padding:2px 5px;border-radius:4px}
+.chat-head .who small{font-size:.72rem;color:#9FC2C9;display:inline-flex;align-items:center;gap:5px}
+.chat-head .who small i{width:6px;height:6px;border-radius:50%;background:var(--ok);display:inline-block;box-shadow:0 0 0 3px rgba(32,178,108,.22)}
+.chat-head .hbtns{display:flex;gap:2px;flex:none}
+.chat-head .hbtns button{
   width:30px;height:30px;border:0;border-radius:8px;background:rgba(255,255,255,.07);color:#B8D2D7;
   cursor:pointer;display:grid;place-items:center;transition:.15s;
 }
-.ai-head .hbtns button:hover{background:rgba(255,255,255,.16);color:#fff}
-.ai-head .hbtns .ico{width:15px;height:15px}
+.chat-head .hbtns button:hover{background:rgba(255,255,255,.16);color:#fff}
+.chat-head .hbtns .ico{width:15px;height:15px}
 
-.ai-body{
+.chat-body{
   flex:1;min-height:0;overflow-y:auto;padding:16px 14px 10px;background:
     radial-gradient(400px 200px at 100% 0,rgba(0,169,155,.07),transparent 70%),
     linear-gradient(180deg,#F3F9F9,#F7FBFB);
   display:flex;flex-direction:column;gap:10px;scroll-behavior:smooth;overscroll-behavior:contain;
 }
-.ai-body::-webkit-scrollbar{width:6px}
-.ai-body::-webkit-scrollbar-thumb{background:#CBDDDF;border-radius:99px}
-.ai-day{text-align:center;font-size:.68rem;color:#8BA4AB;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:2px 0 4px;flex:none}
+.chat-body::-webkit-scrollbar{width:6px}
+.chat-body::-webkit-scrollbar-thumb{background:#CBDDDF;border-radius:99px}
+.chat-day{text-align:center;font-size:.68rem;color:#8BA4AB;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:2px 0 4px;flex:none}
 .msg{max-width:87%;padding:10px 13px;border-radius:15px;font-size:.875rem;line-height:1.5;overflow-wrap:anywhere;position:relative;flex:none;
   opacity:0;transform:translateY(8px);animation:msgIn .3s var(--ease) forwards}
 @keyframes msgIn{to{opacity:1;transform:none}}
@@ -695,77 +695,77 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 .msg__card .row.total{border-top:1px dashed var(--line-2);padding-top:7px;margin-top:2px;font-size:.85rem}
 .msg__card .row.total b{color:var(--accent-d);font-size:.95rem}
 .msg__card .card-foot{padding:0 14px 12px;font-size:.7rem;color:var(--muted);line-height:1.4}
-.ai-typing{justify-self:flex-start;display:flex;gap:4px;padding:13px 15px;background:#fff;border:1px solid #E2EDEF;border-radius:15px;border-bottom-left-radius:5px;width:max-content;flex:none}
-.ai-typing[hidden]{display:none}
-.ai-typing span{width:6px;height:6px;border-radius:50%;background:#9FB8BE;animation:tp 1.1s infinite}
-.ai-typing span:nth-child(2){animation-delay:.16s}
-.ai-typing span:nth-child(3){animation-delay:.32s}
+.chat-typing{justify-self:flex-start;display:flex;gap:4px;padding:13px 15px;background:#fff;border:1px solid #E2EDEF;border-radius:15px;border-bottom-left-radius:5px;width:max-content;flex:none}
+.chat-typing[hidden]{display:none}
+.chat-typing span{width:6px;height:6px;border-radius:50%;background:#9FB8BE;animation:tp 1.1s infinite}
+.chat-typing span:nth-child(2){animation-delay:.16s}
+.chat-typing span:nth-child(3){animation-delay:.32s}
 @keyframes tp{0%,60%,100%{transform:none;opacity:.35}30%{transform:translateY(-4px);opacity:1}}
 
-.ai-chips{display:flex;gap:7px;padding:0 14px 10px;flex-wrap:wrap;background:#F7FBFB;flex:none}
-.ai-chips:empty{display:none}
+.chat-chips{display:flex;gap:7px;padding:0 14px 10px;flex-wrap:wrap;background:#F7FBFB;flex:none}
+.chat-chips:empty{display:none}
 .chip{
   border:1px solid #CFE3E4;background:#fff;color:var(--accent-d);font-size:.78rem;font-weight:700;
   padding:7px 11px;border-radius:999px;cursor:pointer;transition:.16s;display:inline-flex;align-items:center;gap:5px;
 }
 .chip:hover{background:var(--accent-l);border-color:var(--accent);transform:translateY(-1px)}
 .chip .ico{width:12px;height:12px}
-.ai-input{display:flex;align-items:flex-end;gap:8px;padding:10px 12px;border-top:1px solid var(--line);background:#fff;flex:none}
-.ai-input textarea{
+.chat-input{display:flex;align-items:flex-end;gap:8px;padding:10px 12px;border-top:1px solid var(--line);background:#fff;flex:none}
+.chat-input textarea{
   flex:1;min-width:0;border:0;background:var(--paper-2);border-radius:12px;padding:11px 13px;resize:none;
   font-size:.875rem;line-height:1.4;max-height:96px;min-height:42px;outline:none;transition:box-shadow .18s;
 }
-.ai-input textarea:focus{box-shadow:0 0 0 2px rgba(0,169,155,.35)}
-.ai-input .send{
+.chat-input textarea:focus{box-shadow:0 0 0 2px rgba(0,169,155,.35)}
+.chat-input .send{
   width:42px;height:42px;border-radius:50%;border:0;background:linear-gradient(150deg,var(--accent),#00BFAE);
   color:#fff;display:grid;place-items:center;cursor:pointer;flex:none;transition:.18s;box-shadow:0 6px 16px -8px rgba(0,169,155,.9);
 }
-.ai-input .send:hover{transform:scale(1.05)}
-.ai-input .send:disabled{opacity:.5;cursor:default;transform:none}
-.ai-input .send .ico{width:19px;height:19px}
-.ai-foot-note{padding:7px 14px 9px;font-size:.66rem;color:#8BA4AB;background:#fff;border-top:1px dashed var(--line);text-align:center;line-height:1.4;flex:none}
-.ai-foot-note b{color:var(--accent-d)}
+.chat-input .send:hover{transform:scale(1.05)}
+.chat-input .send:disabled{opacity:.5;cursor:default;transform:none}
+.chat-input .send .ico{width:19px;height:19px}
+.chat-foot-note{padding:7px 14px 9px;font-size:.66rem;color:#8BA4AB;background:#fff;border-top:1px dashed var(--line);text-align:center;line-height:1.4;flex:none}
+.chat-foot-note b{color:var(--accent-d)}
 
-/* ---------- витрина ИИ-консультанта ---------- */
-.ai-showcase{
+/* ---------- витрина консультанта ---------- */
+.chat-showcase{
   background:
     radial-gradient(700px 360px at 88% 10%,rgba(0,169,155,.28),transparent 62%),
     linear-gradient(160deg,#08181F 0%,#0A2630 60%,#0E3540 100%);
   color:#fff;overflow:hidden;
 }
-.ai-showcase .wrap{display:grid;grid-template-columns:1fr .92fr;gap:48px;align-items:center}
-.ai-showcase .eyebrow{color:#4FE0CE}
-.ai-showcase .eyebrow::before{background:#4FE0CE}
-.ai-showcase h2{color:#fff}
-.ai-showcase h2 em{color:#4FE0CE}
-.ai-showcase .lead{color:#AFCBD1}
-.ai-showcase .cta-list li{color:#D6E7EA}
-.ai-showcase .cta-list{margin:22px 0 26px}
-.ai-demo-card{
+.chat-showcase .wrap{display:grid;grid-template-columns:1fr .92fr;gap:48px;align-items:center}
+.chat-showcase .eyebrow{color:#4FE0CE}
+.chat-showcase .eyebrow::before{background:#4FE0CE}
+.chat-showcase h2{color:#fff}
+.chat-showcase h2 em{color:#4FE0CE}
+.chat-showcase .lead{color:#AFCBD1}
+.chat-showcase .cta-list li{color:#D6E7EA}
+.chat-showcase .cta-list{margin:22px 0 26px}
+.chat-demo-card{
   background:#fff;border-radius:18px;padding:16px;color:var(--ink);
   box-shadow:0 30px 70px -20px rgba(0,0,0,.6);position:relative;
 }
-.ai-demo-card__head{display:flex;align-items:center;gap:9px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:12px}
-.ai-demo-card__head .av{width:30px;height:30px;border-radius:9px;background:linear-gradient(150deg,#00A99B,#0A2630);display:grid;place-items:center}
-.ai-demo-card__head .av svg{width:16px;height:16px;color:#fff}
-.ai-demo-card__head b{font-size:.82rem;font-weight:800;display:flex;align-items:center;gap:6px}
-.ai-demo-card__head b em{font-style:normal;font-size:.55rem;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-d);background:var(--accent-l);padding:2px 5px;border-radius:4px}
-.ai-demo-card__head span{margin-left:auto;font-size:.65rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
-.ai-demo-card__head span i{width:5px;height:5px;border-radius:50%;background:var(--ok)}
-.ai-demo-msgs{display:grid;gap:8px;background:var(--paper-2);border-radius:12px;padding:11px}
-.ai-demo-msgs .b,.ai-demo-msgs .u{max-width:90%;padding:8px 11px;border-radius:12px;font-size:.78rem;line-height:1.45}
-.ai-demo-msgs .b{background:#fff;border:1px solid #E2EDEF;border-bottom-left-radius:4px;color:var(--ink-2)}
-.ai-demo-msgs .u{justify-self:end;background:var(--accent);color:#fff;font-weight:600;border-bottom-right-radius:4px}
-.ai-demo-msgs .b b{color:var(--accent-d)}
-.ai-demo-lead{
+.chat-demo-card__head{display:flex;align-items:center;gap:9px;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.chat-demo-card__head .av{width:32px;height:32px;border-radius:50%;background:linear-gradient(150deg,#00A99B,#0A2630);display:block;overflow:hidden;flex:none}
+.chat-demo-card__head .av img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
+.chat-demo-card__head b{font-size:.82rem;font-weight:800;display:flex;align-items:center;gap:6px}
+.chat-demo-card__head b em{font-style:normal;font-size:.55rem;letter-spacing:.07em;text-transform:uppercase;color:var(--accent-d);background:var(--accent-l);padding:2px 5px;border-radius:4px}
+.chat-demo-card__head span{margin-left:auto;font-size:.65rem;color:var(--muted);display:inline-flex;align-items:center;gap:4px}
+.chat-demo-card__head span i{width:5px;height:5px;border-radius:50%;background:var(--ok)}
+.chat-demo-msgs{display:grid;gap:8px;background:var(--paper-2);border-radius:12px;padding:11px}
+.chat-demo-msgs .b,.chat-demo-msgs .u{max-width:90%;padding:8px 11px;border-radius:12px;font-size:.78rem;line-height:1.45}
+.chat-demo-msgs .b{background:#fff;border:1px solid #E2EDEF;border-bottom-left-radius:4px;color:var(--ink-2)}
+.chat-demo-msgs .u{justify-self:end;background:var(--accent);color:#fff;font-weight:600;border-bottom-right-radius:4px}
+.chat-demo-msgs .b b{color:var(--accent-d)}
+.chat-demo-lead{
   margin-top:8px;background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;
 }
-.ai-demo-lead__top{background:linear-gradient(150deg,#0A2630,#123E48);color:#fff;padding:7px 10px;font-size:.68rem;font-weight:800;display:flex;justify-content:space-between;align-items:center}
-.ai-demo-lead__top span{color:#4FE0CE;font-size:.58rem;letter-spacing:.06em}
-.ai-demo-lead__body{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;font-size:.72rem;color:var(--body)}
-.ai-demo-lead__body b{color:var(--ink);font-weight:800}
-.ai-demo-card__foot{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:.65rem;color:var(--muted)}
-.ai-demo-card__foot .ico{width:12px;height:12px;color:var(--accent)}
+.chat-demo-lead__top{background:linear-gradient(150deg,#0A2630,#123E48);color:#fff;padding:7px 10px;font-size:.68rem;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+.chat-demo-lead__top span{color:#4FE0CE;font-size:.58rem;letter-spacing:.06em}
+.chat-demo-lead__body{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;font-size:.72rem;color:var(--body)}
+.chat-demo-lead__body b{color:var(--ink);font-weight:800}
+.chat-demo-card__foot{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:.65rem;color:var(--muted)}
+.chat-demo-card__foot .ico{width:12px;height:12px;color:var(--accent)}
 
 /* ---------- анимации появления ---------- */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
@@ -797,7 +797,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   .hero .wrap{grid-template-columns:1fr;gap:36px}
   .hero h1{max-width:24ch}
   .calc{max-width:560px}
-  .price-wrap,.scope,.faq,.cta .wrap,.contacts,.ai-showcase .wrap{grid-template-columns:1fr}
+  .price-wrap,.scope,.faq,.cta .wrap,.contacts,.chat-showcase .wrap{grid-template-columns:1fr}
   .trust .wrap{grid-template-columns:1fr;gap:14px;padding-block:18px}
   .trust__label{border-right:0;padding-right:0}
   .compare{grid-template-columns:1fr}
@@ -811,8 +811,8 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   .mobilebar{display:flex}
   body{padding-bottom:66px}
   footer.site{padding-bottom:90px}
-  .ai-dock{bottom:calc(76px + env(safe-area-inset-bottom))}
-  .ai-panel{height:min(620px,calc(100dvh - 108px))}
+  .chat-dock{bottom:calc(76px + env(safe-area-inset-bottom))}
+  .chat-panel{height:min(620px,calc(100dvh - 108px))}
 }
 @media (max-width:700px){
   .wrap{padding:0 16px}
@@ -859,9 +859,9 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   .calc{padding:20px}
   .calc__result .r-price{font-size:1.5rem}
   footer.site .cols{grid-template-columns:1fr;gap:24px}
-  .ai-panel{width:calc(100vw - 20px);height:min(78dvh,640px)}
-  .ai-teaser{display:none !important}
-  .ai-launch{display:none}
+  .chat-panel{width:calc(100vw - 20px);height:min(78dvh,640px)}
+  .chat-teaser{display:none !important}
+  .chat-launch{display:none}
   .sec-head{margin-bottom:26px}
   h2.sec{font-size:1.55rem}
   .scope__aside .big{font-size:1.3rem}
@@ -883,8 +883,8 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 }
 @media (max-width:420px){
   .trust__item{font-size:.76rem;padding:7px 11px}
-  .ai-launch{width:58px;height:58px}
-  .ai-launch__face svg{width:26px;height:26px}
+  .chat-launch{width:58px;height:58px}
+  .chat-launch__face svg{width:26px;height:26px}
 }
 </style>
 </head>
@@ -927,7 +927,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <span class="regions"><svg class="ico"><use href="#i-pin"/></svg>Сыктывкар</span>
     <span class="regions regions--wide">Коми · Кировская обл. · Нижегородская обл.</span>
     <span class="dash"></span>
-    <a class="badge-ai" href="#ai" data-open-ai><span class="pulse"></span>ИИ-консультант онлайн</a>
+    <a class="badge-ai" href="#chat" data-open-chat><span class="pulse"></span>На связи 24/7 · ответ за 15 секунд</a>
   </div>
 </div>
 
@@ -937,7 +937,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <a class="logo" href="#top">
       <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
       <span>
-        <b>Прайм-Клининг</b>
+        <b>Прайм Клининг</b>
         <small>профессиональный клининг для бизнеса</small>
       </span>
     </a>
@@ -949,7 +949,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     </nav>
     <div class="head-right">
       <div class="head-phone">
-        <a href="tel:+79128636500">8 912 863-65-00</a>
+        <a href="tel:+79128636500">8 912 863 65 00</a>
         <span>круглосуточно, без выходных</span>
       </div>
       <a class="btn btn--sm" href="#lead"><span class="h-cta-full">Рассчитать стоимость</span><span class="h-cta-short">Смета</span></a>
@@ -965,7 +965,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="mobnav__head">
       <a class="logo" href="#top">
         <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
-        <span><b>Прайм-Клининг</b><small>с 2006 года</small></span>
+        <span><b>Прайм Клининг</b><small>с 2006 года</small></span>
       </a>
       <button class="mobnav__close" id="mobnav-close" type="button" aria-label="Закрыть меню">×</button>
     </div>
@@ -976,7 +976,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <a href="#reviews">Отзывы</a>
     <a href="#contacts">Контакты</a>
     <a class="btn btn--block" href="#lead">Рассчитать стоимость</a>
-    <a class="btn btn--block btn--ghost" href="tel:+79128636500">8 912 863-65-00</a>
+    <a class="btn btn--block btn--ghost" href="tel:+79128636500">8 912 863 65 00</a>
   </div>
 </div>
 
@@ -988,18 +988,19 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div>
       <span class="tag"><span class="dot"></span>Бесплатная тестовая уборка перед договором</span>
       <h1>Уборка для бизнеса <em>без предоплаты</em> и простоев</h1>
-      <p class="lead">«Прайм-Клининг» с 2006 года обслуживает офисы, производства, ритейл и территории. Сначала бесплатно покажем качество на вашем объекте — потом подписываем договор.</p>
+      <p class="lead">«Прайм Клининг» с 2006 года обслуживает офисы, производства, ритейл и территории. Сначала бесплатно покажем качество на вашем объекте, потом подписываем договор.</p>
       <div class="points">
         <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span><b>20 лет</b> на рынке клининга: 120+ объектов на постоянном обслуживании</span></span>
         <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span><b>Платите по факту:</b> без предоплаты, только за подтверждённые работы</span></span>
         <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span>Сертифицированная химия, журналы контроля по требованиям Роспотребнадзора</span></span>
-        <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span>Электронный контроль выхода персонала — опоздание видно сразу</span></span>
+        <span><span class="tick"><svg class="ico"><use href="#i-check"/></svg></span><span>Электронный контроль выхода персонала: опоздание видно сразу</span></span>
       </div>
       <div class="hero-cta">
         <a class="btn" href="#lead">Получить смету за 15 минут <svg class="ico" style="width:17px;height:17px"><use href="#i-arrow"/></svg></a>
-        <button class="btn btn--ghost" type="button" data-open-ai><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Спросить ИИ-консультанта</button>
+        <button class="btn btn--ghost" type="button" data-open-chat><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Спросить консультанта</button>
       </div>
-      <p class="hero-note"><svg class="ico"><use href="#i-shield"/></svg>СРО фасилити-операторов · ISO · реестр «Белый ФМ»</p>
+      <p class="hero-note"><svg class="ico"><use href="#i-clock"/></svg>На связи 24/7, ответим за 15 секунд</p>
+      <p class="hero-note" style="margin-top:6px"><svg class="ico"><use href="#i-shield"/></svg>СРО фасилити операторов · ISO · реестр «Белый ФМ»</p>
     </div>
 
     <!-- калькулятор -->
@@ -1008,11 +1009,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <span class="badge"><svg class="ico"><use href="#i-calc"/></svg>Калькулятор</span>
       </div>
       <div class="calc__title" id="calc-title">Стоимость за 20 секунд</div>
-      <div class="calc__sub">Укажите объект и площадь — покажем ориентир по прайсу. Точную смету пришлём после бесплатного осмотра.</div>
+      <div class="calc__sub">Укажите объект и площадь, покажем ориентир по прайсу. Точную смету пришлём после бесплатного осмотра.</div>
       <div class="field">
         <label for="calc-object">Тип объекта</label>
         <select id="calc-object">
-          <option>Офис / бизнес-центр</option>
+          <option>Офис / деловой центр</option>
           <option>Производство / склад</option>
           <option>Магазин / ритейл</option>
           <option>Медицинское учреждение</option>
@@ -1051,7 +1052,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <div class="r-hint" id="calc-hint">Минимальный заказ 1 500 ₽ · ориентир по прайсу 2026</div>
       </div>
       <button class="btn btn--block" type="button" id="calc-submit">Получить точную смету</button>
-      <p class="calc__fine">Бесплатный осмотр объекта и тестовая уборка — без обязательств</p>
+      <p class="calc__fine">Бесплатный осмотр объекта и тестовая уборка без обязательств</p>
     </div>
   </div>
 </section>
@@ -1088,7 +1089,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="sec-head reveal">
       <span class="eyebrow">Услуги</span>
       <h2 class="sec">Один подрядчик на всё: <em>от ежедневной уборки до вывоза снега</em></h2>
-      <p class="lead">Не нужно искать разных исполнителей на офис, территорию и окна. Заключаете один договор — мы закрываем весь объём, включая расходники и отчётность.</p>
+      <p class="lead">Не нужно искать разных исполнителей на офис, территорию и окна. Заключаете один договор, мы закрываем весь объём, включая расходники и отчётность.</p>
     </div>
 
     <div class="svc-grid">
@@ -1111,7 +1112,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <article class="svc reveal">
         <div class="svc__ico"><svg class="ico"><use href="#i-factory"/></svg></div>
         <h3>Уборка после ремонта</h3>
-        <p>Строительная пыль, следы краски, клея и затирки, мойка окон и полов. Сдаём объект под ключ — без «доделок».</p>
+        <p>Строительная пыль, следы краски, клея и затирки, мойка окон и полов. Сдаём объект под ключ, без «доделок».</p>
         <div class="svc__price"><b>от 40 ₽</b><span>/ м²</span></div>
         <button class="svc__more" type="button" data-service="Уборка после ремонта">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
       </article>
@@ -1151,14 +1152,14 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <article class="svc reveal">
         <div class="svc__ico"><svg class="ico"><use href="#i-users"/></svg></div>
         <h3>Аутсорсинг и подменный персонал</h3>
-        <p>Подмена на время больничных и отпусков, уборщицы в штате подрядчика — без кадрового учёта и налогов.</p>
+        <p>Подмена на время больничных и отпусков, уборщицы в штате подрядчика, без кадрового учёта и налогов.</p>
         <div class="svc__price"><b>от 220 ₽</b><span>/ час</span></div>
         <button class="svc__more" type="button" data-service="Аутсорсинг персонала">Рассчитать <svg class="ico"><use href="#i-arrow"/></svg></button>
       </article>
     </div>
 
     <div class="hero-cta" style="margin-top:26px;justify-content:center">
-      <button class="btn btn--ghost" type="button" data-open-ai><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Не нашли услугу? Спросите ИИ-консультанта</button>
+      <button class="btn btn--ghost" type="button" data-open-chat><svg class="ico" style="width:17px;height:17px"><use href="#i-chat"/></svg>Не нашли услугу? Спросите консультанта</button>
     </div>
   </div>
 </section>
@@ -1169,7 +1170,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="sec-head reveal">
       <span class="eyebrow">Что входит в работу</span>
       <h2 class="sec">Не «протереть пыль», <em>а регламент под ваш объект</em></h2>
-      <p class="lead">Перед стартом мы описываем зоны, перечень работ и периодичность. Вы точно знаете, что и как часто делается — это приложение к договору.</p>
+      <p class="lead">Перед стартом мы описываем зоны, перечень работ и периодичность. Вы точно знаете, что и как часто делается. Это приложение к договору.</p>
     </div>
 
     <div class="tabs" role="tablist" aria-label="Тип объекта">
@@ -1182,12 +1183,12 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="tabpanel" id="panel-office" role="tabpanel" aria-labelledby="tab-office">
       <div class="scope">
         <div class="scope__list">
-          <h3>Офис / бизнес-центр</h3>
+          <h3>Офис / деловой центр</h3>
           <p>Ежедневная поддерживающая уборка по графику до начала рабочего дня и в течение дня.</p>
           <ul>
             <li><svg class="ico"><use href="#i-check"/></svg>Кабинеты, опенспейсы, переговорные: пыль, полы, рабочие поверхности</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Санузлы: мойка и дезинфекция, замена расходников, контроль запасов</li>
-            <li><svg class="ico"><use href="#i-check"/></svg>Кухня и кофе-поинт: поверхности, техника, посуда, вынос мусора</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Кухня и кофе зона: поверхности, техника, посуда, вынос мусора</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Входная группа, стекло, лифты, зоны ресепшн</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Вынос мусора и ТКО, содержание контейнерных площадок</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Отчётность: журналы уборки, акты, фотофиксация по запросу</li>
@@ -1197,7 +1198,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
           <div class="big">От графика зависят <em>деньги</em></div>
           <p>Абонентский договор дешевле разовых вызовов: персонал закреплён, логистика учтена, закупка химии идёт оптом.</p>
           <div class="scope__kpi">
-            <div><b>1–2 дня</b><span>на запуск объекта после подписания</span></div>
+            <div><b>1 или 2 дня</b><span>на запуск объекта после подписания</span></div>
             <div><b>24/7</b><span>работаем, пока офис закрыт</span></div>
             <div><b>0 ₽</b><span>за тестовую уборку перед договором</span></div>
           </div>
@@ -1222,7 +1223,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         </div>
         <div class="scope__aside">
           <div class="big">Техника решает <em>скорость</em></div>
-          <p>На площади от 3 000 м² ручная уборка экономически бессмысленна. Мы считаем стоимость с учётом механизации — это дешевле в пересчёте на м².</p>
+          <p>На площади от 3 000 м² ручная уборка экономически бессмысленна. Мы считаем стоимость с учётом механизации, это дешевле в пересчёте на м².</p>
           <div class="scope__kpi">
             <div><b>до 2 000 м²/ч</b><span>производительность райдера</span></div>
             <div><b>3 модели</b><span>техники в собственном парке</span></div>
@@ -1237,22 +1238,22 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <div class="scope">
         <div class="scope__list">
           <h3>Магазин и ритейл</h3>
-          <p>Уборка до открытия и уборка в течение дня — без остановки торговли.</p>
+          <p>Уборка до открытия и уборка в течение дня, без остановки торговли.</p>
           <ul>
             <li><svg class="ico"><use href="#i-check"/></svg>Торговый зал: полы, пыль на полках, зеркала, цокольные зоны</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Витрины и входные группы: мойка стекла, следы от рук</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Примерочные, кассовая зона, зона ожидания</li>
-            <li><svg class="ico"><use href="#i-check"/></svg>Уборка до 08:00 — к открытию объект в идеальном виде</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Уборка до 08:00, к открытию объект в идеальном виде</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Санузлы для сотрудников и посетителей, расходники</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Оперативный выход по заявке: разливы, поломки, ЧП</li>
           </ul>
         </div>
         <div class="scope__aside">
           <div class="big">Чистота кассы <em>видна всем</em></div>
-          <p>Грязный пол у кассы — минус к среднему чеку. На бригаде лежит поддержание стандарта компании, а не разовая приборка.</p>
+          <p>Грязный пол у кассы это минус к среднему чеку. На бригаде лежит поддержание стандарта компании, а не разовая приборка.</p>
           <div class="scope__kpi">
             <div><b>до 08:00</b><span>сдаём объект к открытию</span></div>
-            <div><b>2–4 ч</b><span>выезд по заявке в городе</span></div>
+            <div><b>2 или 4 часа</b><span>выезд по заявке в городе</span></div>
             <div><b>1 договор</b><span>на все точки сети</span></div>
           </div>
           <a class="btn btn--sm" href="#lead">Рассчитать сеть</a>
@@ -1264,7 +1265,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <div class="scope">
         <div class="scope__list">
           <h3>Прилегающая территория</h3>
-          <p>Круглогодичное содержание: летом — чистота, зимой — безопасные проходы.</p>
+          <p>Круглогодичное содержание: летом чистота, зимой безопасные проходы.</p>
           <ul>
             <li><svg class="ico"><use href="#i-check"/></svg>Тротуары, парковки, въезды: подметание и мойка механизированно</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Газоны и клумбы: покос, сбор листвы, содержание урн</li>
@@ -1276,7 +1277,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         </div>
         <div class="scope__aside">
           <div class="big">Зимой штраф дороже <em>договора</em></div>
-          <p>Неубранный снег — это травмы, претензии и предписания. Мы берём погодные риски на себя и держим технику наготове.</p>
+          <p>Неубранный снег означает травмы, претензии и предписания. Мы берём погодные риски на себя и держим технику наготове.</p>
           <div class="scope__kpi">
             <div><b>посыпка</b><span>в течение 2 часов после снегопада</span></div>
             <div><b>своя техника</b><span>самосвалы, погрузчики, трактор</span></div>
@@ -1295,14 +1296,14 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="sec-head reveal">
       <span class="eyebrow">Цены</span>
       <h2 class="sec">Прозрачный прайс <em>без скрытых доплат</em></h2>
-      <p class="lead">Цены за 1 м² — ориентировочные, фиксируются в смете после осмотра. Итог зависит от площади, периодичности и степени загрязнения — обсудим это сразу, а не после выставления счёта.</p>
+      <p class="lead">Цены за 1 м² ориентировочные, фиксируются в смете после осмотра. Итог зависит от площади, периодичности и степени загрязнения, обсудим это сразу, а не после выставления счёта.</p>
     </div>
 
     <div class="price-wrap">
       <div class="table-card reveal">
         <div class="table-scroll">
           <table class="price">
-            <caption>Прайс-лист на 2026 год<span>Ориентировочные цены. Точная стоимость — по итогам бесплатного осмотра.</span></caption>
+            <caption>Прайс лист на 2026 год<span>Ориентировочные цены. Точная стоимость по итогам бесплатного осмотра.</span></caption>
             <thead>
               <tr><th scope="col">Услуга</th><th scope="col">Цена</th><th scope="col">Мин. заказ</th></tr>
             </thead>
@@ -1321,15 +1322,15 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
             </tbody>
           </table>
         </div>
-        <p class="price-note">Цена зависит от площади, периодичности, степени загрязнения и материалов отделки. Срочные заказы в выходные, праздники и ночное время — по повышенному тарифу, всегда согласованному заранее.</p>
+        <p class="price-note">Цена зависит от площади, периодичности, степени загрязнения и материалов отделки. Срочные заказы в выходные, праздники и ночное время по повышенному тарифу, всегда согласованному заранее.</p>
       </div>
 
       <aside class="price-aside">
         <div class="price-card-side reveal">
           <h3>Пригласите нас на тендер</h3>
-          <p>Готовим коммерческое предложение по 44-ФЗ и 223-ФЗ, с полным пакетом документов и фиксированной ценой на срок договора.</p>
+          <p>Готовим коммерческое предложение по 44 ФЗ и 223 ФЗ, с полным пакетом документов и фиксированной ценой на срок договора.</p>
           <ul>
-            <li><svg class="ico"><use href="#i-check"/></svg>СРО фасилити-операторов, ISO</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>СРО фасилити операторов, ISO</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Опыт с бюджетными учреждениями</li>
             <li><svg class="ico"><use href="#i-check"/></svg>Полный комплект закрывающих документов</li>
           </ul>
@@ -1337,7 +1338,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         </div>
         <div class="price-side-light reveal">
           <b>Нужен расчёт под площадь?</b>
-          <p>Введите метраж в калькуляторе — покажем ориентир по прайсу и пришлём смету после осмотра.</p>
+          <p>Введите метраж в калькуляторе: покажем ориентир по прайсу и пришлём смету после осмотра.</p>
           <a class="link-underline" href="#calc" style="display:inline-block;margin-top:10px;font-size:.85rem;font-weight:700">Открыть калькулятор →</a>
         </div>
       </aside>
@@ -1349,41 +1350,41 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 <section class="alt" id="why">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Почему «Прайм-Клининг»</span>
+      <span class="eyebrow">Почему «Прайм Клининг»</span>
       <h2 class="sec">Почему нас не меняют: <em>шесть причин</em></h2>
       <p class="lead">Мы работаем с 2006 года и знаем: клиента теряют не на цене, а на срывах графика и «невидимых» доплатах. Поэтому выстроили процессы так, чтобы этого не происходило.</p>
     </div>
 
     <div class="adv-grid">
       <article class="adv reveal">
-        <div class="adv__n">01 — Скорость</div>
+        <div class="adv__n">01. Скорость</div>
         <h3>Начнём на следующий день</h3>
-        <p>Осмотр — в течение суток, бригада выходит на объект на следующий день после звонка. <b>Простоев на вашей стороне нет.</b></p>
+        <p>Осмотр в течение суток, бригада выходит на объект на следующий день после звонка. <b>Простоев на вашей стороне нет.</b></p>
       </article>
       <article class="adv reveal">
-        <div class="adv__n">02 — Качество</div>
+        <div class="adv__n">02. Качество</div>
         <h3>Бесплатная тестовая уборка</h3>
         <p>Сначала показываем результат на деле, потом подписываем договор. <b>Оплата только за подтверждённые вами работы</b>, без предоплаты.</p>
       </article>
       <article class="adv reveal">
-        <div class="adv__n">03 — Безопасность</div>
+        <div class="adv__n">03. Безопасность</div>
         <h3>Химия по требованиям Роспотребнадзора</h3>
-        <p>Сертифицированные моющие и дезинфицирующие средства, инструктаж персонала, <b>журналы контроля</b> — готовы к любой проверке.</p>
+        <p>Сертифицированные моющие и дезинфицирующие средства, инструктаж персонала, <b>журналы контроля</b>, готовы к любой проверке.</p>
       </article>
       <article class="adv reveal">
-        <div class="adv__n">04 — Удобство</div>
+        <div class="adv__n">04. Удобство</div>
         <h3>Не только уборка</h3>
         <p>Химчистка мебели, расходники для туалетных комнат, озеленение, аренда грязезащитных ковриков. <b>Один подрядчик на всю эксплуатацию.</b></p>
       </article>
       <article class="adv reveal">
-        <div class="adv__n">05 — Прозрачность</div>
+        <div class="adv__n">05. Прозрачность</div>
         <h3>Белый ФМ и СРО</h3>
-        <p>Регистрация в госреестре «Белый ФМ» и членство в СРО фасилити-операторов: <b>официальные зарплаты, налоги и ГОСТы</b>.</p>
+        <p>Регистрация в госреестре «Белый ФМ» и членство в СРО фасилити операторов: <b>официальные зарплаты, налоги и ГОСТы</b>.</p>
       </article>
       <article class="adv reveal">
-        <div class="adv__n">06 — Контроль</div>
+        <div class="adv__n">06. Контроль</div>
         <h3>Электронный контроль выхода</h3>
-        <p>Система фиксирует приход и нахождение персонала на объекте. <b>Опоздание или отсутствие видно сразу</b> — и сразу исправляется.</p>
+        <p>Система фиксирует приход и нахождение персонала на объекте. <b>Опоздание или отсутствие видно сразу</b>, и сразу исправляется.</p>
       </article>
     </div>
   </div>
@@ -1400,24 +1401,24 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="compare">
       <div class="cmp cmp--us reveal">
         <span class="cmp__badge">выгоднее</span>
-        <h3><svg class="ico"><use href="#i-spark"/></svg>Прайм-Клининг</h3>
+        <h3><svg class="ico"><use href="#i-spark"/></svg>Прайм Клининг</h3>
         <ul>
-          <li><svg class="ico"><use href="#i-check"/></svg>Бригада закреплена за объектом, при болезни — подмена в тот же день</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Бригада закреплена за объектом, при болезни подмена в тот же день</li>
           <li><svg class="ico"><use href="#i-check"/></svg>Бесплатная тестовая уборка и оплата по факту, без предоплаты</li>
           <li><svg class="ico"><use href="#i-check"/></svg>Полный пакет документов: договор, акты, счета, журналы, СРО</li>
           <li><svg class="ico"><use href="#i-check"/></svg>Ответственность за имущество закреплена в договоре</li>
-          <li><svg class="ico"><use href="#i-check"/></svg>Своя техника и профессиональная химия — без «пятен после мойки»</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Своя техника и профессиональная химия без «пятен после мойки»</li>
           <li><svg class="ico"><use href="#i-check"/></svg>Электронный контроль выхода и отчёт по объекту</li>
         </ul>
       </div>
       <div class="cmp cmp--them reveal">
         <h3><svg class="ico"><use href="#i-minus"/></svg>Частная бригада / уборщица в штате</h3>
         <ul>
-          <li><svg class="ico"><use href="#i-close"/></svg>Заболел единственный человек — объект стоит, замены нет</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Заболел единственный человек, объект стоит, замены нет</li>
           <li><svg class="ico"><use href="#i-close"/></svg>Аванс вперёд и «доплатите за сложность» по ходу работ</li>
-          <li><svg class="ico"><use href="#i-close"/></svg>Налоги, кадровый учёт, больничные и отпуска — на вас</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Налоги, кадровый учёт, больничные и отпуска на вас</li>
           <li><svg class="ico"><use href="#i-close"/></svg>Качество зависит от настроения, стандарта нет</li>
-          <li><svg class="ico"><use href="#i-close"/></svg>Испорченная отделка — отвечать некому</li>
+          <li><svg class="ico"><use href="#i-close"/></svg>Испорченная отделка, отвечать некому</li>
           <li><svg class="ico"><use href="#i-close"/></svg>Проверить фактический выход практически невозможно</li>
         </ul>
       </div>
@@ -1431,7 +1432,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="sec-head reveal">
       <span class="eyebrow">Как мы работаем</span>
       <h2 class="sec">Как проходит запуск: <em>пять шагов</em></h2>
-      <p class="lead">Средний срок от первого звонка до выхода бригады — двое суток. Осмотр и тестовая уборка бесплатны и не обязывают вас подписывать договор.</p>
+      <p class="lead">Средний срок от первого звонка до выхода бригады составляет двое суток. Осмотр и тестовая уборка бесплатны и не обязывают вас подписывать договор.</p>
     </div>
     <div class="steps">
       <div class="step reveal">
@@ -1450,11 +1451,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <div class="step__dot">3</div>
         <time>перед договором</time>
         <h3>Тестовая уборка</h3>
-        <p>Показываем качество на деле — бесплатно. Вы оцениваете результат и решаете, работать ли дальше.</p>
+        <p>Показываем качество на деле, бесплатно. Вы оцениваете результат и решаете, работать ли дальше.</p>
       </div>
       <div class="step reveal">
         <div class="step__dot">4</div>
-        <time>1–2 дня</time>
+        <time>1 или 2 дня</time>
         <h3>Договор и регламент</h3>
         <p>Фиксируем цену, график, зоны и ответственность. Подписываем приложение с перечнем работ.</p>
       </div>
@@ -1462,7 +1463,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <div class="step__dot">5</div>
         <time>каждый месяц</time>
         <h3>Работа и контроль</h3>
-        <p>Бригада на объекте, менеджер на связи, акты и отчёты — ежемесячно. Качество проверяем сами.</p>
+        <p>Бригада на объекте, менеджер на связи, акты и отчёты ежемесячно. Качество проверяем сами.</p>
       </div>
     </div>
   </div>
@@ -1507,7 +1508,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="sec-head reveal">
       <span class="eyebrow">Отзывы</span>
       <h2 class="sec">Что говорят <em>наши клиенты</em></h2>
-      <p class="lead">Работаем с промышленными предприятиями, ритейлом, бюджетной сферой и банками. Ниже — типичные отзывы по каждому направлению.</p>
+      <p class="lead">Работаем с промышленными предприятиями, ритейлом, бюджетной сферой и банками. Ниже типичные отзывы по каждому направлению.</p>
     </div>
     <div class="reviews">
       <article class="review reveal">
@@ -1517,7 +1518,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
           </div>
           <span class="review__seg">Производство</span>
         </div>
-        <p>«До этого пробовали двух подрядчиков — оба срывались на графике в сезон. Здесь третий год: бригада приходит до смены, полы в цеху моют машиной, замечаний по журналам нет. Отдельно ценю, что замена сотрудника — не наша головная боль».</p>
+        <p>«До этого пробовали двух подрядчиков: оба срывались на графике в сезон. Здесь третий год: бригада приходит до смены, полы в цеху моют машиной, замечаний по журналам нет. Отдельно ценю, что замена сотрудника не наша головная боль».</p>
         <div class="review__who">
           <span class="review__ava">АС</span>
           <div><b>Алексей С.</b><span>начальник АХО, деревообрабатывающее производство</span></div>
@@ -1530,7 +1531,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
           </div>
           <span class="review__seg">Ритейл</span>
         </div>
-        <p>«Магазин в торговом центре: главное — к открытию всё сияет, и нас не видно в зале в течение дня. Работают до 08:00, витрины протирают без разводов. По акту раз в месяц всё прозрачно, сюрпризов в счёте не было».</p>
+        <p>«Магазин в торговом центре: главное, к открытию всё сияет, и нас не видно в зале в течение дня. Работают до 08:00, витрины протирают без разводов. По акту раз в месяц всё прозрачно, сюрпризов в счёте не было».</p>
         <div class="review__who">
           <span class="review__ava">МК</span>
           <div><b>Марина К.</b><span>управляющая сетью магазинов</span></div>
@@ -1543,51 +1544,51 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
           </div>
           <span class="review__seg">Бюджетная сфера</span>
         </div>
-        <p>«Заходили через тендер, документы собрали без единого замечания. Тестовую уборку сделали ещё до подписания — по факту сравнивали два подрядчика и выбрали по результату, а не по презентации. Работаем второй контракт».</p>
+        <p>«Заходили через тендер, документы собрали без единого замечания. Тестовую уборку сделали ещё до подписания, по факту сравнивали два подрядчика и выбрали по результату, а не по презентации. Работаем второй контракт».</p>
         <div class="review__who">
           <span class="review__ava">ИД</span>
           <div><b>Ирина Д.</b><span>заместитель директора по эксплуатации</span></div>
         </div>
       </article>
     </div>
-    <p style="font-size:.74rem;color:var(--muted);margin-top:16px">Отзывы приведены как пример подачи для демо-версии сайта.</p>
+    <p style="font-size:.74rem;color:var(--muted);margin-top:16px">Отзывы приведены как пример подачи для демонстрационной версии сайта.</p>
   </div>
 </section>
 
-<!-- ВИТРИНА ИИ-КОНСУЛЬТАНТА -->
-<section class="ai-showcase" id="ai-consultant">
+<!-- ВИТРИНА КОНСУЛЬТАНТА -->
+<section class="chat-showcase" id="chat-consultant">
   <div class="wrap">
     <div class="reveal">
-      <span class="eyebrow">ИИ-консультант</span>
-      <h2 class="sec" style="color:#fff">Ночью, в выходные и в пик заявок <em>отвечает ИИ</em></h2>
+      <span class="eyebrow">консультант</span>
+      <h2 class="sec" style="color:#fff">Ночью, в выходные и в пик заявок <em>отвечает Алёна</em></h2>
       <p class="lead">Алёна знает прайс, услуги, договор и документы. Считает стоимость по площади, снимает возражения и передаёт менеджеру готовую заявку с параметрами объекта.</p>
       <ul class="cta-list">
         <li><svg class="ico"><use href="#i-check"/></svg>Мгновенный расчёт по прайсу: 20 секунд вместо звонка</li>
-        <li><svg class="ico"><use href="#i-check"/></svg>Понимает свободный текст: «уборка после ремонта 1 200 м²»</li>
-        <li><svg class="ico"><use href="#i-check"/></svg>Собирает объект, площадь и телефон — заявка уходит в CRM</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Понимает запрос с полуслова: «уборка после ремонта 1 200 м²»</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Собирает объект, площадь и телефон, передаёт заявку менеджеру</li>
       </ul>
-      <button class="btn btn--light" type="button" data-open-ai>
+      <button class="btn btn--light" type="button" data-open-chat>
         <svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Попробовать диалог
       </button>
-      <p style="font-size:.76rem;color:#8FB3BB;margin-top:14px">Это рабочий образец: чат запускается прямо на странице, без установки и настроек.</p>
+      <p style="font-size:.76rem;color:#8FB3BB;margin-top:14px">Это рабочий образец: диалог запускается прямо на странице, без установки и настроек.</p>
     </div>
 
-    <div class="ai-demo-card reveal" aria-hidden="true">
-      <div class="ai-demo-card__head">
-        <span class="av"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2l1.25 3.3 3.3 1.25-3.3 1.25L12 11.3 10.75 8 7.45 6.75l3.3-1.25z" fill="currentColor"/><rect x="4.4" y="12.1" width="15.2" height="9.6" rx="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="9.1" cy="16.9" r="1.3" fill="currentColor"/><circle cx="14.9" cy="16.9" r="1.3" fill="currentColor"/></svg></span>
-        <b>Алёна <em>ИИ</em></b>
-        <span><i></i>онлайн</span>
+    <div class="chat-demo-card reveal" aria-hidden="true">
+      <div class="chat-demo-card__head">
+        <span class="av"><img src="assets/consultant.jpg" alt=""></span>
+        <b>Алёна <em>менеджер</em></b>
+        <span><i></i>на связи 24/7</span>
       </div>
-      <div class="ai-demo-msgs">
-        <div class="b">Здравствуйте! Уборка офиса 600 м² — <b>от 33 000 ₽/мес</b> ежедневно. Нужна разовая или генеральная?</div>
+      <div class="chat-demo-msgs">
+        <div class="b">Здравствуйте! Уборка офиса 600 м², <b>от 33 000 ₽/мес</b> ежедневно. Нужна разовая или генеральная?</div>
         <div class="u">Нужна ежедневная, оплата по факту</div>
-        <div class="b">Принял: офис, 600 м², ежедневная. Бесплатная тестовая уборка — включена. Оставьте телефон, менеджер пришлёт смету за 15 минут.</div>
-        <div class="ai-demo-lead">
-          <div class="ai-demo-lead__top">Заявка на расчёт <span>№ ДЕМО-2417</span></div>
-          <div class="ai-demo-lead__body"><span>Объект: офис, 600 м²</span><b>от 33 000 ₽/мес</b></div>
+        <div class="b">Принял: офис, 600 м², ежедневная. Бесплатная тестовая уборка включена. Оставьте телефон, менеджер пришлёт смету за 15 минут.</div>
+        <div class="chat-demo-lead">
+          <div class="chat-demo-lead__top">Заявка на расчёт <span>№ ДЕМО 2417</span></div>
+          <div class="chat-demo-lead__body"><span>Объект: офис, 600 м²</span><b>от 33 000 ₽/мес</b></div>
         </div>
       </div>
-      <div class="ai-demo-card__foot"><svg class="ico"><use href="#i-shield"/></svg>Демо-образец диалога ИИ-консультанта</div>
+      <div class="chat-demo-card__foot"><svg class="ico"><use href="#i-shield"/></svg>Демо диалога с консультантом</div>
     </div>
   </div>
 </section>
@@ -1601,11 +1602,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <h2 class="sec" style="margin-bottom:20px">Отвечаем на то, <em>что спрашивают чаще всего</em></h2>
         <div class="faq__aside">
           <h3>Не нашли свой вопрос?</h3>
-          <p>ИИ-консультант знает прайс, услуги и порядок работы. Ответит мгновенно в любое время — даже ночью.</p>
-          <button class="btn btn--light" type="button" data-open-ai><svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Открыть чат</button>
-          <div class="ai-note">
+          <p>Алёна знает прайс, услуги и порядок работы. Мы на связи 24/7, ответим за 15 секунд, даже ночью.</p>
+          <button class="btn btn--light" type="button" data-open-chat><svg class="ico" style="width:17px;height:17px"><use href="#i-spark"/></svg>Открыть чат</button>
+          <div class="chat-note">
             <svg class="ico"><use href="#i-shield"/></svg>
-            <span>Чат — демонстрационный образец ИИ-консультанта. Он работает на встроенной базе знаний сайта и передаёт заявку менеджеру.</span>
+            <span>Демо: консультант отвечает по прайсу и услугам сайта, заявку передаёт менеджеру.</span>
           </div>
         </div>
       </div>
@@ -1613,35 +1614,35 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <div class="faq__list reveal">
         <details class="q" open>
           <summary>Уборка действительно бесплатная для теста?</summary>
-          <div class="a">Да. Мы делаем <b>разовую тестовую уборку бесплатно</b> — на объекте или территории. Вы оцениваете результат на деле и только потом решаете, заключать договор или нет. Предоплата не требуется: платите за фактически выполненные и подтверждённые вами работы.</div>
+          <div class="a">Да. Мы делаем <b>разовую тестовую уборку бесплатно</b> на объекте или территории. Вы оцениваете результат на деле и только потом решаете, заключать договор или нет. Предоплата не требуется: платите за фактически выполненные и подтверждённые вами работы.</div>
         </details>
         <details class="q">
           <summary>Как формируется цена и почему «от»?</summary>
-          <div class="a">Ориентир считаем по прайсу за 1 м². Финальная цена зависит от площади, периодичности (регулярный клининг по абонентскому договору дешевле разового), степени загрязнения, материалов отделки (мрамор, ценные породы дерева требуют специальной химии) и особых условий — срочность, ночь, выходные. Все условия фиксируем <b>до начала работ</b>.</div>
+          <div class="a">Ориентир считаем по прайсу за 1 м². Финальная цена зависит от площади, периодичности (регулярный клининг по абонентскому договору дешевле разового), степени загрязнения, материалов отделки (мрамор, ценные породы дерева требуют специальной химии) и особых условий: срочность, ночь, выходные. Все условия фиксируем <b>до начала работ</b>.</div>
         </details>
         <details class="q">
           <summary>Сколько времени занимает запуск объекта?</summary>
-          <div class="a">Заявку принимаем круглосуточно, менеджер отвечает в течение 15 минут. Осмотр — в течение суток, бригада выходит на объект <b>на следующий день</b> после звонка. Договор и регламент уборки оформляем параллельно, без остановки работ.</div>
+          <div class="a">Заявку принимаем круглосуточно, менеджер отвечает в течение 15 минут. Осмотр в течение суток, бригада выходит на объект <b>на следующий день</b> после звонка. Договор и регламент уборки оформляем параллельно, без остановки работ.</div>
         </details>
         <details class="q">
           <summary>Кто отвечает, если испортили имущество?</summary>
-          <div class="a">Ответственность за сохранность имущества закреплена в договоре. Персонал работает с сертифицированной химией и по инструкциям, поэтому риск повреждения минимален, но если что-то произошло — <b>ущерб компенсируем</b>.</div>
+          <div class="a">Ответственность за сохранность имущества закреплена в договоре. Персонал работает с сертифицированной химией и по инструкциям, поэтому риск повреждения минимален, но если что-то произошло, <b>ущерб компенсируем</b>.</div>
         </details>
         <details class="q">
           <summary>Работаете ли вы с бюджетными учреждениями и тендерами?</summary>
-          <div class="a">Да. Мы участвуем в закупках по <b>44-ФЗ и 223-ФЗ</b>, состоим в СРО фасилити-операторов, зарегистрированы в реестре «Белый ФМ». Готовим коммерческое предложение с полным комплектом документов и фиксированной ценой на срок договора.</div>
+          <div class="a">Да. Мы участвуем в закупках по <b>44 ФЗ и 223 ФЗ</b>, состоим в СРО фасилити операторов, зарегистрированы в реестре «Белый ФМ». Готовим коммерческое предложение с полным комплектом документов и фиксированной ценой на срок договора.</div>
         </details>
         <details class="q">
           <summary>Что будет, если сотрудник заболел?</summary>
-          <div class="a">Это наша зона ответственности. У нас есть подменный персонал: <b>замена выходит в тот же день</b>, объект не останавливается. Также применяем электронный контроль выхода — опоздание или отсутствие видно сразу, а не по жалобе на следующий день.</div>
+          <div class="a">Это наша зона ответственности. У нас есть подменный персонал: <b>замена выходит в тот же день</b>, объект не останавливается. Также применяем электронный контроль выхода: опоздание или отсутствие видно сразу, а не по жалобе на следующий день.</div>
         </details>
         <details class="q">
           <summary>Какие документы вы предоставляете?</summary>
-          <div class="a">Договор, приложение с перечнем работ и периодичностью, акты выполненных работ, счета и закрывающие документы для бухгалтерии, журналы уборки и дезинфекции. По запросу — фотоотчёт до и после.</div>
+          <div class="a">Договор, приложение с перечнем работ и периодичностью, акты выполненных работ, счета и закрывающие документы для бухгалтерии, журналы уборки и дезинфекции. По запросу: фотоотчёт до и после.</div>
         </details>
         <details class="q">
           <summary>Можно ли заказать разовую уборку без договора?</summary>
-          <div class="a">Можно. Разовая уборка — генеральная, после ремонта, мойка окон, дезинфекция — выполняется по заявке с минимальной суммой заказа от 1 500–2 000 ₽ в зависимости от услуги. Но регулярное обслуживание по абонентскому договору <b>обойдётся дешевле</b> в пересчёте на месяц.</div>
+          <div class="a">Можно. Разовая уборка (генеральная, после ремонта, мойка окон, дезинфекция) выполняется по заявке с минимальной суммой заказа от 1 500 до 2 000 ₽ в зависимости от услуги. Но регулярное обслуживание по абонентскому договору <b>обойдётся дешевле</b> в пересчёте на месяц.</div>
         </details>
       </div>
     </div>
@@ -1654,11 +1655,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="reveal">
       <span class="eyebrow" style="color:#4FE0CE">Заявка</span>
       <h2>Посчитаем ваш объект и покажем <em>качество бесплатно</em></h2>
-      <p class="sub">Оставьте контакт — менеджер перезвонит в течение 15 минут, уточнит площадь и пришлёт смету. Осмотр и тестовая уборка бесплатны.</p>
+      <p class="sub">Оставьте контакт, менеджер перезвонит в течение 15 минут, уточнит площадь и пришлёт смету. Осмотр и тестовая уборка бесплатны.</p>
       <ul class="cta-list">
         <li><svg class="ico"><use href="#i-check"/></svg>Смета с фиксированной ценой на срок договора</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Без предоплаты, оплата по факту выполненных работ</li>
-        <li><svg class="ico"><use href="#i-check"/></svg>КП по 44-ФЗ и 223-ФЗ, полный пакет документов</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>КП по 44 ФЗ и 223 ФЗ, полный пакет документов</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Работаем круглосуточно, включая праздники</li>
       </ul>
       <p style="font-size:.8rem;color:#8FB3BB;display:flex;gap:8px;align-items:center">
@@ -1670,7 +1671,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="lead-form reveal">
       <form id="lead-form" novalidate>
         <h3>Расчёт стоимости</h3>
-        <p class="f-sub">Заполните — и мы вернёмся с ценой, а не с «давайте обсудим».</p>
+        <p class="f-sub">Заполните, и мы вернёмся с ценой, а не с «давайте обсудим».</p>
         <div class="row2">
           <div class="field">
             <label for="lf-name">Как к вам обращаться</label>
@@ -1687,7 +1688,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         </div>
         <label class="consent">
           <input type="checkbox" id="lf-consent" checked>
-          <span>Согласен на обработку персональных данных. Это демо-форма: данные никуда не отправляются.</span>
+          <span>Согласен на обработку персональных данных. Это демонстрационная форма: данные никуда не отправляются.</span>
         </label>
         <button class="btn btn--block" type="submit">Получить смету за 15 минут</button>
       </form>
@@ -1706,7 +1707,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     <div class="sec-head reveal">
       <span class="eyebrow">Контакты</span>
       <h2 class="sec">Свяжитесь <em>удобным способом</em></h2>
-      <p class="lead">Диспетчерская принимает заявки круглосуточно. Если удобнее текстом — напишите ИИ-консультанту, он ответит сразу и передаст заявку менеджеру.</p>
+      <p class="lead">Диспетчерская принимает заявки круглосуточно. Если удобнее текстом, напишите консультанту, он ответит сразу и передаст заявку менеджеру.</p>
     </div>
 
     <div class="contacts">
@@ -1714,11 +1715,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <div class="contact-list">
           <a class="contact-item" href="tel:+79128636500">
             <span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span>
-            <span><b>8 912 863-65-00</b><span>круглосуточно, отдел продаж</span></span>
+            <span><b>8 912 863 65 00</b><span>круглосуточно, отдел продаж</span></span>
           </a>
           <a class="contact-item" href="tel:+78212272732">
             <span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span>
-            <span><b>8 8212 27-27-32</b><span>офис в Сыктывкаре</span></span>
+            <span><b>8 8212 27 27 32</b><span>офис в Сыктывкаре</span></span>
           </a>
           <a class="contact-item" href="mailto:commercial@prime-cleaning.ru">
             <span class="ci"><svg class="ico"><use href="#i-mail"/></svg></span>
@@ -1773,7 +1774,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
           </svg>
         </div>
         <div class="map-card__box">
-          <b>Офис «Прайм-Клининг»</b>
+          <b>Офис «Прайм Клининг»</b>
           <span>г. Сыктывкар, ул. Маркова, д. 20</span>
           <a href="#lead">Построить маршрут <svg class="ico" style="width:12px;height:12px"><use href="#i-arrow"/></svg></a>
         </div>
@@ -1790,10 +1791,10 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <div>
         <a class="logo" href="#top">
           <span class="logo__mark"><svg class="ico"><use href="#i-spark"/></svg></span>
-          <span><b>Прайм-Клининг</b><small>профессиональные клининговые услуги</small></span>
+          <span><b>Прайм Клининг</b><small>профессиональные клининговые услуги</small></span>
         </a>
         <p class="f-desc">Клининг для бизнеса с 2006 года. Комплексная и разовая уборка, мойка окон и фасадов, дезинфекция, вывоз снега и ТБО, аутсорсинг персонала.</p>
-        <p class="f-desc" style="margin-top:10px">Центральная и Северо-Западная часть России: Республика Коми, Кировская и Нижегородская области.</p>
+        <p class="f-desc" style="margin-top:10px">Центральная Россия и северные регионы: Республика Коми, Кировская и Нижегородская области.</p>
       </div>
       <div>
         <h3>Услуги</h3>
@@ -1812,7 +1813,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         <ul>
           <li><a href="#why">Почему мы</a></li>
           <li><a href="#process">Как работаем</a></li>
-          <li><a href="#prices">Прайс-лист</a></li>
+          <li><a href="#prices">Прайс лист</a></li>
           <li><a href="#reviews">Отзывы</a></li>
           <li><a href="#team">Команда</a></li>
           <li><a href="#faq">Вопросы и ответы</a></li>
@@ -1820,8 +1821,8 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       </div>
       <div>
         <h3>Контакты</h3>
-        <a class="f-phone" href="tel:+79128636500">8 912 863-65-00</a>
-        <a class="f-phone" href="tel:+78212272732" style="font-size:.92rem;font-weight:700">8 8212 27-27-32</a>
+        <a class="f-phone" href="tel:+79128636500">8 912 863 65 00</a>
+        <a class="f-phone" href="tel:+78212272732" style="font-size:.92rem;font-weight:700">8 8212 27 27 32</a>
         <ul style="margin-top:10px">
           <li><a href="mailto:commercial@prime-cleaning.ru">commercial@prime-cleaning.ru</a></li>
           <li>Сыктывкар, ул. Маркова, 20</li>
@@ -1831,7 +1832,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       </div>
     </div>
     <div class="bottom">
-      <span>© 2026 «Прайм-Клининг» · демо-версия лендинга</span>
+      <span>© 2026 «Прайм Клининг» · демонстрационная версия лендинга</span>
       <span>Политика обработки персональных данных · Карта сайта</span>
     </div>
   </div>
@@ -1840,50 +1841,46 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 <!-- мобильная панель -->
 <div class="mobilebar">
   <a class="mb-call" href="tel:+79128636500"><svg class="ico"><use href="#i-phone"/></svg>Позвонить</a>
-  <button class="mb-cta" type="button" data-open-ai><svg class="ico"><use href="#i-spark"/></svg>Спросить ИИ</button>
+  <button class="mb-cta" type="button" data-open-chat><svg class="ico"><use href="#i-spark"/></svg>Спросить</button>
 </div>
 
-<!-- ИИ-КОНСУЛЬТАНТ -->
-<div class="ai-dock" id="ai">
-  <div class="ai-teaser" id="ai-teaser" role="button" tabindex="0" aria-label="ИИ-консультант: подберу услугу и посчитаю стоимость">
-    <b><svg class="ico"><use href="#i-spark"/></svg>ИИ-консультант</b>
+<!-- КОНСУЛЬТАНТ -->
+<div class="chat-dock" id="chat">
+  <div class="chat-teaser" id="chat-teaser" role="button" tabindex="0" aria-label="Алёна: подберу услугу и посчитаю стоимость">
+    <b><svg class="ico"><use href="#i-spark"/></svg>консультант</b>
     <span>Подберу услугу и посчитаю стоимость за 20 секунд</span>
     <span class="tip">Нажмите, чтобы начать диалог</span>
   </div>
 
-  <div class="ai-panel" id="ai-panel" role="dialog" aria-modal="false" aria-labelledby="ai-title" hidden>
-    <header class="ai-head">
-      <span class="ai-ava" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2l1.25 3.3 3.3 1.25-3.3 1.25L12 11.3 10.75 8 7.45 6.75l3.3-1.25z" fill="currentColor"/><rect x="4.4" y="12.1" width="15.2" height="9.6" rx="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="9.1" cy="16.9" r="1.3" fill="currentColor"/><circle cx="14.9" cy="16.9" r="1.3" fill="currentColor"/></svg>
-      </span>
+  <div class="chat-panel" id="chat-panel" role="dialog" aria-modal="false" aria-labelledby="chat-title" hidden>
+    <header class="chat-head">
+      <span class="chat-ava" aria-hidden="true"><img src="assets/consultant.jpg" alt=""></span>
       <div class="who">
-        <b id="ai-title">Алёна <em>ИИ</em></b>
-        <small><i></i>онлайн · отвечает мгновенно</small>
+        <b id="chat-title">Алёна <em>менеджер</em></b>
+        <small><i></i>на связи 24/7 · ответ за 15 секунд</small>
       </div>
       <div class="hbtns">
-        <button type="button" id="ai-reset" aria-label="Начать диалог заново" title="Начать заново"><svg class="ico"><use href="#i-minus"/></svg></button>
-        <button type="button" id="ai-close" aria-label="Закрыть чат" title="Закрыть"><svg class="ico"><use href="#i-close"/></svg></button>
+        <button type="button" id="chat-reset" aria-label="Начать диалог заново" title="Начать заново"><svg class="ico"><use href="#i-minus"/></svg></button>
+        <button type="button" id="chat-close" aria-label="Закрыть чат" title="Закрыть"><svg class="ico"><use href="#i-close"/></svg></button>
       </div>
     </header>
 
-    <div class="ai-body" id="ai-body" aria-live="polite" aria-relevant="additions"></div>
-    <div class="ai-chips" id="ai-chips"></div>
+    <div class="chat-body" id="chat-body" aria-live="polite" aria-relevant="additions"></div>
+    <div class="chat-chips" id="chat-chips"></div>
 
-    <form class="ai-input" id="ai-form">
-      <textarea id="ai-text" rows="1" placeholder="Напишите вопрос…" aria-label="Ваше сообщение" autocomplete="off"></textarea>
-      <button class="send" type="submit" id="ai-send" aria-label="Отправить сообщение"><svg class="ico"><use href="#i-send"/></svg></button>
+    <form class="chat-input" id="chat-form">
+      <textarea id="chat-text" rows="1" placeholder="Напишите вопрос…" aria-label="Ваше сообщение" autocomplete="off"></textarea>
+      <button class="send" type="submit" id="chat-send" aria-label="Отправить сообщение"><svg class="ico"><use href="#i-send"/></svg></button>
     </form>
-    <div class="ai-foot-note"><b>Демо:</b> ИИ-консультант работает на базе знаний сайта и передаёт заявку менеджеру</div>
+    <div class="chat-foot-note"><b>Демо:</b> консультант отвечает по прайсу и услугам сайта, заявку передаёт менеджеру</div>
   </div>
 
-  <button class="ai-launch" id="ai-launch" type="button" aria-label="ИИ-консультант AI — открыть чат" aria-expanded="false" aria-controls="ai-panel">
-    <span class="ai-launch__ring" aria-hidden="true"></span>
-    <span class="ai-launch__ping" aria-hidden="true"></span>
-    <span class="ai-launch__face" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2l1.25 3.3 3.3 1.25-3.3 1.25L12 11.3 10.75 8 7.45 6.75l3.3-1.25z" fill="currentColor"/><rect x="4.4" y="12.1" width="15.2" height="9.6" rx="3.7" stroke="currentColor" stroke-width="1.7"/><circle cx="9.1" cy="16.9" r="1.3" fill="currentColor"/><circle cx="14.9" cy="16.9" r="1.3" fill="currentColor"/></svg>
-    </span>
-    <span class="ai-launch__dot" aria-hidden="true"></span>
-    <span class="ai-launch__badge" aria-hidden="true">AI</span>
+  <button class="chat-launch" id="chat-launch" type="button" aria-label="Открыть чат с Алёной" aria-expanded="false" aria-controls="chat-panel">
+    <span class="chat-launch__ring" aria-hidden="true"></span>
+    <span class="chat-launch__ping" aria-hidden="true"></span>
+    <span class="chat-launch__face" aria-hidden="true"><img src="assets/consultant.jpg" alt=""></span>
+    <span class="chat-launch__dot" aria-hidden="true"></span>
+    <span class="chat-launch__badge" aria-hidden="true">24/7</span>
   </button>
 </div>
 
@@ -2074,10 +2071,10 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     $("#lead-ok").classList.add("show");
   });
 
-  /* ============ ИИ-КОНСУЛЬТАНТ ============ */
-  var panel = $("#ai-panel"), launch = $("#ai-launch"), teaser = $("#ai-teaser"),
-      body = $("#ai-body"), chipsBox = $("#ai-chips"),
-      aiForm = $("#ai-form"), aiText = $("#ai-text");
+  /* ============ КОНСУЛЬТАНТ ============ */
+  var panel = $("#chat-panel"), launch = $("#chat-launch"), teaser = $("#chat-teaser"),
+      body = $("#chat-body"), chipsBox = $("#chat-chips"),
+      aiForm = $("#chat-form"), aiText = $("#chat-text");
 
   var ai = {
     started: false, open: false, busy: false, pending: null,
@@ -2131,7 +2128,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   function showTyping() {
     if (!ai.typing) {
       ai.typing = document.createElement("div");
-      ai.typing.className = "ai-typing";
+      ai.typing.className = "chat-typing";
       ai.typing.innerHTML = "<span></span><span></span><span></span>";
     }
     ai.typing.hidden = false;
@@ -2168,9 +2165,9 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     var s = ai.slots;
     var hasCalc = s.area >= 30 && RATES[s.type] && s.type !== "snow" && s.type !== "staff";
     var res = hasCalc ? priceFor(s.type, s.area, s.territory) : null;
-    var num = "ДЕМО-" + (2400 + Math.floor(Math.random() * 99));
+    var num = "ДЕМО " + (2400 + Math.floor(Math.random() * 99));
     var rows = "";
-    rows += '<div class="row"><span>Телефон</span><b>' + esc(s.phone || "—") + "</b></div>";
+    rows += '<div class="row"><span>Телефон</span><b>' + esc(s.phone || "не указан") + "</b></div>";
     if (s.object) rows += '<div class="row"><span>Объект</span><b>' + esc(OBJ_LABEL[s.object]) + "</b></div>";
     if (s.type) rows += '<div class="row"><span>Услуга</span><b>' + esc(TYPE_LABEL[s.type]) + "</b></div>";
     if (s.area) rows += '<div class="row"><span>Площадь</span><b>' + fmt(s.area) + " м²</b></div>";
@@ -2213,7 +2210,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     return null;
   }
   function detectObject(t) {
-    if (t.indexOf("офис") !== -1 || t.indexOf("бизнес-центр") !== -1 || t.indexOf("бц") !== -1) return "office";
+    if (t.indexOf("офис") !== -1 || t.indexOf("деловой центр") !== -1 || t.indexOf("бц") !== -1) return "office";
     if (t.indexOf("производ") !== -1 || t.indexOf("склад") !== -1 || t.indexOf("цех") !== -1) return "production";
     if (t.indexOf("магазин") !== -1 || t.indexOf("ритейл") !== -1 || t.indexOf("торгов") !== -1) return "retail";
     if (t.indexOf("медицин") !== -1 || t.indexOf("клиник") !== -1 || t.indexOf("больниц") !== -1) return "medical";
@@ -2223,7 +2220,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     return null;
   }
 
-  /* --- база знаний --- */
+  /* --- справочник ответов --- */
   var KB = [
     { id: "price", k: ["стоимость", "стоит", "цена", "цены", "прайс", "сколько", "расценк", "смет", "расчет", "почем", "тариф", "бюджет"] },
     { id: "daily", k: ["ежеднев", "каждый день", "постоянн", "абонент", "регулярн", "поддерживающ"] },
@@ -2263,104 +2260,104 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   /* --- ответы --- */
   var ANSWERS = {
     daily:
-      "<b>Ежедневная уборка по абонентскому договору</b> — основной формат для офисов, производств и ритейла." +
+      "<b>Ежедневная уборка по абонентскому договору</b>: основной формат для офисов, производств и ритейла." +
       '<span class="ln">от 1,7 ₽/м² за 1 рабочий день, минимальный заказ 1 500 ₽ за выход</span>' +
-      '<span class="ln">бригада закреплена за объектом, подмена — в тот же день</span>' +
+      '<span class="ln">бригада закреплена за объектом, подмена в тот же день</span>' +
       '<span class="ln">расходники, журналы, акты и электронный контроль выхода включены</span>' +
       '<span class="hint">Абонентский договор дешевле разовых вызовов: персонал и логистика планируются заранее.</span>',
     general:
-      "<b>Генеральная уборка</b> — глубокая чистка всех поверхностей: стены, мебель, радиаторы, вентиляция, труднодоступные места." +
+      "<b>Генеральная уборка</b>: глубокая чистка всех поверхностей: стены, мебель, радиаторы, вентиляция, труднодоступные места." +
       '<span class="ln">от 30 ₽/м², минимальный заказ 2 000 ₽</span>' +
-      '<span class="ln">сроки: 400 м² — 1 смена, 1 500 м² — 2–3 смены</span>' +
-      '<span class="hint">Обычно берут 2–4 раза в год, а между ними — поддерживающая уборка.</span>',
+      '<span class="ln">сроки: 400 м² это 1 смена, 1 500 м² это 2 или 3 смены</span>' +
+      '<span class="hint">Обычно берут 2 или 4 раза в год, а между ними поддерживающая уборка.</span>',
     rebuild:
-      "<b>Уборка после ремонта</b> — убираем строительную пыль, следы краски, клея, затирки и плёнки." +
+      "<b>Уборка после ремонта</b>: убираем строительную пыль, следы краски, клея, затирки и плёнки." +
       '<span class="ln">от 40 ₽/м², минимальный заказ 2 000 ₽</span>' +
       '<span class="ln">мойка окон, полов, санузлов, вынос строймусора по договорённости</span>' +
-      '<span class="hint">Стоимость зависит от площади остекления и объёма мусора — лучше прислать фото или видео объекта.</span>',
+      '<span class="hint">Стоимость зависит от площади остекления и объёма мусора, лучше прислать фото или видео объекта.</span>',
     windows:
       "<b>Мойка окон и фасадов</b>:" +
-      '<span class="ln">окна — от 50 ₽/м² остекления, мин. 2 000 ₽</span>' +
-      '<span class="ln">фасады — от 40 ₽/м², мин. 2 000 ₽</span>' +
-      '<span class="ln">витражи, вывески, остекление на высоте — с автовышки или промышленными альпинистами</span>' +
+      '<span class="ln">окна: от 50 ₽/м² остекления, мин. 2 000 ₽</span>' +
+      '<span class="ln">фасады: от 40 ₽/м², мин. 2 000 ₽</span>' +
+      '<span class="ln">витражи, вывески, остекление на высоте, с автовышки или промышленными альпинистами</span>' +
       '<span class="hint">Работаем без разводов: деминерализованная вода и профессиональная химия.</span>',
     disinfect:
-      "<b>Дезинфекция помещений</b> по требованиям СанПиН — сертифицированные средства, не оставляющие запаха." +
+      "<b>Дезинфекция помещений</b>: по требованиям СанПиН, сертифицированные средства, не оставляющие запаха." +
       '<span class="ln">от 10 ₽/м², минимальный заказ 2 000 ₽</span>' +
       '<span class="ln">обработка санузлов, цехов, общественных зон, пищевых производств</span>' +
       '<span class="ln">выдаём акт и журнал обработки для проверок</span>',
     snow:
-      "<b>Вывоз снега и ТБО</b> — своя техника: самосвалы, погрузчики, трактор." +
-      '<span class="ln">вывоз снега — от 180 ₽/м³, минимальный заказ 18 000 ₽</span>' +
+      "<b>Вывоз снега и ТБО</b>: своя техника: самосвалы, погрузчики, трактор." +
+      '<span class="ln">вывоз снега: от 180 ₽/м³, минимальный заказ 18 000 ₽</span>' +
       '<span class="ln">расчистка и посыпка территории в течение 2 часов после снегопада</span>' +
       '<span class="ln">документы для бухгалтерии и фотоотчёт до/после</span>' +
-      '<span class="hint">Зимний договор выгоднее разовых вызовов — техника закреплена за объектом.</span>',
+      '<span class="hint">Зимний договор выгоднее разовых вызовов, техника закреплена за объектом.</span>',
     staff:
-      "<b>Аутсорсинг и подменный персонал</b> — уборщицы в штате подрядчика, без кадрового учёта и налогов у вас." +
+      "<b>Аутсорсинг и подменный персонал</b>: уборщицы в штате подрядчика, без кадрового учёта и налогов у вас." +
       '<span class="ln">от 220 ₽/час; возможна фиксированная сумма за период</span>' +
       '<span class="ln">подмена на время больничных, отпусков и пиковых нагрузок</span>' +
-      '<span class="ln">официальное трудоустройство и обучение персонала — на нас</span>',
+      '<span class="ln">официальное трудоустройство и обучение персонала на нас</span>',
     territory:
-      "<b>Уборка прилегающей территории</b> — тротуары, парковки, газоны, урны." +
+      "<b>Уборка прилегающей территории</b>: тротуары, парковки, газоны, урны." +
       '<span class="ln">от 1 ₽/м² за 1 рабочий день</span>' +
       '<span class="ln">летом: подметание, мойка, покос; зимой: сгребание снега, посыпка, вывоз</span>' +
       '<span class="ln">механизированно и вручную, по согласованному графику</span>',
     tender:
-      "<b>Для тендеров и бюджетных учреждений</b> — работаем по 44-ФЗ и 223-ФЗ." +
-      '<span class="ln">СРО фасилити-операторов, сертификат ISO, реестр «Белый ФМ»</span>' +
+      "<b>Для тендеров и бюджетных учреждений</b>: работаем по 44 ФЗ и 223 ФЗ." +
+      '<span class="ln">СРО фасилити операторов, сертификат ISO, реестр «Белый ФМ»</span>' +
       '<span class="ln">полный комплект документов, фиксированная цена на срок договора</span>' +
       '<span class="ln">опыт обслуживания государственных организаций</span>' +
-      '<span class="hint">Пришлите техзадание — подготовим КП и расчёт в течение рабочего дня.</span>',
+      '<span class="hint">Пришлите техзадание, подготовим КП и расчёт в течение рабочего дня.</span>',
     payment:
-      "<b>Оплата</b> — без предоплаты: платите за фактически выполненные и подтверждённые работы." +
+      "<b>Оплата</b>: без предоплаты: платите за фактически выполненные и подтверждённые работы." +
       '<span class="ln">безналичный расчёт, счёт и акт ежемесячно</span>' +
-      '<span class="ln">для новых клиентов — бесплатная тестовая уборка перед договором</span>' +
+      '<span class="ln">для новых клиентов бесплатная тестовая уборка перед договором</span>' +
       '<span class="ln">условия фиксируются в договоре, доплат «по факту» не бывает</span>',
     docs:
       "<b>Документы</b>, которые вы получаете:" +
       '<span class="ln">договор и приложение с перечнем работ и периодичностью</span>' +
       '<span class="ln">акты выполненных работ, счета, закрывающие документы для бухгалтерии</span>' +
-      '<span class="ln">журналы уборки и дезинфекции — готовы к проверке Роспотребнадзора</span>' +
+      '<span class="ln">журналы уборки и дезинфекции, готовы к проверке Роспотребнадзора</span>' +
       '<span class="ln">фотоотчёт до/после по запросу</span>',
     guarantee:
       "<b>Качество и ответственность</b>:" +
-      '<span class="ln">сначала бесплатная тестовая уборка — вы видите результат до договора</span>' +
+      '<span class="ln">сначала бесплатная тестовая уборка: вы видите результат до договора</span>' +
       '<span class="ln">ответственность за сохранность имущества закреплена в договоре</span>' +
       '<span class="ln">замечания устраняем за свой счёт в оговорённый срок</span>',
     timing:
       "<b>Сроки</b>: заявку принимаем круглосуточно, менеджер отвечает в течение 15 минут." +
-      '<span class="ln">осмотр объекта — в течение суток</span>' +
-      '<span class="ln">выход бригады — на следующий день после звонка</span>' +
-      '<span class="ln">срочные выезды в городе — от 2–4 часов</span>',
+      '<span class="ln">осмотр объекта в течение суток</span>' +
+      '<span class="ln">выход бригады на следующий день после звонка</span>' +
+      '<span class="ln">срочные выезды в городе от 2 до 4 часов</span>',
     safety:
-      "<b>Безопасность</b> — используем сертифицированные моющие и дезинфицирующие средства, соответствующие требованиям Роспотребнадзора." +
+      "<b>Безопасность</b>: используем сертифицированные моющие и дезинфицирующие средства, соответствующие требованиям Роспотребнадзора." +
       '<span class="ln">инструктаж и СИЗ для персонала</span>' +
-      '<span class="ln">для мрамора, ценных пород дерева и дизайнерских тканей — отдельная химия</span>' +
+      '<span class="ln">для мрамора, ценных пород дерева и дизайнерских тканей нужна отдельная химия</span>' +
       '<span class="ln">ведём все необходимые журналы контроля</span>',
     about:
-      "«Прайм-Клининг» работает <b>с 2006 года</b>." +
+      "«Прайм Клининг» работает <b>с 2006 года</b>." +
       '<span class="ln">120+ объектов на постоянном обслуживании, 260 сотрудников в штате</span>' +
       '<span class="ln">Республика Коми, Кировская и Нижегородская области</span>' +
-      '<span class="ln">СРО фасилити-операторов, ISO, реестр «Белый ФМ»</span>' +
+      '<span class="ln">СРО фасилити операторов, ISO, реестр «Белый ФМ»</span>' +
       '<span class="ln">офис: Сыктывкар, ул. Маркова, 20</span>',
     contacts:
       "<b>Связаться с нами</b>:" +
-      '<span class="ln">8 912 863-65-00 — отдел продаж, круглосуточно</span>' +
-      '<span class="ln">8 8212 27-27-32 — офис в Сыктывкаре</span>' +
-      '<span class="ln">commercial@prime-cleaning.ru — для КП и тендеров</span>' +
-      '<span class="hint">Или оставьте телефон здесь — менеджер перезвонит в течение 15 минут.</span>',
+      '<span class="ln">8 912 863 65 00, отдел продаж, круглосуточно</span>' +
+      '<span class="ln">8 8212 27 27 32, офис в Сыктывкаре</span>' +
+      '<span class="ln">commercial@prime-cleaning.ru для КП и тендеров</span>' +
+      '<span class="hint">Или оставьте телефон здесь, менеджер перезвонит в течение 15 минут.</span>',
     test:
       "<b>Да, тестовая уборка бесплатна.</b> Мы делаем разовую уборку на вашем объекте, вы оцениваете результат и только потом решаете, подписывать ли договор." +
       '<span class="ln">предоплата не нужна</span>' +
       '<span class="ln">оплата только за фактически выполненные работы</span>' +
       '<span class="hint">Хотите записаться на тестовую уборку?</span>',
     vacancy:
-      "Мы регулярно набираем уборщиков и бригадиров. Вакансии и условия — на странице «Вакансии» или у менеджера по персоналу: <b>8 912 863-65-00</b>." +
+      "Мы регулярно набираем уборщиков и бригадиров. Вакансии и условия на странице «Вакансии» или у менеджера по персоналу: <b>8 912 863 65 00</b>." +
       '<span class="hint">Официальное трудоустройство, инвентарь и химия предоставляются.</span>',
     human:
-      "Конечно, подключу менеджера — но сначала телефон, чтобы он перезвонил точно по делу.",
+      "Конечно, подключу менеджера, но сначала телефон, чтобы он перезвонил точно по делу.",
     thanks:
-      "Рада помочь! Если появятся вопросы — я на связи круглосуточно." +
+      "Рада помочь! Если появятся вопросы, я на связи круглосуточно." +
       '<span class="hint">Заявку можно оставить прямо здесь: назовите телефон.</span>'
   };
 
@@ -2380,23 +2377,23 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     if (!s.type) {
       ai.pending = "type";
       await botSay("Стоимость зависит от формата уборки. <b>Какой формат вам нужен?</b>" +
-        '<span class="ln">ежедневная — от 1,7 ₽/м² за рабочий день</span>' +
-        '<span class="ln">генеральная — от 30 ₽/м²</span>' +
-        '<span class="ln">после ремонта — от 40 ₽/м²</span>' +
-        '<span class="ln">мойка окон — от 50 ₽/м²</span>');
+        '<span class="ln">ежедневная: от 1,7 ₽/м² за рабочий день</span>' +
+        '<span class="ln">генеральная: от 30 ₽/м²</span>' +
+        '<span class="ln">после ремонта: от 40 ₽/м²</span>' +
+        '<span class="ln">мойка окон: от 50 ₽/м²</span>');
       setChips([["Ежедневная", "Ежедневная уборка офиса"], ["Генеральная", "Генеральная уборка"], ["После ремонта", "Уборка после ремонта"], ["Мойка окон", "Мойка окон"]]);
       return;
     }
     if (!s.area) {
       ai.pending = "area";
       var objTxt = s.object ? " для " + OBJ_LABEL[s.object] : "";
-      await botSay("<b>" + TYPE_LABEL[s.type].charAt(0).toUpperCase() + TYPE_LABEL[s.type].slice(1) + "</b>" + objTxt + " — " + TYPE_RATE[s.type] + "." +
-        '<span class="hint">Какая площадь объекта? Напишите в м², например «600 м²» — сразу посчитаю.</span>');
+      await botSay("<b>" + TYPE_LABEL[s.type].charAt(0).toUpperCase() + TYPE_LABEL[s.type].slice(1) + "</b>" + objTxt + ". " + TYPE_RATE[s.type] + "." +
+        '<span class="hint">Какая площадь объекта? Напишите в м², например «600 м²», сразу посчитаю.</span>');
       setChips([["600 м²", "600 м²"], ["1 200 м²", "1200 м²"], ["Не знаю площадь", "Точную площадь уточню позже"]]);
       return;
     }
     var res = priceFor(s.type, s.area, s.territory);
-    var assumed = s.assumed ? '<span class="hint">Взяла самый частый формат для такого объекта — ежедневную уборку. Нужна разовая или генеральная — просто скажите.</span>' : "";
+    var assumed = s.assumed ? '<span class="hint">Взяла самый частый формат для такого объекта: ежедневную уборку. Нужна разовая или генеральная, просто скажите.</span>' : "";
     var html = "Посчитала по прайсу 2026 года:" +
       '<span class="sep"></span>' +
       "<b>" + TYPE_LABEL[s.type].charAt(0).toUpperCase() + TYPE_LABEL[s.type].slice(1) + "</b>" +
@@ -2404,7 +2401,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       '<span class="ln">ориентир: <b>от ' + fmt(res.total) + " ₽ " + res.period + "</b></span>" +
       (res.perDay ? '<span class="ln">≈ ' + fmt(res.perDay) + " ₽ за 1 рабочий день, 22 смены в месяц</span>" : "") +
       (res.terr ? '<span class="ln">включая территорию: + ' + fmt(res.terr) + " ₽/мес</span>" : "") +
-      '<span class="hint">Точную цену зафиксируем после бесплатного осмотра: она зависит от загрязнения и материалов отделки. Осмотр и тестовая уборка — бесплатно.</span>' + assumed;
+      '<span class="hint">Точную цену зафиксируем после бесплатного осмотра: она зависит от загрязнения и материалов отделки. Осмотр и тестовая уборка бесплатно.</span>' + assumed;
     s.assumed = false;
     await botSay(html);
     setChips([["Оставить заявку", "@lead"], ["Как формируется цена?", "Как формируется цена?"], ["Что входит в уборку?", "Что входит в ежедневную уборку офиса?"]]);
@@ -2414,12 +2411,12 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     var s = ai.slots;
     ai.pending = "phone";
     var summary = [];
-    if (s.object) summary.push("объект — " + OBJ_LABEL[s.object]);
+    if (s.object) summary.push("объект: " + OBJ_LABEL[s.object]);
     if (s.type) summary.push(TYPE_LABEL[s.type]);
     if (s.area) summary.push(fmt(s.area) + " м²");
     var lead = summary.length ? "Приняла: <b>" + summary.join(", ") + "</b>.<br>" : "";
-    await botSay(lead + "Оставьте номер телефона — менеджер пришлёт смету в течение <b>15 минут</b> и согласует бесплатный осмотр." +
-      '<span class="hint">Например: +7 912 863-65-00. Это демо, звонка не будет.</span>');
+    await botSay(lead + "Оставьте номер телефона, менеджер пришлёт смету в течение <b>15 минут</b> и согласует бесплатный осмотр." +
+      '<span class="hint">Например: +7 912 863 65 00. Это демо, звонка не будет.</span>');
     setChips([["Пока не готов", "@later"], ["Позвонить самому", "Как связаться?"]]);
   }
 
@@ -2434,7 +2431,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     }
     if (cmd === "@later") {
       ai.pending = null;
-      await botSay("Поняла, не настаиваю. Если понадобится — телефон отдела продаж <b>8 912 863-65-00</b>, работаем круглосуточно." +
+      await botSay("Поняла, не настаиваю. Если понадобится, телефон отдела продаж <b>8 912 863 65 00</b>, работаем круглосуточно." +
         '<span class="hint">Я остаюсь здесь: могу рассказать про договор, документы или бесплатную тестовую уборку.</span>');
       setChips([["Про договор", "Расскажите про договор"], ["Тестовая уборка", "Тестовая уборка бесплатная?"], ["Прайс", "Покажите прайс"]]);
       return;
@@ -2443,11 +2440,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 
   async function completeLead() {
     ai.pending = null;
-    await botSay("Записала номер <b>" + esc(ai.slots.phone) + "</b>. Заявка сформирована — детали ниже.", 800);
+    await botSay("Записала номер <b>" + esc(ai.slots.phone) + "</b>. Заявка сформирована. Детали ниже.", 800);
     leadCard();
     await sleep(450);
-    await botSay("Что дальше: менеджер перезвонит в течение 15 минут, уточнит детали и пришлёт смету. Осмотр — бесплатно." +
-      '<span class="hint">Пока ждёте — можете спросить про договор, документы или тестовую уборку.</span>');
+    await botSay("Что дальше: менеджер перезвонит в течение 15 минут, уточнит детали и пришлёт смету. Осмотр бесплатно." +
+      '<span class="hint">Пока ждёте, можете спросить про договор, документы или тестовую уборку.</span>');
     setChips([["Про договор", "Расскажите про договор"], ["Документы", "Какие документы вы предоставляете?"], ["Спасибо", "Спасибо"]]);
   }
 
@@ -2458,11 +2455,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     if (ai.pending === "phone") {
       var d = digits(text);
       if (d.length >= 10) { ai.slots.phone = maskPhone(d); await completeLead(); return; }
-      await botSay("Похоже, в номере не хватает цифр. Напишите в формате <b>+7 912 863-65-00</b> — и я передам заявку менеджеру.");
+      await botSay("Похоже, в номере не хватает цифр. Напишите в формате <b>+7 912 863 65 00</b>, и я передам заявку менеджеру.");
       return;
     }
 
-    /* номер телефона без контекста — тоже заявка */
+    /* номер телефона без контекста тоже заявка */
     if (digits(text).length >= 10 && String(text).replace(/[\d\s()+\-]/g, "").length === 0) {
       ai.slots.phone = maskPhone(digits(text));
       await completeLead();
@@ -2474,7 +2471,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       if (a) { ai.slots.area = a; ai.pending = null; await estimateReply(); return; }
       if (t.indexOf("не знаю") !== -1 || t.indexOf("позже") !== -1 || t.indexOf("уточн") !== -1) {
         ai.pending = null;
-        await botSay("Не проблема — менеджер замерит площадь на бесплатном осмотре и посчитает точно. Оставьте телефон, и он согласует время.");
+        await botSay("Не проблема, менеджер замерит площадь на бесплатном осмотре и посчитает точно. Оставьте телефон, и он согласует время.");
         await startLead();
         return;
       }
@@ -2522,11 +2519,11 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       return;
     }
     if (intent === "docs" && t.indexOf("договор") !== -1 && t.indexOf("акт") === -1) {
-      await botSay("<b>Договор</b> — с фиксированной ценой и приложением, где описаны зоны, перечень работ и периодичность." +
-        '<span class="ln">заключаем с юрлицами и ИП, работаем по 44-ФЗ и 223-ФЗ</span>' +
+      await botSay("<b>Договор</b>: с фиксированной ценой и приложением, где описаны зоны, перечень работ и периодичность." +
+        '<span class="ln">заключаем с юрлицами и ИП, работаем по 44 ФЗ и 223 ФЗ</span>' +
         '<span class="ln">цена не меняется в течение срока договора</span>' +
-        '<span class="ln">расторжение — по уведомлению, без штрафов «на будущее»</span>' +
-        '<span class="hint">Сначала бесплатная тестовая уборка — вы подписываете уже с уверенностью в результате.</span>');
+        '<span class="ln">расторжение по уведомлению, без штрафов «на будущее»</span>' +
+        '<span class="hint">Сначала бесплатная тестовая уборка: вы подписываете уже с уверенностью в результате.</span>');
       setChips([["Оставить заявку", "@lead"], ["Документы для бухгалтерии", "Какие документы вы предоставляете?"], ["Оплата", "Как происходит оплата?"]]);
       return;
     }
@@ -2534,7 +2531,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     if (intent) { await answerIntent(intent); return; }
 
     /* 4. фолбэк */
-    await botSay("Пока не уверен, что понял вопрос. Я разбираюсь в уборке, ценах, договорах, тендерах и документах — попробуйте спросить чуть иначе." +
+    await botSay("Пока не уверен, что понял вопрос. Я разбираюсь в уборке, ценах, договорах, тендерах и документах, попробуйте спросить чуть иначе." +
       '<span class="hint">Например: «сколько стоит уборка офиса 800 м²» или «какие документы вы даёте».</span>');
     setChips([["Сколько стоит уборка?", "Сколько стоит уборка офиса 600 м²?"], ["Тестовая уборка", "Тестовая уборка бесплатная?"], ["Позвать менеджера", "@lead"]]);
   }
@@ -2554,24 +2551,24 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     text = String(text || "").trim();
     if (!text || ai.busy) return;
     ai.busy = true;
-    $("#ai-send").disabled = true;
+    $("#chat-send").disabled = true;
     setChips([]);
     addUser(text);
     aiText.value = "";
     autoGrow();
     try { await route(text); } catch (err) { console.error(err); }
     ai.busy = false;
-    $("#ai-send").disabled = false;
+    $("#chat-send").disabled = false;
   }
 
   /* --- приветствие --- */
   async function greet() {
     body.innerHTML = "";
     var day = document.createElement("div");
-    day.className = "ai-day";
-    day.textContent = "ИИ-консультант · демо";
+    day.className = "chat-day";
+    day.textContent = "Алёна · менеджер";
     body.appendChild(day);
-    await botSay("Здравствуйте! Я <b>Алёна</b>, ИИ-консультант «Прайм-Клининг». Помогу подобрать уборку и посчитать стоимость по прайсу.", 600);
+    await botSay("Здравствуйте! Я <b>Алёна</b>, консультант «Прайм Клининг». Мы на связи 24/7 и отвечаем за 15 секунд. Помогу подобрать уборку и посчитать стоимость по прайсу.", 600);
     await botSay("С чего начнём?" +
       '<span class="ln">рассчитаю стоимость по площади</span>' +
       '<span class="ln">расскажу, что входит в уборку</span>' +
@@ -2586,7 +2583,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 
   function openChat(prefill) {
     panel.hidden = false;
-    $("#ai").classList.add("is-open");
+    $("#chat").classList.add("is-open");
     launch.setAttribute("aria-expanded", "true");
     ai.open = true;
     teaser.classList.remove("show");
@@ -2604,15 +2601,15 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
   }
   function closeChat() {
     panel.hidden = true;
-    $("#ai").classList.remove("is-open");
+    $("#chat").classList.remove("is-open");
     launch.setAttribute("aria-expanded", "false");
     ai.open = false;
     launch.focus({ preventScroll: true });
   }
 
   launch.addEventListener("click", function () { ai.open ? closeChat() : openChat(); });
-  $("#ai-close").addEventListener("click", closeChat);
-  $("#ai-reset").addEventListener("click", function () {
+  $("#chat-close").addEventListener("click", closeChat);
+  $("#chat-reset").addEventListener("click", function () {
     ai.pending = null;
     ai.busy = false;
     ai.slots = { type: null, area: 0, object: null, territory: false, phone: null };
@@ -2628,7 +2625,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     if (e.key === "Escape" && ai.open) closeChat();
   });
 
-  $$("[data-open-ai]").forEach(function (btn) {
+  $$("[data-open-chat]").forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       openChat();
