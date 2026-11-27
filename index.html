@@ -277,6 +277,35 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .calc .btn{margin-top:14px}
 .calc__fine{font-size:.68rem;color:var(--muted);text-align:center;margin-top:9px;line-height:1.4}
 
+
+/* ---------- векторный фон первого экрана ---------- */
+.hero-art{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.hero-art svg{width:100%;height:100%;display:block}
+.hero .wrap{position:relative;z-index:1}
+.hero-art .bub{transform-box:fill-box;transform-origin:center;animation:floaty 17s ease-in-out infinite}
+.hero-art .b2{animation-duration:22s;animation-delay:-5s}
+.hero-art .b3{animation-duration:19s;animation-delay:-9s}
+.hero-art .spark{transform-box:fill-box;transform-origin:center;animation:twinkle 6s ease-in-out infinite}
+.hero-art .spark2{animation-duration:8.5s;animation-delay:-3s}
+@keyframes floaty{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-15px) scale(1.03)}}
+@keyframes twinkle{0%,100%{opacity:.16;transform:scale(.85)}50%{opacity:.5;transform:scale(1.12)}}
+
+/* ---------- тематические подложки секций ---------- */
+#services{background-image:
+  radial-gradient(760px 420px at 92% 0,rgba(0,169,155,.08),transparent 62%),
+  radial-gradient(620px 340px at 4% 92%,rgba(0,169,155,.05),transparent 60%)}
+#prices{background-image:radial-gradient(680px 340px at 6% 0,rgba(0,169,155,.055),transparent 62%)}
+
+/* ---------- волны в блоке заявки ---------- */
+.cta{overflow:hidden}
+.cta-waves{position:absolute;left:0;right:0;bottom:-2px;height:clamp(120px,18vw,220px);width:100%;z-index:0;pointer-events:none}
+.cta .wrap{position:relative;z-index:1}
+
+@media (max-width:700px){
+  .hero-art .hide-sm{display:none}
+  .hero-art{opacity:.9}
+}
+
 /* ---------- полоса доверия ---------- */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding:0}
 .trust .wrap{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;padding-block:20px}
@@ -984,6 +1013,88 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 
 <!-- HERO -->
 <section class="hero" id="hero">
+
+  <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <defs>
+        <linearGradient id="heroBeam" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffffff" stop-opacity=".85"/>
+          <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="heroBubble" cx=".34" cy=".28" r=".78">
+          <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+          <stop offset=".55" stop-color="#E9F7F5" stop-opacity=".38"/>
+          <stop offset="1" stop-color="#00A99B" stop-opacity=".1"/>
+        </radialGradient>
+        <filter id="heroSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+        <filter id="heroSoft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+        <linearGradient id="gridFade" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+          <stop offset=".45" stop-color="#ffffff" stop-opacity=".85"/>
+          <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+        </linearGradient>
+        <mask id="gridMask"><rect x="880" y="0" width="600" height="430" fill="url(#gridFade)"/></mask>
+      </defs>
+
+      <g opacity=".9">
+        <path d="M1030 -60 L1210 -60 L790 820 L580 820 Z" fill="url(#heroBeam)" opacity=".62"/>
+        <path d="M1210 -60 L1300 -60 L900 820 L810 820 Z" fill="url(#heroBeam)" opacity=".4"/>
+        <path d="M-40 -60 L60 -60 L470 820 L350 820 Z" fill="url(#heroBeam)" opacity=".16"/>
+      </g>
+
+      <g stroke="#0A2630" stroke-opacity=".05" stroke-width="1.6" class="hide-sm" mask="url(#gridMask)">
+        <path d="M960 0 V390 M1060 0 V390 M1160 0 V390 M1260 0 V390 M1360 0 V390"/>
+        <path d="M960 70 H1440 M960 160 H1440 M960 250 H1440 M960 340 H1440"/>
+        <path d="M960 0 H1440" stroke-width="2"/>
+      </g>
+
+      <g class="hide-sm" fill="none" stroke="#00A99B" stroke-opacity=".11" stroke-width="2">
+        <circle cx="110" cy="790" r="250"/>
+        <circle cx="110" cy="790" r="330"/>
+      </g>
+      <g class="hide-sm" fill="none" stroke="#00A99B" stroke-opacity=".07" stroke-width="2">
+        <circle cx="1330" cy="600" r="180"/>
+      </g>
+      <circle cx="1180" cy="150" r="210" fill="#00A99B" opacity=".07" filter="url(#heroSoft)"/>
+      <circle cx="120" cy="700" r="230" fill="#00A99B" opacity=".06" filter="url(#heroSoft)"/>
+
+      <g class="bub">
+        <circle cx="92" cy="612" r="54" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".2"/>
+        <circle cx="74" cy="594" r="10" fill="#fff" opacity=".85"/>
+      </g>
+      <g class="bub b2 hide-sm">
+        <circle cx="182" cy="716" r="26" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".22"/>
+        <circle cx="174" cy="708" r="5" fill="#fff" opacity=".9"/>
+      </g>
+      <g class="bub b3 hide-sm">
+        <circle cx="1270" cy="690" r="58" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".18"/>
+        <circle cx="1248" cy="668" r="11" fill="#fff" opacity=".85"/>
+      </g>
+      <g class="bub b2 hide-sm">
+        <circle cx="1360" cy="252" r="24" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".22"/>
+      </g>
+      <g class="bub b3 hide-sm">
+        <circle cx="1050" cy="738" r="22" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".2"/>
+      </g>
+      <g class="bub hide-sm">
+        <circle cx="690" cy="770" r="34" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".18"/>
+      </g>
+      <g class="bub b3 hide-sm">
+        <circle cx="46" cy="330" r="20" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".22"/>
+      </g>
+      <g class="bub b2 hide-sm">
+        <circle cx="1240" cy="470" r="30" fill="url(#heroBubble)" stroke="#00A99B" stroke-opacity=".2"/>
+      </g>
+
+      <g fill="#00A99B">
+        <path class="spark" d="M1004 556 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z" opacity=".18"/>
+        <path class="spark spark2" d="M900 150 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" opacity=".14"/>
+      </g>
+
+      <ellipse cx="720" cy="828" rx="760" ry="110" fill="#ffffff" opacity=".6" filter="url(#heroSoft2)"/>
+    </svg>
+  </div>
+
   <div class="wrap">
     <div>
       <span class="tag"><span class="dot"></span>Бесплатная тестовая уборка перед договором</span>
@@ -1650,6 +1761,13 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
 
 <!-- ФИНАЛЬНЫЙ CTA -->
 <section class="cta" id="lead">
+
+  <svg class="cta-waves" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M0 120 C240 60 420 180 720 130 C1020 80 1200 170 1440 110 V220 H0 Z" fill="#0E3540" opacity=".6"/>
+    <path d="M0 160 C260 110 460 210 760 165 C1060 120 1240 195 1440 150 V220 H0 Z" fill="#00A99B" opacity=".14"/>
+    <path d="M0 192 C300 150 520 226 820 190 C1120 154 1280 216 1440 182 V220 H0 Z" fill="#4FE0CE" opacity=".1"/>
+  </svg>
+
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow" style="color:#4FE0CE">Заявка</span>
