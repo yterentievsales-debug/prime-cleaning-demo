@@ -12,7 +12,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2300A99B'/%3E%3Cpath d='M16 7l2.3 5.7L24 15l-5.7 2.3L16 23l-2.3-5.7L8 15l5.7-2.3z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 /* ============================================================
-   «Прайм Клининг»: демо-лендинг. Один файл, без внешних зависимостей.
+   «Прайм Клининг»: демонстрационный лендинг. Один файл, без внешних зависимостей.
    ============================================================ */
 :root{
   --ink:#08181F;
@@ -111,7 +111,7 @@ section.alt{background:var(--paper-2)}
 section.tight{padding-top:0}
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
 
-/* ---------- верхняя микро-полоса ---------- */
+/* ---------- верхняя полоса ---------- */
 .topbar{background:var(--ink);color:#B9CDD3;font-size:.78rem}
 .topbar .wrap{display:flex;align-items:center;gap:18px;min-height:36px;flex-wrap:wrap}
 .topbar .regions{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
@@ -215,7 +215,7 @@ nav.main a:hover{color:var(--accent-d);background:var(--accent-l)}
 .hero-note{margin-top:14px;font-size:.78rem;color:var(--muted);display:flex;gap:8px;align-items:center}
 .hero-note .ico{width:14px;height:14px;color:var(--ok)}
 
-/* карточка-калькулятор */
+/* карточка калькулятора */
 .calc{
   background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;
   box-shadow:var(--shadow-lg);position:relative;
@@ -1626,7 +1626,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
         </details>
         <details class="q">
           <summary>Кто отвечает, если испортили имущество?</summary>
-          <div class="a">Ответственность за сохранность имущества закреплена в договоре. Персонал работает с сертифицированной химией и по инструкциям, поэтому риск повреждения минимален, но если что-то произошло, <b>ущерб компенсируем</b>.</div>
+          <div class="a">Ответственность за сохранность имущества закреплена в договоре. Персонал работает с сертифицированной химией и по инструкциям, поэтому риск повреждения минимален, но если повреждение случилось, <b>ущерб компенсируем</b>.</div>
         </details>
         <details class="q">
           <summary>Работаете ли вы с бюджетными учреждениями и тендерами?</summary>
@@ -1695,7 +1695,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
       <div class="form-ok" id="lead-ok">
         <div class="ok-ico"><svg class="ico"><use href="#i-check"/></svg></div>
         <b>Заявка принята</b>
-        <span>Менеджер перезвонит в течение 15 минут и согласует бесплатный осмотр.<br><small style="color:var(--muted);font-size:.78rem">Демо-режим: данные не отправлены.</small></span>
+        <span>Менеджер перезвонит в течение 15 минут и согласует бесплатный осмотр.<br><small style="color:var(--muted);font-size:.78rem">Демонстрационный режим: данные не отправлены.</small></span>
       </div>
     </div>
   </div>
@@ -2177,7 +2177,7 @@ footer.site .demo-note{background:rgba(255,255,255,.06);border:1px solid rgba(25
     card.innerHTML =
       '<div class="card-top"><svg class="ico"><use href="#i-doc"/></svg><b>Заявка на расчёт</b><span>' + num + "</span></div>" +
       '<dl>' + rows + "</dl>" +
-      '<div class="card-foot">Менеджер свяжется в течение 15 минут и согласует бесплатный осмотр. Заявка сформирована в демо-режиме.</div>';
+      '<div class="card-foot">Менеджер свяжется в течение 15 минут и согласует бесплатный осмотр. Заявка сформирована в демонстрационном режиме.</div>';
     body.appendChild(card);
     scrollChat();
   }
